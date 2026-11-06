@@ -13,7 +13,7 @@ ADSENSE_CLIENT = ""                      # ex: ca-pub-1234567890123456 (après v
 # Ne pas mélanger avec AdSense sur la même page.
 def _adsterra(key, w, h, minw=0, maxw=99999):
     # Charge la pub uniquement si l'écran est assez large (évite de charger une pub cachée)
-    return ("<script>(function(){if(window.innerWidth<%d||window.innerWidth>%d)return;"
+    return ("<script>(function(){try{if(localStorage.getItem('c15')!=='1')return}catch(e){return}if(window.innerWidth<%d||window.innerWidth>%d)return;"
             "window.atOptions={'key':'%s','format':'iframe','height':%d,'width':%d,'params':{}};"
             "document.write('<scr'+'ipt src=\"https://bauval.org/22/%s\"></scr'+'ipt>');})();</script>") % (minw, maxw, key, h, w, key)
 
@@ -94,9 +94,11 @@ def header(rel):
     return (f'<header class="top"><a class="logo" href="{rel}index.html">{logo_svg(40)}<span>{esc(SITE_NAME)}</span></a>'
             f'<span class="tag">{esc(TAGLINE)}</span></header>')
 
+CONSENT = """<div id="cb" style="display:none;position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#111;color:#fff;padding:14px 16px;font:14px/1.4 system-ui,sans-serif;box-shadow:0 -2px 12px rgba(0,0,0,.3)"><div style="max-width:900px;margin:auto;display:flex;gap:12px;flex-wrap:wrap;align-items:center"><span style="flex:1 1 300px">Nous utilisons des cookies publicitaires (réseau Adsterra) pour financer ce site gratuit. Vous pouvez les accepter ou les refuser. <a href="/15minutes-journal/confidentialite.html" style="color:#9cf">En savoir plus</a></span><button id="cr" style="padding:8px 16px;border:1px solid #fff;background:none;color:#fff;border-radius:6px;cursor:pointer">Refuser</button><button id="ca" style="padding:8px 16px;border:0;background:#fff;color:#111;border-radius:6px;cursor:pointer;font-weight:600">Accepter</button></div></div><script>function rc15(){try{localStorage.removeItem('c15')}catch(e){}location.reload();return false}(function(){var v=null;try{v=localStorage.getItem('c15')}catch(e){}if(v===null){var b=document.getElementById('cb');b.style.display='block';document.getElementById('ca').onclick=function(){try{localStorage.setItem('c15','1')}catch(e){}location.reload()};document.getElementById('cr').onclick=function(){try{localStorage.setItem('c15','0')}catch(e){}b.style.display='none'}}})();</script>"""
+
 def footer(rel=""):
     return (f'<footer><p>© {esc(SITE_NAME)}. Contenus rédigés de façon originale à partir de sources citées.</p>'
-            f'<p><a href="{rel}a-propos.html">À propos</a> · <a href="{rel}contact.html">Contact</a> · <a href="{rel}mentions-legales.html">Mentions légales</a> · <a href="{rel}confidentialite.html">Confidentialité et cookies</a></p></footer></body></html>')
+            f'<p><a href="{rel}a-propos.html">À propos</a> · <a href="{rel}contact.html">Contact</a> · <a href="{rel}mentions-legales.html">Mentions légales</a> · <a href="{rel}confidentialite.html">Confidentialité et cookies</a> · <a href="#" onclick="return rc15()">Gérer les cookies</a></p></footer>{CONSENT}</body></html>')
 
 def wrap(text, font, width, draw):
     words, lines, cur = text.split(), [], ""
@@ -166,8 +168,9 @@ def legal_pages(arts):
         "<p><strong>Hébergement :</strong> à compléter (ex. Netlify, Inc.).</p>"
         "<p><strong>Propriété intellectuelle :</strong> les textes et visuels de ce site sont protégés. Toute reproduction sans autorisation est interdite.</p>"
         "<p><strong>Responsabilité :</strong> nous veillons à l'exactitude des informations publiées et corrigeons toute erreur signalée.</p>"),
-     "confidentialite": ("Confidentialité et cookies", "<p>Ce site n'utilise actuellement aucun cookie de suivi ni de publicité.</p>"
-        "<p>Si de la publicité (Google AdSense) est activée, un bandeau de consentement vous permettra d'accepter ou de refuser les cookies publicitaires et de modifier votre choix à tout moment. Cette page sera alors mise à jour.</p>"
+     "confidentialite": ("Confidentialité et cookies", "<p>Ce site est financé par la publicité. Avec votre accord (bandeau affiché à la première visite), le réseau publicitaire Adsterra peut déposer des cookies et collecter des données techniques (adresse IP, appareil, pages consultées) afin d'afficher des annonces.</p>"
+        "<p>Si vous refusez, aucune publicité n'est chargée et aucun cookie publicitaire n'est déposé. Seul votre choix est mémorisé dans votre navigateur.</p>"
+        "<p>Vous pouvez modifier votre choix à tout moment via le lien « Gérer les cookies » en bas de chaque page. Pour plus d'informations sur le traitement des données par Adsterra, consultez sa politique de confidentialité sur adsterra.com.</p>"
         f"<p>Responsable du traitement : {esc(e['nom'])} — {esc(e['email'])}.</p>"
         "<p>Vous disposez d'un droit d'accès, de rectification et de suppression de vos données (LPD suisse, RGPD pour les visiteurs de l'UE).</p>"),
     }
