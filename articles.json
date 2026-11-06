@@ -1,5 +1,24 @@
 [
  {
+  "slug": "yens-ancien-college-nouveau-centre-de-vie",
+  "title": "Yens transforme son ancien collège en centre de vie pour le village",
+  "category": "Région",
+  "date": "2026-11-06",
+  "summary": "Administration communale, épicerie et espace de coworking : la commune a achevé la rénovation de l'ancien collège de la Cité.",
+  "body": [
+   "La commune de Yens vient d'achever la rénovation de l'ancien collège de la Cité. Le bâtiment doit accueillir plusieurs activités destinées à renforcer la vie locale : les services de l'administration communale, une épicerie et un espace de coworking.",
+   "Le projet ne se limite pas à la rénovation d'un bâtiment existant. Il comprend aussi la création d'une véritable place de village, pensée comme un nouvel espace de rencontre pour les habitants.",
+   "En regroupant services publics, commerce de proximité et lieu de travail partagé au même endroit, la commune entend faire de cet ancien collège un point d'ancrage de la vie du village."
+  ],
+  "sources": [
+   {
+    "name": "Dossier de presse du 6 novembre 2026 (actualités du canton de Vaud)"
+   }
+  ],
+  "motif": "village",
+  "author": "Diego Carvalho"
+ },
+ {
   "slug": "fonction-publique-vaudoise-manifestation-lausanne",
   "title": "Lausanne : des milliers d'employés de l'État dans la rue contre les coupes budgétaires",
   "category": "Société",
@@ -25,7 +44,9 @@
     "name": "État de Vaud – Communiqués de presse",
     "url": "https://www.vd.ch/actualites/communiques-de-presse-de-letat-de-vaud"
    }
-  ]
+  ],
+  "motif": "crowd",
+  "author": "Mauricio Montero"
  },
  {
   "slug": "tram-lausanne-renens-credit-supplementaire",
@@ -51,7 +72,9 @@
     "name": "24heures – L'essentiel de l'actualité du 5 novembre 2026",
     "url": "https://www.24heures.ch/lessentiel-de-lactualite-du-jeudi-5-novembre-2026-220352982720"
    }
-  ]
+  ],
+  "motif": "tram",
+  "author": "Diego Carvalho"
  },
  {
   "slug": "chomage-vaud-octobre-2026",
@@ -69,7 +92,9 @@
     "name": "État de Vaud – Communiqués de presse",
     "url": "https://www.vd.ch/actualites/communiques-de-presse-de-letat-de-vaud"
    }
-  ]
+  ],
+  "motif": "chart",
+  "author": "Mauricio Montero"
  },
  {
   "slug": "grand-conseil-vaudois-10-novembre-transports",
@@ -88,7 +113,9 @@
     "name": "Grand Conseil vaudois – Séance du 10 novembre 2026",
     "url": "https://www.vd.ch/gc/seances-du-grand-conseil/detail-seance/seance-gc/1033715"
    }
-  ]
+  ],
+  "motif": "parliament",
+  "author": "Diego Carvalho"
  },
  {
   "slug": "taxe-automobile-vaud-motion-glayre",
@@ -106,7 +133,9 @@
     "name": "État de Vaud – Communiqués de presse",
     "url": "https://www.vd.ch/actualites/communiques-de-presse-de-letat-de-vaud"
    }
-  ]
+  ],
+  "motif": "car",
+  "author": "Mauricio Montero"
  },
  {
   "slug": "halloween-violences-suisse-mimetisme",
@@ -128,7 +157,9 @@
     "name": "Watson – Des milliers de personnes ont manifesté à Lausanne",
     "url": "https://www.watson.ch/fr/suisse/vaud/541540260-des-milliers-de-personnes-ont-manifeste-a-lausanne"
    }
-  ]
+  ],
+  "motif": "halloween",
+  "author": "Diego Carvalho"
  },
  {
   "slug": "tamedia-debrayage-redactions",
@@ -150,7 +181,9 @@
     "name": "État de Vaud – Communiqué du 17 juin 2025",
     "url": "https://www.vd.ch/typo3temp/assets/pdfs/le-conseil-detat-regrette-un-nouvel-affaiblissement-de-la-presse.pdf"
    }
-  ]
+  ],
+  "motif": "press",
+  "author": "Mauricio Montero"
  },
  {
   "slug": "communes-vaudoises-investissements-2025",
@@ -172,7 +205,9 @@
     "name": "LFM – Actualité Lausanne",
     "url": "https://www.lfm.ch/actualite/suisse/romandie/vaud/lausanne/un-credit-additionnel-pour-le-tram-lausanne-renens/"
    }
-  ]
+  ],
+  "motif": "communes",
+  "author": "Diego Carvalho"
  },
  {
   "slug": "week-end-musees-riviera-revue-vaudoise",
@@ -198,6 +233,8 @@
     "name": "Loisirs.ch – Région Vaud",
     "url": "https://www.loisirs.ch/category/region/vaud/?page=13"
    }
-  ]
+  ],
+  "motif": "museum",
+  "author": "Mauricio Montero"
  }
 ]

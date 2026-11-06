@@ -108,6 +108,20 @@ def wrap(text, font, width, draw):
         else: lines.append(cur); cur = w
     return lines + [cur]
 
+import sys; sys.path.insert(0, str(Path(__file__).parent))
+import illus
+
+def hero_image(a, path):
+    W, H = 1200, 675
+    c = CATS.get(a["category"], "#334155")
+    r, g, bl = [int(c[i:i+2], 16) for i in (1, 3, 5)]
+    img = Image.new("RGB", (W, H)); d = ImageDraw.Draw(img)
+    for y in range(H):
+        k = y / H; d.line([(0, y), (W, y)], fill=(int(r*(1-.6*k)), int(g*(1-.6*k)), int(bl*(1-.6*k))))
+    sc = illus.scene(a.get("motif", "press"), c).resize((1100, 616))
+    img.paste(sc, (50, 30), sc)
+    img.save(path, optimize=True)
+
 def social_image(a, path):
     W, H = 1080, 1350
     c = CATS.get(a["category"], "#334155")
@@ -121,17 +135,19 @@ def social_image(a, path):
     d.text((160, 78), SITE_NAME, font=ImageFont.truetype(FONT_B, 52), fill="white")
     tag = ImageFont.truetype(FONT_S, 34)
     tw = d.textlength(a["category"].upper(), font=tag)
-    d.rounded_rectangle([60, 430, 60 + tw + 50, 495], radius=8, fill="white")
-    d.text((85, 441), a["category"].upper(), font=tag, fill=c)
+    sc = illus.scene(a.get("motif", "press"), c).resize((1040, 582))
+    img.paste(sc, (20, 170), sc)
+    d.rounded_rectangle([60, 770, 60 + tw + 50, 835], radius=8, fill="white")
+    d.text((85, 781), a["category"].upper(), font=tag, fill=c)
     size = 76
     while True:
         f = ImageFont.truetype(FONT_B, size)
         lines = wrap(a["title"], f, W - 120, d)
-        if len(lines) * (size + 14) <= 640 or size <= 48: break
+        if len(lines) * (size + 12) <= 380 or size <= 44: break
         size -= 4
-    y = 540
+    y = 860
     for ln in lines:
-        d.text((60, y), ln, font=f, fill="white"); y += size + 14
+        d.text((60, y), ln, font=f, fill="white"); y += size + 12
     d.text((60, H - 110), "Lire l'article  →  lien en bio / en commentaire", font=ImageFont.truetype(FONT_S, 32), fill="white")
     img.save(path, optimize=True)
 
@@ -198,17 +214,18 @@ def main():
 
     for a in arts:
         social_image(a, OUT / "social" / f"{a['slug']}.png")
+        (OUT / "img").mkdir(exist_ok=True); hero_image(a, OUT / "img" / f"{a['slug']}.jpg")
         col = CATS.get(a["category"], "#334155")
         body = ""
         for i, p in enumerate(a["body"]):
             body += f"<p>{esc(p)}</p>"
             if i == 0: body += ad("inline")
-        srcs = "".join(f'<li><a href="{esc(s["url"])}" rel="noopener nofollow" target="_blank">{esc(s["name"])}</a></li>' for s in a["sources"])
+        srcs = "".join((f'<li><a href="{esc(s["url"])}" rel="noopener nofollow" target="_blank">{esc(s["name"])}</a></li>' if s.get("url") else f'<li>{esc(s["name"])}</li>') for s in a["sources"])
         demo = '<div class="demo">Article d\'exemple — à remplacer par un contenu réel.</div>' if a.get("demo") else ""
-        page = (head(f'{a["title"]} – {SITE_NAME}', a["summary"], "../", f'social/{a["slug"]}.png') + header("../") +
+        page = (head(f'{a["title"]} – {SITE_NAME}', a["summary"], "../", f'img/{a["slug"]}.jpg') + header("../") +
                 f'<main><article>{demo}{ad("top")}<span class="cat" style="background:{col}">{esc(a["category"])}</span>'
-                f'<h1>{esc(a["title"])}</h1><div class="meta">{fr_date(a["date"])}</div>'
-                f'<img class="hero" src="../social/{a["slug"]}.png" alt="{esc(a["title"])}">'
+                f'<h1>{esc(a["title"])}</h1><div class="meta">Par <strong>{esc(a.get("author","La rédaction"))}</strong> · {fr_date(a["date"])}</div>'
+                f'<img class="hero" src="../img/{a["slug"]}.jpg" alt="{esc(a["title"])}">'
                 f'<p class="lead">{esc(a["summary"])}</p>{body}{ad("inline")}'
                 f'<div class="sources"><strong>Sources :</strong><ul>{srcs}</ul></div></article>'
                 f'<aside>{ad("side")}<div class="box"><strong>À lire aussi</strong><br>' +
@@ -219,9 +236,9 @@ def main():
     cards = ""
     for a in arts:
         col = CATS.get(a["category"], "#334155")
-        cards += (f'<a class="card" href="article/{a["slug"]}.html"><img src="social/{a["slug"]}.png" alt="">'
+        cards += (f'<a class="card" href="article/{a["slug"]}.html"><img src="img/{a["slug"]}.jpg" alt="">'
                   f'<div><span class="cat" style="background:{col}">{esc(a["category"])}</span>'
-                  f'<h2>{esc(a["title"])}</h2><p>{esc(a["summary"])}</p><span class="meta">{fr_date(a["date"])}</span></div></a>')
+                  f'<h2>{esc(a["title"])}</h2><p>{esc(a["summary"])}</p><span class="meta">Par {esc(a.get("author","La rédaction"))} · {fr_date(a["date"])}</span></div></a>')
     idx = (head(f"{SITE_NAME} – {TAGLINE}", TAGLINE, "") + header("") +
            f'<main><section>{ad("top")}{cards}</section><aside>{ad("side")}</aside></main>' + footer(""))
     (OUT / "index.html").write_text(idx, encoding="utf-8")
