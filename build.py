@@ -9,6 +9,10 @@ SITE_NAME = "15 minutes"
 TAGLINE = "L'essentiel de l'actualité romande en 15 minutes"
 BASE_URL = "https://bookingdcevents-collab.github.io/15minutes-journal"                            # ex: https://vaudquotidien.ch (sert aux balises Facebook)
 ADSENSE_CLIENT = ""                      # ex: ca-pub-1234567890123456 (après validation Google)
+# Codes d'un autre réseau (ex. Adsterra) : coller le code HTML fourni dans l'emplacement voulu.
+# Ne pas mélanger avec AdSense sur la même page.
+AD_CUSTOM = {"top": "", "inline": "", "side": ""}
+HEAD_SNIPPET = ""                        # code à placer dans <head>, si le réseau le demande
 SHOW_AD_PLACEHOLDERS = False   # True = affiche des cadres "Espace publicitaire" (maquette uniquement)
 EDITEUR = {"nom": "À compléter (nom / raison sociale)", "adresse": "À compléter", "email": "contact@exemple.ch"}
 AD_SLOTS = {"top": "", "inline": "", "side": ""}   # identifiants de blocs AdSense
@@ -28,6 +32,8 @@ def fr_date(iso):
     return f"{int(d)} {m[int(mo)-1]} {y}"
 
 def ad(slot):
+    if AD_CUSTOM.get(slot):
+        return f'<div class="ad ad-{slot}" style="background:none;border:0;min-height:0">{AD_CUSTOM[slot]}</div>'
     if ADSENSE_CLIENT and AD_SLOTS.get(slot):
         return (f'<div class="ad ad-{slot}"><ins class="adsbygoogle" style="display:block" '
                 f'data-ad-client="{ADSENSE_CLIENT}" data-ad-slot="{AD_SLOTS[slot]}" '
@@ -48,7 +54,7 @@ def head(title, desc, rel, og_img=None, url=None):
               f'<meta property="og:site_name" content="{esc(SITE_NAME)}"><meta name="twitter:card" content="summary_large_image">')
     return (f'<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8">'
             f'<meta name="viewport" content="width=device-width,initial-scale=1">'
-            f'<title>{esc(title)}</title><meta name="description" content="{esc(desc)}">{og}'
+            f'{HEAD_SNIPPET}<title>{esc(title)}</title><meta name="description" content="{esc(desc)}">{og}'
             f'<link rel="icon" type="image/svg+xml" href="{rel}logo.svg"><link rel="stylesheet" href="{rel}style.css">{adsense}</head><body>')
 
 RED = "#d7261e"
