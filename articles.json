@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "exemple-travaux-route-cossonay",
+    "title": "Travaux sur l'axe Lausanne–Cossonay : ce que les automobilistes doivent savoir",
+    "category": "Mobilité",
+    "date": "2026-11-06",
+    "summary": "Article d'exemple pour montrer la mise en page : circulation alternée, déviations et durée estimée du chantier.",
+    "body": [
+      "Ceci est un article d'exemple destiné à valider la mise en page du site. Remplacez-le par un texte original rédigé à partir de faits vérifiés.",
+      "Une bonne structure : un chapeau qui donne l'essentiel, puis le contexte, les chiffres, et enfin ce que cela change concrètement pour les lecteurs.",
+      "Chaque article indique ses sources en bas de page, ce qui renforce la crédibilité du média et respecte le travail des rédactions citées."
+    ],
+    "sources": [{"name": "Communiqué de la commune (exemple)", "url": "https://www.vd.ch"}],
+    "demo": true
+  },
+  {
+    "slug": "exemple-marche-noel-morges",
+    "title": "Marchés de Noël : le programme du week-end sur La Côte",
+    "category": "Région",
+    "date": "2026-11-06",
+    "summary": "Article d'exemple : agenda, horaires et conseils pratiques pour les sorties du week-end.",
+    "body": [
+      "Article d'exemple. Les contenus de type agenda se prêtent bien au format court et partageable sur Instagram.",
+      "Pensez à vérifier les horaires et les dates auprès des organisateurs avant publication."
+    ],
+    "sources": [{"name": "Site de l'organisateur (exemple)", "url": "https://www.morges.ch"}],
+    "demo": true
+  },
+  {
+    "slug": "exemple-football-ligue-regionale",
+    "title": "Football régional : les résultats et le classement de la journée",
+    "category": "Sport",
+    "date": "2026-11-06",
+    "summary": "Article d'exemple : résumé des matchs, buteurs et prochaine journée.",
+    "body": [
+      "Article d'exemple. Les résultats sportifs sont des faits : vous pouvez les rapporter avec vos propres mots en citant la source.",
+      "Ajoutez toujours un angle utile au lecteur : enjeu du classement, prochain match, lieu et heure."
+    ],
+    "sources": [{"name": "Association cantonale vaudoise de football (exemple)", "url": "https://www.acvf.ch"}],
+    "demo": true
+  }
+]

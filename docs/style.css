@@ -1,0 +1,18 @@
+
+*{box-sizing:border-box}body{margin:0;font:18px/1.65 Georgia,'Times New Roman',serif;color:#16181d;background:#f6f5f1}
+a{color:inherit}.top{background:#fff;border-bottom:3px solid #16181d;padding:18px 24px;display:flex;gap:18px;align-items:baseline;flex-wrap:wrap}
+.logo{font:800 32px/1 'DejaVu Serif',Georgia,serif;text-decoration:none;letter-spacing:-.5px;display:flex;align-items:center;gap:10px}.tag{font:14px system-ui,sans-serif;color:#667}
+main{max-width:1060px;margin:0 auto;padding:24px;display:grid;grid-template-columns:1fr 300px;gap:32px}
+@media(max-width:860px){main{grid-template-columns:1fr}}
+.cat{font:700 12px system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#fff;padding:3px 8px;border-radius:3px;display:inline-block}
+.card{background:#fff;border:1px solid #e3e1da;border-radius:8px;overflow:hidden;margin-bottom:20px;display:block;text-decoration:none}
+.card img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;object-position:top}
+.card div{padding:16px 18px}.card h2{margin:8px 0 6px;font-size:23px;line-height:1.25}.card p{margin:0;color:#555;font-size:16px}
+.meta{font:13px system-ui,sans-serif;color:#778}article h1{font-size:36px;line-height:1.2;margin:10px 0}
+.lead{font-size:21px;color:#333}.hero{width:100%;border-radius:8px;margin:14px 0}
+.sources{border-top:1px solid #ddd;margin-top:28px;padding-top:12px;font:14px system-ui,sans-serif}
+.demo{background:#fff3cd;border:1px solid #e6cf7a;padding:8px 12px;border-radius:6px;font:14px system-ui,sans-serif;margin-bottom:12px}
+.ad{background:repeating-linear-gradient(45deg,#f0eee8,#f0eee8 10px,#e9e6de 10px,#e9e6de 20px);border:1px dashed #b9b4a6;color:#8a8473;font:12px system-ui,sans-serif;display:flex;align-items:center;justify-content:center;margin:22px 0;text-transform:uppercase;letter-spacing:.1em}
+.ad-top{min-height:90px}.ad-inline{min-height:250px}.ad-side{min-height:600px}
+aside .box{background:#fff;border:1px solid #e3e1da;border-radius:8px;padding:14px 16px;font:15px system-ui,sans-serif}
+footer{text-align:center;font:13px system-ui,sans-serif;color:#667;padding:30px 20px}
