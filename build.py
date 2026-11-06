@@ -221,6 +221,7 @@ def main():
     arts.sort(key=lambda a: a["date"], reverse=True)
     if OUT.exists(): shutil.rmtree(OUT)
     (OUT / "article").mkdir(parents=True); (OUT / "social").mkdir()
+    if (ROOT / "photos").exists(): shutil.copytree(ROOT / "photos", OUT / "photos")
     (OUT / "style.css").write_text(CSS, encoding="utf-8")
     (OUT / "logo.svg").write_text(logo_svg(256), encoding="utf-8")
     logo_png(OUT / "logo-profil.png")
