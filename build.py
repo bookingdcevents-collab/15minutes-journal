@@ -111,6 +111,13 @@ def wrap(text, font, width, draw):
 import sys; sys.path.insert(0, str(Path(__file__).parent))
 import illus
 
+def photo(a, w, h):
+    """Photo fournie (docs/photos/<fichier>) recadrée au format voulu, ou None."""
+    f = a.get("image")
+    if not f or not (OUT / "photos" / f).exists(): return None
+    from PIL import ImageOps
+    return ImageOps.fit(Image.open(OUT / "photos" / f).convert("RGB"), (w, h), Image.LANCZOS)
+
 def hero_image(a, path):
     W, H = 1200, 675
     c = CATS.get(a["category"], "#334155")
@@ -118,8 +125,11 @@ def hero_image(a, path):
     img = Image.new("RGB", (W, H)); d = ImageDraw.Draw(img)
     for y in range(H):
         k = y / H; d.line([(0, y), (W, y)], fill=(int(r*(1-.6*k)), int(g*(1-.6*k)), int(bl*(1-.6*k))))
-    sc = illus.scene(a.get("motif", "press"), c).resize((1100, 616))
-    img.paste(sc, (50, 30), sc)
+    ph = photo(a, 1200, 675)
+    if ph: img = ph
+    else:
+        sc = illus.scene(a.get("motif", "press"), c).resize((1100, 616))
+        img.paste(sc, (50, 30), sc)
     img.save(path, optimize=True)
 
 def social_image(a, path):
@@ -135,8 +145,11 @@ def social_image(a, path):
     d.text((160, 78), SITE_NAME, font=ImageFont.truetype(FONT_B, 52), fill="white")
     tag = ImageFont.truetype(FONT_S, 34)
     tw = d.textlength(a["category"].upper(), font=tag)
-    sc = illus.scene(a.get("motif", "press"), c).resize((1040, 582))
-    img.paste(sc, (20, 170), sc)
+    ph = photo(a, 1040, 582)
+    if ph: img.paste(ph, (20, 170))
+    else:
+        sc = illus.scene(a.get("motif", "press"), c).resize((1040, 582))
+        img.paste(sc, (20, 170), sc)
     d.rounded_rectangle([60, 770, 60 + tw + 50, 835], radius=8, fill="white")
     d.text((85, 781), a["category"].upper(), font=tag, fill=c)
     size = 76
@@ -221,11 +234,12 @@ def main():
             body += f"<p>{esc(p)}</p>"
             if i == 0: body += ad("inline")
         srcs = "".join((f'<li><a href="{esc(s["url"])}" rel="noopener nofollow" target="_blank">{esc(s["name"])}</a></li>' if s.get("url") else f'<li>{esc(s["name"])}</li>') for s in a["sources"])
+        credit = f'<div class="meta" style="margin:-8px 0 14px">{esc(a["image_credit"])}</div>' if a.get("image") and a.get("image_credit") else ""
         demo = '<div class="demo">Article d\'exemple — à remplacer par un contenu réel.</div>' if a.get("demo") else ""
         page = (head(f'{a["title"]} – {SITE_NAME}', a["summary"], "../", f'img/{a["slug"]}.jpg') + header("../") +
                 f'<main><article>{demo}{ad("top")}<span class="cat" style="background:{col}">{esc(a["category"])}</span>'
                 f'<h1>{esc(a["title"])}</h1><div class="meta">Par <strong>{esc(a.get("author","La rédaction"))}</strong> · {fr_date(a["date"])}</div>'
-                f'<img class="hero" src="../img/{a["slug"]}.jpg" alt="{esc(a["title"])}">'
+                f'<img class="hero" src="../img/{a["slug"]}.jpg" alt="{esc(a["title"])}">{credit}'
                 f'<p class="lead">{esc(a["summary"])}</p>{body}{ad("inline")}'
                 f'<div class="sources"><strong>Sources :</strong><ul>{srcs}</ul></div></article>'
                 f'<aside>{ad("side")}<div class="box"><strong>À lire aussi</strong><br>' +
