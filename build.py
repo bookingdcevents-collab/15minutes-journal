@@ -98,7 +98,7 @@ CONSENT = """<div id="cb" style="display:none;position:fixed;left:0;right:0;bott
 
 def footer(rel=""):
     return (f'<footer><p>© {esc(SITE_NAME)}. Contenus rédigés de façon originale à partir de sources citées.</p>'
-            f'<p><a href="{rel}a-propos.html">À propos</a> · <a href="{rel}contact.html">Contact</a> · <a href="{rel}mentions-legales.html">Mentions légales</a> · <a href="{rel}confidentialite.html">Confidentialité et cookies</a> · <a href="#" onclick="return rc15()">Gérer les cookies</a></p></footer>{CONSENT}</body></html>')
+            f'<p><a href="{rel}a-propos.html">À propos</a> · <a href="{rel}contact.html">Contact</a> · <a href="{rel}mentions-legales.html">Mentions légales</a> · <a href="{rel}confidentialite.html">Confidentialité et cookies</a></p></footer></body></html>')
 
 def wrap(text, font, width, draw):
     words, lines, cur = text.split(), [], ""
@@ -168,9 +168,8 @@ def legal_pages(arts):
         "<p><strong>Hébergement :</strong> à compléter (ex. Netlify, Inc.).</p>"
         "<p><strong>Propriété intellectuelle :</strong> les textes et visuels de ce site sont protégés. Toute reproduction sans autorisation est interdite.</p>"
         "<p><strong>Responsabilité :</strong> nous veillons à l'exactitude des informations publiées et corrigeons toute erreur signalée.</p>"),
-     "confidentialite": ("Confidentialité et cookies", "<p>Ce site est financé par la publicité. Avec votre accord (bandeau affiché à la première visite), le réseau publicitaire Adsterra peut déposer des cookies et collecter des données techniques (adresse IP, appareil, pages consultées) afin d'afficher des annonces.</p>"
-        "<p>Si vous refusez, aucune publicité n'est chargée et aucun cookie publicitaire n'est déposé. Seul votre choix est mémorisé dans votre navigateur.</p>"
-        "<p>Vous pouvez modifier votre choix à tout moment via le lien « Gérer les cookies » en bas de chaque page. Pour plus d'informations sur le traitement des données par Adsterra, consultez sa politique de confidentialité sur adsterra.com.</p>"
+     "confidentialite": ("Confidentialité et cookies", "<p>Ce site est financé par la publicité. Le réseau publicitaire Adsterra peut déposer des cookies et collecter des données techniques (adresse IP, appareil, pages consultées) afin d'afficher des annonces.</p>"
+        "<p>Vous pouvez refuser ou supprimer ces cookies dans les paramètres de votre navigateur. Pour plus d'informations, consultez la politique de confidentialité d'Adsterra sur adsterra.com.</p>"
         f"<p>Responsable du traitement : {esc(e['nom'])} — {esc(e['email'])}.</p>"
         "<p>Vous disposez d'un droit d'accès, de rectification et de suppression de vos données (LPD suisse, RGPD pour les visiteurs de l'UE).</p>"),
     }
