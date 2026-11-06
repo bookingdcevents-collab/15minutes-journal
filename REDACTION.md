@@ -8,14 +8,7 @@
 - Build : `python3 build.py && touch docs/.nojekyll`, puis commit, `git pull --rebase`, push sur main.
 - **Photos** : déposer le fichier dans `photos/` (à la racine du dépôt, pas dans docs/), puis ajouter à l'article `"image": "nom.jpg"` et `"image_credit": "Illustration générée par IA"` (ou « Photo : Prénom Nom »). Sans champ `image`, l'illustration dessinée (`motif`) est utilisée.
 
-## Format des dossiers de presse reçus de Diego (ChatGPT)
-Pour chaque actualité : identification (titre original, média, date de publication, auteur, lien, catégorie, lieu) ; contenu (titre développé, résumé détaillé, contexte, personnes/institutions, chiffres, chronologie, conséquences pour les habitants, réactions des autorités, informations manquantes).
-Règles de publication :
-1. Ne jamais inventer les informations manquantes.
-2. Ne pas transformer une hypothèse en fait confirmé.
-3. Ne pas présenter un article ancien comme une actualité du jour.
-4. Ne pas confondre date de publication et date de l'événement.
-5. Ne pas reproduire mot pour mot les articles des médias.
-6. Pas deux articles sur le même événement sans angle différent.
-7. Informations insuffisantes : mettre l'article en attente de vérification (ne pas publier).
-Sujets en attente (détails insuffisants) : ARCAM (région Cossonay-Aubonne-Morges), Forward Morges.
+## Style (décision de Diego)
+- Articles percutants, vivants, qui donnent envie de lire : titres forts, accroche dès la première phrase, rythme, verbes d'action.
+- Les faits restent exacts : jamais de chiffre, citation, événement ou détail inventé ou exagéré. Le style peut être dramatique, pas les faits.
+- Si Diego colle un dossier de presse, s'en servir comme matière première (ne pas exiger un format particulier).
