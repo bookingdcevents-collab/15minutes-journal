@@ -11,7 +11,17 @@ BASE_URL = "https://bookingdcevents-collab.github.io/15minutes-journal"         
 ADSENSE_CLIENT = ""                      # ex: ca-pub-1234567890123456 (après validation Google)
 # Codes d'un autre réseau (ex. Adsterra) : coller le code HTML fourni dans l'emplacement voulu.
 # Ne pas mélanger avec AdSense sur la même page.
-AD_CUSTOM = {"top": "", "inline": "", "side": ""}
+def _adsterra(key, w, h, minw=0, maxw=99999):
+    # Charge la pub uniquement si l'écran est assez large (évite de charger une pub cachée)
+    return ("<script>(function(){if(window.innerWidth<%d||window.innerWidth>%d)return;"
+            "window.atOptions={'key':'%s','format':'iframe','height':%d,'width':%d,'params':{}};"
+            "document.write('<scr'+'ipt src=\"https://bauval.org/22/%s\"></scr'+'ipt>');})();</script>") % (minw, maxw, key, h, w, key)
+
+AD_CUSTOM = {
+    "top": _adsterra("81f0f1093be39cfd364923e057257562", 728, 90, 768) + _adsterra("5083ba51c137481c711eaa6d0fabb937", 320, 50, 0, 767),  # 728x90 ordinateur/tablette, 320x50 mobile
+    "inline": _adsterra("f4bffaebe314ea08e3a2cdb7e970e9d6", 300, 250, 0),    # 300x250 partout
+    "side": _adsterra("ffe5be9075f8ba72055da2924ee871c4", 160, 600, 861),    # 160x600 colonne latérale (visible desktop)
+}
 HEAD_SNIPPET = ""                        # code à placer dans <head>, si le réseau le demande
 SHOW_AD_PLACEHOLDERS = False   # True = affiche des cadres "Espace publicitaire" (maquette uniquement)
 EDITEUR = {"nom": "À compléter (nom / raison sociale)", "adresse": "À compléter", "email": "contact@exemple.ch"}
@@ -138,7 +148,7 @@ main{max-width:1060px;margin:0 auto;padding:24px;display:grid;grid-template-colu
 .sources{border-top:1px solid #ddd;margin-top:28px;padding-top:12px;font:14px system-ui,sans-serif}
 .demo{background:#fff3cd;border:1px solid #e6cf7a;padding:8px 12px;border-radius:6px;font:14px system-ui,sans-serif;margin-bottom:12px}
 .ad{background:repeating-linear-gradient(45deg,#f0eee8,#f0eee8 10px,#e9e6de 10px,#e9e6de 20px);border:1px dashed #b9b4a6;color:#8a8473;font:12px system-ui,sans-serif;display:flex;align-items:center;justify-content:center;margin:22px 0;text-transform:uppercase;letter-spacing:.1em}
-.ad-top{min-height:90px}.ad-inline{min-height:250px}.ad-side{min-height:600px}
+.ad-top{min-height:90px}.ad-inline{min-height:250px}.ad-side{min-height:600px}@media(max-width:860px){.ad-side{display:none}}@media(max-width:767px){.ad-top{min-height:50px}}
 aside .box{background:#fff;border:1px solid #e3e1da;border-radius:8px;padding:14px 16px;font:15px system-ui,sans-serif}
 footer{text-align:center;font:13px system-ui,sans-serif;color:#667;padding:30px 20px}
 """

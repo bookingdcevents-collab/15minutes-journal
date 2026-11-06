@@ -13,6 +13,6 @@ main{max-width:1060px;margin:0 auto;padding:24px;display:grid;grid-template-colu
 .sources{border-top:1px solid #ddd;margin-top:28px;padding-top:12px;font:14px system-ui,sans-serif}
 .demo{background:#fff3cd;border:1px solid #e6cf7a;padding:8px 12px;border-radius:6px;font:14px system-ui,sans-serif;margin-bottom:12px}
 .ad{background:repeating-linear-gradient(45deg,#f0eee8,#f0eee8 10px,#e9e6de 10px,#e9e6de 20px);border:1px dashed #b9b4a6;color:#8a8473;font:12px system-ui,sans-serif;display:flex;align-items:center;justify-content:center;margin:22px 0;text-transform:uppercase;letter-spacing:.1em}
-.ad-top{min-height:90px}.ad-inline{min-height:250px}.ad-side{min-height:600px}
+.ad-top{min-height:90px}.ad-inline{min-height:250px}.ad-side{min-height:600px}@media(max-width:860px){.ad-side{display:none}}@media(max-width:767px){.ad-top{min-height:50px}}
 aside .box{background:#fff;border:1px solid #e3e1da;border-radius:8px;padding:14px 16px;font:15px system-ui,sans-serif}
 footer{text-align:center;font:13px system-ui,sans-serif;color:#667;padding:30px 20px}
