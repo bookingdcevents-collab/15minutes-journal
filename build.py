@@ -13,7 +13,7 @@ ADSENSE_CLIENT = ""                      # ex: ca-pub-1234567890123456 (après v
 # Ne pas mélanger avec AdSense sur la même page.
 def _adsterra(key, w, h, minw=0, maxw=99999):
     # Charge la pub uniquement si l'écran est assez large (évite de charger une pub cachée)
-    return ("<script>(function(){try{if(localStorage.getItem('c15')!=='1')return}catch(e){return}if(window.innerWidth<%d||window.innerWidth>%d)return;"
+    return ("<script>(function(){if(window.innerWidth<%d||window.innerWidth>%d)return;"
             "window.atOptions={'key':'%s','format':'iframe','height':%d,'width':%d,'params':{}};"
             "document.write('<scr'+'ipt src=\"https://bauval.org/22/%s\"></scr'+'ipt>');})();</script>") % (minw, maxw, key, h, w, key)
 
