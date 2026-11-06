@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bookingdcevents-collab.github.io/15minutes-journal/sitemap.xml

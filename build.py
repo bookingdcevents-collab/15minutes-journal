@@ -9,6 +9,7 @@ SITE_NAME = "15 minutes"
 TAGLINE = "L'essentiel de l'actualité romande en 15 minutes"
 BASE_URL = "https://bookingdcevents-collab.github.io/15minutes-journal"                            # ex: https://vaudquotidien.ch (sert aux balises Facebook)
 ADSENSE_CLIENT = ""                      # ex: ca-pub-1234567890123456 (après validation Google)
+SHOW_AD_PLACEHOLDERS = False   # True = affiche des cadres "Espace publicitaire" (maquette uniquement)
 EDITEUR = {"nom": "À compléter (nom / raison sociale)", "adresse": "À compléter", "email": "contact@exemple.ch"}
 AD_SLOTS = {"top": "", "inline": "", "side": ""}   # identifiants de blocs AdSense
 CATS = {"Mobilité": "#1f6feb", "Région": "#c2410c", "Sport": "#15803d",
@@ -32,6 +33,8 @@ def ad(slot):
                 f'data-ad-client="{ADSENSE_CLIENT}" data-ad-slot="{AD_SLOTS[slot]}" '
                 f'data-ad-format="auto" data-full-width-responsive="true"></ins>'
                 f'<script>(adsbygoogle=window.adsbygoogle||[]).push({{}});</script></div>')
+    if not SHOW_AD_PLACEHOLDERS:
+        return ""
     return f'<div class="ad ad-{slot}"><span>Espace publicitaire</span></div>'
 
 def head(title, desc, rel, og_img=None, url=None):
@@ -46,7 +49,7 @@ def head(title, desc, rel, og_img=None, url=None):
     return (f'<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8">'
             f'<meta name="viewport" content="width=device-width,initial-scale=1">'
             f'<title>{esc(title)}</title><meta name="description" content="{esc(desc)}">{og}'
-            f'<link rel="stylesheet" href="{rel}style.css">{adsense}</head><body>')
+            f'<link rel="icon" type="image/svg+xml" href="{rel}logo.svg"><link rel="stylesheet" href="{rel}style.css">{adsense}</head><body>')
 
 RED = "#d7261e"
 def logo_svg(size=44, ink="#16181d"):
@@ -77,7 +80,7 @@ def header(rel):
 
 def footer(rel=""):
     return (f'<footer><p>© {esc(SITE_NAME)}. Contenus rédigés de façon originale à partir de sources citées.</p>'
-            f'<p><a href="{rel}a-propos.html">À propos</a> · <a href="{rel}mentions-legales.html">Mentions légales</a> · <a href="{rel}confidentialite.html">Confidentialité et cookies</a></p></footer></body></html>')
+            f'<p><a href="{rel}a-propos.html">À propos</a> · <a href="{rel}contact.html">Contact</a> · <a href="{rel}mentions-legales.html">Mentions légales</a> · <a href="{rel}confidentialite.html">Confidentialité et cookies</a></p></footer></body></html>')
 
 def wrap(text, font, width, draw):
     words, lines, cur = text.split(), [], ""
@@ -140,12 +143,15 @@ def legal_pages(arts):
      "a-propos": ("À propos", f"<p><strong>{esc(SITE_NAME)}</strong> propose chaque jour l'essentiel de l'actualité romande, présenté en lecture courte.</p>"
         "<p>Nos articles sont rédigés de façon originale. Lorsque nous nous appuyons sur d'autres médias ou sur des communiqués officiels, nous citons toujours nos sources en bas de page.</p>"
         f"<p>Contact : {esc(e['email'])}</p>"),
+     "contact": ("Contact", f"<p>Pour toute question, correction ou information à nous transmettre :</p><p><strong>{esc(e['email'])}</strong></p>"
+        f"<p>Éditeur : {esc(e['nom'])}, {esc(e['adresse'])}</p>"
+        "<p>Nous corrigeons toute erreur signalée dans les meilleurs délais.</p>"),
      "mentions-legales": ("Mentions légales", f"<p><strong>Éditeur :</strong> {esc(e['nom'])}<br>{esc(e['adresse'])}<br>{esc(e['email'])}</p>"
         "<p><strong>Hébergement :</strong> à compléter (ex. Netlify, Inc.).</p>"
         "<p><strong>Propriété intellectuelle :</strong> les textes et visuels de ce site sont protégés. Toute reproduction sans autorisation est interdite.</p>"
         "<p><strong>Responsabilité :</strong> nous veillons à l'exactitude des informations publiées et corrigeons toute erreur signalée.</p>"),
-     "confidentialite": ("Confidentialité et cookies", "<p>Ce site utilise des cookies, notamment ceux de partenaires publicitaires (Google AdSense) afin d'afficher des annonces et d'en mesurer l'efficacité.</p>"
-        "<p>Vous pouvez accepter ou refuser ces cookies via le bandeau de consentement et modifier votre choix à tout moment.</p>"
+     "confidentialite": ("Confidentialité et cookies", "<p>Ce site n'utilise actuellement aucun cookie de suivi ni de publicité.</p>"
+        "<p>Si de la publicité (Google AdSense) est activée, un bandeau de consentement vous permettra d'accepter ou de refuser les cookies publicitaires et de modifier votre choix à tout moment. Cette page sera alors mise à jour.</p>"
         f"<p>Responsable du traitement : {esc(e['nom'])} — {esc(e['email'])}.</p>"
         "<p>Vous disposez d'un droit d'accès, de rectification et de suppression de vos données (LPD suisse, RGPD pour les visiteurs de l'UE).</p>"),
     }
@@ -154,6 +160,14 @@ def legal_pages(arts):
             f'<main style="display:block;max-width:760px"><h1>{t}</h1>{body}</main>' + footer(""), encoding="utf-8")
     if ADSENSE_CLIENT:
         (OUT / "ads.txt").write_text(f"google.com, {ADSENSE_CLIENT.replace('ca-','')}, DIRECT, f08c47fec0942fa0\n", encoding="utf-8")
+
+def seo_files(arts):
+    base = BASE_URL.rstrip("/")
+    urls = [""] + [f"article/{a['slug']}.html" for a in arts] + [f"{x}.html" for x in ("a-propos", "contact", "mentions-legales", "confidentialite")]
+    sm = '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + \
+         "".join(f"<url><loc>{base}/{u}</loc></url>" for u in urls) + "</urlset>"
+    (OUT / "sitemap.xml").write_text(sm, encoding="utf-8")
+    (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {base}/sitemap.xml\n", encoding="utf-8")
 
 def main():
     arts = json.loads((ROOT / "articles.json").read_text(encoding="utf-8"))
@@ -194,6 +208,7 @@ def main():
            f'<main><section>{ad("top")}{cards}</section><aside>{ad("side")}</aside></main>' + footer(""))
     (OUT / "index.html").write_text(idx, encoding="utf-8")
     legal_pages(arts)
+    seo_files(arts)
     print(f"{len(arts)} articles générés dans {OUT}")
 
 if __name__ == "__main__":
