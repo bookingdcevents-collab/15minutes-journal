@@ -1,5 +1,42 @@
 [
  {
+  "slug": "grasshopper-lausanne-sport-match-de-la-peur-letzigrund",
+  "title": "Match de la peur ce soir : le Lausanne-Sport, dernier, défie Grasshopper, avant-dernier",
+  "category": "Sport",
+  "date": "2026-11-07",
+  "summary": "Au Letzigrund, deux clubs menacés se retrouvent à 20h30. Pour le LS, qui n'a plus gagné en championnat depuis le 1er août, c'est déjà une finale.",
+  "body": [
+   "Personne ne veut perdre ce soir au Letzigrund. À Zurich, Grasshopper, 11e de Super League, reçoit le Lausanne-Sport, dernier du classement. Coup d'envoi à 20h30, selon la RTS, qui diffuse la rencontre sur RTS 2.",
+   "Les chiffres disent l'urgence. Après 12 journées, GC compte 10 points et une différence de buts de -13. Le LS n'en a que 6, avec 11 buts marqués pour 22 encaissés. Quatre points séparent les deux équipes, et Grasshopper occupe pour l'instant la place de barragiste.",
+   "Côté vaudois, la crise est profonde. Le LS n'a plus gagné en championnat depuis le 1er août et reste sur six défaites. Dimanche, il a encore sombré à domicile contre Thoune (4-5), le jour des 130 ans du club. Le lendemain de ce naufrage, l'entraîneur Luka Elsner a été remercié. Ludovic Magnin, 47 ans, a été nommé dès le mercredi.",
+   "Magnin parle d'une « mission commando » et dit vouloir ramener de la positivité dans le vestiaire. Ce soir, on verra les premiers effets de sa méthode.",
+   "En face, Grasshopper n'est pas en grande forme non plus : selon bluewin, le club n'a plus gagné en Super League depuis le 12 septembre. Les deux équipes s'étaient quittées sur un 1-1 à la Tuilière le 25 juillet.",
+   "Après ce match, place à la trêve internationale. Le vainqueur pourra souffler, le perdant devra cogiter."
+  ],
+  "sources": [
+   {
+    "name": "RTS – Ludovic Magnin lance la mission maintien",
+    "url": "https://www.rts.ch/sport/football/2026/article/lausanne-sport-ludovic-magnin-lance-la-mission-maintien-29406510.html"
+   },
+   {
+    "name": "bluewin – Magnin et Lausanne veulent stopper l'hémorragie",
+    "url": "https://www.bluewin.ch/fr/sport/football/super-league/magnin-et-le-ls-en-mission-grasshopper-li.3664868"
+   },
+   {
+    "name": "RTS Sport – Classement Super League",
+    "url": "https://www.rts.ch/sport/resultats/#/results/football/super-league"
+   },
+   {
+    "name": "SportyTrader – Grasshopper vs Lausanne-Sport",
+    "url": "https://www.sportytrader.com/en/betting-tips/grasshopper-club-zurich-lausanne-sport-385720/"
+   }
+  ],
+  "author": "Mauricio Montero",
+  "motif": "press",
+  "image": "gc-lausanne-sport.jpg",
+  "image_credit": "Illustration : visuel du match (non contractuel)"
+ },
+ {
   "slug": "arc-lemanique-pib-depasse-zurich-190-milliards",
   "title": "190 milliards : l'Arc lémanique passe devant Zurich, et les élus veulent que Berne l'entende",
   "category": "Économie",
