@@ -44,7 +44,9 @@
    }
   ],
   "author": "Mauricio Montero",
-  "motif": "museum"
+  "motif": "museum",
+  "image": "choc-des-nations.jpg",
+  "image_credit": "Visuel : Le Choc des Nations (organisateurs)"
  },
  {
   "slug": "gare-de-morges-commerces-ferment-chantier-sablon-gare",
