@@ -229,6 +229,7 @@ def main():
     for a in arts:
         social_image(a, OUT / "social" / f"{a['slug']}.png")
         (OUT / "img").mkdir(exist_ok=True); hero_image(a, OUT / "img" / f"{a['slug']}.jpg")
+        import hashlib; a["_v"] = hashlib.md5((OUT / "img" / f"{a['slug']}.jpg").read_bytes()).hexdigest()[:8]
         col = CATS.get(a["category"], "#334155")
         body = ""
         for i, p in enumerate(a["body"]):
@@ -237,10 +238,10 @@ def main():
         srcs = "".join((f'<li><a href="{esc(s["url"])}" rel="noopener nofollow" target="_blank">{esc(s["name"])}</a></li>' if s.get("url") else f'<li>{esc(s["name"])}</li>') for s in a["sources"])
         credit = f'<div class="meta" style="margin:-8px 0 14px">{esc(a["image_credit"])}</div>' if a.get("image") and a.get("image_credit") else ""
         demo = '<div class="demo">Article d\'exemple — à remplacer par un contenu réel.</div>' if a.get("demo") else ""
-        page = (head(f'{a["title"]} – {SITE_NAME}', a["summary"], "../", f'img/{a["slug"]}.jpg') + header("../") +
+        page = (head(f'{a["title"]} – {SITE_NAME}', a["summary"], "../", f'img/{a["slug"]}.jpg?v={a["_v"]}') + header("../") +
                 f'<main><article>{demo}{ad("top")}<span class="cat" style="background:{col}">{esc(a["category"])}</span>'
                 f'<h1>{esc(a["title"])}</h1><div class="meta">Par <strong>{esc(a.get("author","La rédaction"))}</strong> · {fr_date(a["date"])}</div>'
-                f'<img class="hero" src="../img/{a["slug"]}.jpg" alt="{esc(a["title"])}">{credit}'
+                f'<img class="hero" src="../img/{a["slug"]}.jpg?v={a["_v"]}" alt="{esc(a["title"])}">{credit}'
                 f'<p class="lead">{esc(a["summary"])}</p>{body}{ad("inline")}'
                 f'<div class="sources"><strong>Sources :</strong><ul>{srcs}</ul></div></article>'
                 f'<aside>{ad("side")}<div class="box"><strong>À lire aussi</strong><br>' +
@@ -251,7 +252,7 @@ def main():
     cards = ""
     for a in arts:
         col = CATS.get(a["category"], "#334155")
-        cards += (f'<a class="card" href="article/{a["slug"]}.html"><img src="img/{a["slug"]}.jpg" alt="">'
+        cards += (f'<a class="card" href="article/{a["slug"]}.html"><img src="img/{a["slug"]}.jpg?v={a["_v"]}" alt="">'
                   f'<div><span class="cat" style="background:{col}">{esc(a["category"])}</span>'
                   f'<h2>{esc(a["title"])}</h2><p>{esc(a["summary"])}</p><span class="meta">Par {esc(a.get("author","La rédaction"))} · {fr_date(a["date"])}</span></div></a>')
     idx = (head(f"{SITE_NAME} – {TAGLINE}", TAGLINE, "") + header("") +
