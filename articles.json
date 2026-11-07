@@ -1,5 +1,52 @@
 [
   {
+    "slug": "arc-lemanique-pib-depasse-zurich-190-milliards",
+    "title": "190 milliards : l'Arc lémanique passe devant Zurich, et les élus veulent que Berne l'entende",
+    "category": "Économie",
+    "date": "2026-11-07",
+    "summary": "Réunis, Vaud, Genève et Valais auraient produit 190 milliards de francs de PIB en 2024, contre 167 pour Zurich, selon les nouveaux chiffres de l'OFS. Les élus romands en tirent un argument pour les transports.",
+    "body": [
+      "Le classement économique de la Suisse vient de bouger, et la Romandie compte bien s'en servir. Selon les chiffres révisés de l'Office fédéral de la statistique, Vaud, Genève et le Valais ont généré ensemble 190 milliards de francs de produit intérieur brut en 2024. Zurich, longtemps vue comme le moteur du pays, plafonne à 167 milliards.",
+      "Le coup de théâtre vient d'une nouvelle méthode. Au lieu de répartir la richesse selon le nombre d'emplois dans chaque canton, l'OFS regarde désormais la productivité entreprise par entreprise. Résultat : le PIB genevois de 2022 a été réévalué de 61 à 90 milliards, celui de Vaud d'environ 12 % vers le haut, alors que celui de Zurich a légèrement reculé. Prudence toutefois : ces séries sont provisoires, et les résultats consolidés sont annoncés pour mars 2027.",
+      "Autre nuance de taille : sans le Valais, Genève et Vaud dépassent à peine Zurich, avec un peu plus de 168 milliards contre 167. Et ils le font avec environ 1,4 million d'habitants, contre plus de 1,6 million pour le canton alémanique.",
+      "Les élus romands y voient un levier politique. Isabelle Moret et Pierre Maudet défendent l'idée que Vaud et Genève pèsent près de 20 % du PIB national. La conseillère nationale Brenda Tuosto regrette de son côté que le tunnel Morges-Perroy et les gains de temps entre Lausanne et Berne ne figurent pas parmi les projets de priorité 1 du message 2027.",
+      "Pour les habitants de la région, l'enjeu est concret : ces chiffres serviront d'argument pour réclamer davantage de moyens sur les routes et les rails de l'axe lémanique, déjà très chargés."
+    ],
+    "sources": [
+      {
+        "name": "La Télé",
+        "url": "https://latele.ch/actualite/articles/l-arc-lemanique-depasse-zurich-en-termes-de-pib"
+      },
+      {
+        "name": "Econostrum",
+        "url": "https://econostrum.info/suisse/pib-la-region-lemanique-zurich-berne/"
+      }
+    ],
+    "author": "Diego Carvalho",
+    "motif": "chart"
+  },
+  {
+    "slug": "choc-des-nations-impro-lausanne-finale-beaulieu",
+    "title": "Ce soir à Beaulieu : la finale du Choc des Nations, où le public tranche seul",
+    "category": "Culture",
+    "date": "2026-11-07",
+    "summary": "Quatre nations, des improvisateurs sans filet et aucun jury : le Choc des Nations ferme son édition lausannoise ce samedi soir avec la petite finale et la finale.",
+    "body": [
+      "Pas de jury, pas de pitié : c'est la salle qui décide. Ce samedi 7 novembre, le Choc des Nations s'achève au Théâtre de Beaulieu, à Lausanne, avec la petite finale puis la grande finale, à 20 h.",
+      "Le principe tient en une phrase : quatre équipes d'improvisation, la Suisse, la France, la Belgique et le Québec, s'affrontent en duels. À chaque round, les spectateurs votent, et ce sont leurs votes qui font avancer les nations vers la finale. Pour cette sixième édition, sous l'intitulé « Les Grands Duels », le tournoi a commencé mercredi et jeudi à l'Aula du Belvédère, avant de déménager vendredi à Beaulieu pour les demi-finales.",
+      "Ce soir, plus de place pour l'erreur. Les équipes qui ont survécu aux demi-finales jouent leur trophée, et les deux autres se disputent la troisième place. Tout est improvisé sur le moment, ce qui garantit une chose : personne, pas même les comédiens, ne sait ce qui va se passer.",
+      "Côté pratique, les places au Théâtre de Beaulieu sont à 40 francs au tarif plein et à 25 francs au tarif réduit. La billetterie est accessible via Impro Suisse, qui répond aussi au 021 311 23 80 ou à info@impro-suisse.ch. Pour un samedi soir de novembre, c'est une façon de rire à Lausanne plutôt que de regarder la pluie."
+    ],
+    "sources": [
+      {
+        "name": "Lausanne Tourisme – Le Choc des Nations : les Grands Duels",
+        "url": "https://www.lausanne-tourisme.ch/fr/evenement/le-choc-des-nations-les-grands-duels"
+      }
+    ],
+    "author": "Mauricio Montero",
+    "motif": "museum"
+  },
+  {
     "slug": "gare-de-morges-commerces-ferment-chantier-sablon-gare",
     "title": "Gare de Morges : les commerces tirent le rideau, un immeuble de 11 étages se prépare",
     "category": "Région",
