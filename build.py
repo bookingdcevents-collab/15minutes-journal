@@ -267,7 +267,7 @@ def main():
                 f'<h1>{esc(a["title"])}</h1><div class="meta">Par <strong>{esc(a.get("author","La rédaction"))}</strong> · {fr_date(a["date"])}</div>'
                 f'<img class="hero" src="../img/{a["slug"]}.jpg?v={a["_v"]}" alt="{esc(a["title"])}">{credit}'
                 f'<p class="lead">{esc(a["summary"])}</p>{body}{ad("inline")}'
-                f'<div class="sources"><strong>Sources :</strong><ul>{srcs}</ul></div></article>'
+                f'<div class="sources"><strong>Sources :</strong><ul>{srcs}</ul></div>{NATIVE}</article>'
                 f'<aside>{ad("side")}<div class="box"><strong>À lire aussi</strong><br>' +
                 "".join(f'<p><a href="{o["slug"]}.html">{esc(o["title"])}</a></p>' for o in arts if o is not a) +
                 f'</div></aside></main>' + footer("../"))
