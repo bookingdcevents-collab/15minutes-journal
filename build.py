@@ -56,7 +56,7 @@ def ad(slot):
         return ""
     return f'<div class="ad ad-{slot}"><span>Espace publicitaire</span></div>'
 
-def head(title, desc, rel, og_img=None, url=None):
+def head(title, desc, rel, og_img=None, url=None, ld=None, art=None):
     adsense = (f'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADSENSE_CLIENT}" crossorigin="anonymous"></script>'
                if ADSENSE_CLIENT else "")
     og = ""
@@ -65,9 +65,19 @@ def head(title, desc, rel, og_img=None, url=None):
         og = (f'<meta property="og:type" content="article"><meta property="og:title" content="{esc(title)}">'
               f'<meta property="og:description" content="{esc(desc)}"><meta property="og:image" content="{esc(full)}">'
               f'<meta property="og:site_name" content="{esc(SITE_NAME)}"><meta name="twitter:card" content="summary_large_image">')
+    base = BASE_URL.rstrip("/")
+    canon = f'<link rel="canonical" href="{base}/{url or ""}"><meta property="og:url" content="{base}/{url or ""}"><meta property="og:locale" content="fr_CH">'
+    if not og_img:
+        og = (f'<meta property="og:type" content="website"><meta property="og:title" content="{esc(title)}">'
+              f'<meta property="og:description" content="{esc(desc)}"><meta property="og:image" content="{base}/logo-profil.png">'
+              f'<meta property="og:site_name" content="{esc(SITE_NAME)}"><meta name="twitter:card" content="summary">')
+    if art:
+        og += (f'<meta property="article:published_time" content="{art["date"]}T07:00:00+01:00"><meta property="article:section" content="{esc(art["category"])}">'
+               f'<meta property="article:author" content="{esc(art.get("author","La rédaction"))}">')
+    ldj = f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>' if ld else ""
     return (f'<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8">'
             f'<meta name="viewport" content="width=device-width,initial-scale=1">'
-            f'{HEAD_SNIPPET}<title>{esc(title)}</title><meta name="description" content="{esc(desc)}">{og}'
+            f'{HEAD_SNIPPET}<title>{esc(title)}</title><meta name="description" content="{esc(desc)}"><meta name="robots" content="index,follow,max-image-preview:large">{canon}{og}{ldj}'
             f'<link rel="icon" type="image/svg+xml" href="{rel}logo.svg"><link rel="stylesheet" href="{rel}style.css">{adsense}</head><body>')
 
 RED = "#d7261e"
@@ -206,16 +216,19 @@ def legal_pages(arts):
         "<p>Vous disposez d'un droit d'accès, de rectification et de suppression de vos données (LPD suisse, RGPD pour les visiteurs de l'UE).</p>"),
     }
     for slug, (t, body) in pages.items():
-        (OUT / f"{slug}.html").write_text(head(f"{t} – {SITE_NAME}", t, "") + header("") +
+        (OUT / f"{slug}.html").write_text(head(f"{t} – {SITE_NAME}", t, "", url=f"{slug}.html") + header("") +
             f'<main style="display:block;max-width:760px"><h1>{t}</h1>{body}</main>' + footer(""), encoding="utf-8")
     if ADSENSE_CLIENT:
         (OUT / "ads.txt").write_text(f"google.com, {ADSENSE_CLIENT.replace('ca-','')}, DIRECT, f08c47fec0942fa0\n", encoding="utf-8")
 
 def seo_files(arts):
     base = BASE_URL.rstrip("/")
-    urls = [""] + [f"article/{a['slug']}.html" for a in arts] + [f"{x}.html" for x in ("a-propos", "contact", "mentions-legales", "confidentialite")]
-    sm = '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + \
-         "".join(f"<url><loc>{base}/{u}</loc></url>" for u in urls) + "</urlset>"
+    import datetime
+    today = datetime.date.today().isoformat()
+    ents = [f"<url><loc>{base}/</loc><lastmod>{arts[0]['date']}</lastmod><changefreq>hourly</changefreq><priority>1.0</priority></url>"]
+    ents += [f"<url><loc>{base}/article/{a['slug']}.html</loc><lastmod>{a['date']}</lastmod><priority>0.8</priority></url>" for a in arts]
+    ents += [f"<url><loc>{base}/{x}.html</loc><priority>0.3</priority></url>" for x in ("a-propos", "contact", "mentions-legales", "confidentialite")]
+    sm = '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "".join(ents) + "</urlset>"
     (OUT / "sitemap.xml").write_text(sm, encoding="utf-8")
     (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {base}/sitemap.xml\n", encoding="utf-8")
 
@@ -242,7 +255,13 @@ def main():
         srcs = "".join((f'<li><a href="{esc(s["url"])}" rel="noopener nofollow" target="_blank">{esc(s["name"])}</a></li>' if s.get("url") else f'<li>{esc(s["name"])}</li>') for s in a["sources"])
         credit = f'<div class="meta" style="margin:-8px 0 14px">{esc(a["image_credit"])}</div>' if a.get("image") and a.get("image_credit") else ""
         demo = '<div class="demo">Article d\'exemple — à remplacer par un contenu réel.</div>' if a.get("demo") else ""
-        page = (head(f'{a["title"]} – {SITE_NAME}', a["summary"], "../", f'img/{a["slug"]}.jpg?v={a["_v"]}') + header("../") +
+        base_ = BASE_URL.rstrip("/")
+        ld = {"@context": "https://schema.org", "@type": "NewsArticle", "mainEntityOfPage": f"{base_}/article/{a['slug']}.html",
+              "headline": a["title"][:110], "description": a["summary"], "image": [f"{base_}/img/{a['slug']}.jpg"],
+              "datePublished": f"{a['date']}T07:00:00+01:00", "dateModified": f"{a['date']}T07:00:00+01:00", "articleSection": a["category"],
+              "inLanguage": "fr-CH", "author": {"@type": "Person", "name": a.get("author", "La rédaction")},
+              "publisher": {"@type": "Organization", "name": SITE_NAME, "logo": {"@type": "ImageObject", "url": f"{base_}/logo-profil.png"}}}
+        page = (head(f'{a["title"]} – {SITE_NAME}', a["summary"], "../", f'img/{a["slug"]}.jpg?v={a["_v"]}', url=f"article/{a['slug']}.html", ld=ld, art=a) + header("../") +
                 f'<main><article>{demo}{ad("top")}<span class="cat" style="background:{col}">{esc(a["category"])}</span>'
                 f'<h1>{esc(a["title"])}</h1><div class="meta">Par <strong>{esc(a.get("author","La rédaction"))}</strong> · {fr_date(a["date"])}</div>'
                 f'<img class="hero" src="../img/{a["slug"]}.jpg?v={a["_v"]}" alt="{esc(a["title"])}">{credit}'
@@ -259,7 +278,7 @@ def main():
         cards += (f'<a class="card" href="article/{a["slug"]}.html"><img src="img/{a["slug"]}.jpg?v={a["_v"]}" alt="">'
                   f'<div><span class="cat" style="background:{col}">{esc(a["category"])}</span>'
                   f'<h2>{esc(a["title"])}</h2><p>{esc(a["summary"])}</p><span class="meta">Par {esc(a.get("author","La rédaction"))} · {fr_date(a["date"])}</span></div></a>')
-    idx = (head(f"{SITE_NAME} – {TAGLINE}", TAGLINE, "") + header("") +
+    idx = (head(f"{SITE_NAME} – {TAGLINE}", TAGLINE, "", url="", ld={"@context": "https://schema.org", "@type": "NewsMediaOrganization", "name": SITE_NAME, "url": BASE_URL.rstrip("/") + "/", "logo": BASE_URL.rstrip("/") + "/logo-profil.png", "inLanguage": "fr-CH"}) + header("") +
            f'<main><section>{ad("top")}{cards}</section><aside>{ad("side")}</aside></main>' + footer(""))
     (OUT / "index.html").write_text(idx, encoding="utf-8")
     legal_pages(arts)
