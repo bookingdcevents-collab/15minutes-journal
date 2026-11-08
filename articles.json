@@ -1,5 +1,53 @@
 [
   {
+    "slug": "horaire-cff-13-decembre-2026-paris-orbe-rer-vaud",
+    "title": "Horaire CFF : le 13 décembre, Lausanne reprend la route de Paris et Orbe monte dans le RER",
+    "category": "Mobilité",
+    "date": "2026-11-08",
+    "summary": "Le nouvel horaire entre en vigueur le 13 décembre. Au programme : trois TGV quotidiens Lausanne–Paris dès avril 2027 et Orbe intégrée au RER Vaud en 2027.",
+    "body": [
+      "Dans cinq semaines, les montres des pendulaires vaudois vont devoir se recaler. Le nouvel horaire ferroviaire entre en vigueur le 13 décembre 2026, et certaines de ses nouveautés dépassent largement le cadre du canton.",
+      "La plus attendue concerne Paris. À partir du 5 avril 2027, trois TGV circuleront de nouveau chaque jour dans chaque sens entre Lausanne et la capitale française, via Genève, selon les CFF. Une nouvelle liaison Genève–Lyon fera aussi gagner dix minutes : un aller-retour par jour en semaine, deux le week-end.",
+      "Côté vaudois, Orbe rejoindra le RER Vaud au cours de 2027. Dans la région genevoise, certaines rames des lignes L1, L5 et L6 recevront une voiture supplémentaire, et un service de week-end reliera l'aéroport de Genève à la montagne, sur le modèle du Verbier Express.",
+      "Le projet n'a pas été figé dans le silence. Selon le Canton de Vaud, plus de 420 remarques ont été déposées durant la consultation, close le 9 juin 2026, puis transmises aux entreprises de transport pour analyse. Le canton annonce que les horaires définitifs 2027 seront publiés sur le site de l'Office fédéral des transports dès le mardi 10 novembre, et que l'indicateur officiel doit être en ligne à la mi-novembre.",
+      "Pour les habitants de Lausanne, Morges et Cossonay, le conseil est simple : vérifier ses correspondances habituelles dès que les horaires définitifs seront en ligne, avant que le 13 décembre ne les change."
+    ],
+    "sources": [
+      {
+        "name": "La Télé (dépêche ATS) – Nouvel horaire 2027 : une offre améliorée pour Paris",
+        "url": "https://latele.ch/articles/nouvel-horaire-2027-une-offre-amelioree-pour-paris"
+      },
+      {
+        "name": "État de Vaud – Consultation du projet d'horaire",
+        "url": "https://www.vd.ch/mobilite/loffre-de-mobilite-a-votre-disposition/consultation-du-projet-dhoraire"
+      }
+    ],
+    "author": "Diego Carvalho",
+    "motif": "tram"
+  },
+  {
+    "slug": "grand-conseil-vaudois-3-novembre-hopital-payerne-garantie-finances",
+    "title": "Grand Conseil : 67,2 millions de garantie pour l'hôpital de Payerne, 18,6 millions pour l'informatique financière de l'État",
+    "category": "Région",
+    "date": "2026-11-08",
+    "summary": "Le 3 novembre, les députés vaudois ont adopté en premier débat deux décrets : une garantie d'emprunt pour l'hôpital de Payerne et un crédit pour moderniser le système d'information financier de l'État.",
+    "body": [
+      "Deux chiffres ont rythmé la séance du Grand Conseil vaudois du mardi 3 novembre : 67,2 millions et 18 576 000 francs.",
+      "Premier dossier : l'Hôpital intercantonal de la Broye (HIB). Les députés ont adopté, en premier débat, un décret accordant la garantie de l'État de Vaud pour un emprunt bancaire de 67,2 millions de francs. Cet argent doit financer la restructuration et l'agrandissement du bâtiment hospitalier de Payerne. Concrètement, l'État se porte garant : l'hôpital emprunte, le canton soutient la signature.",
+      "Second dossier, plus discret mais coûteux : un crédit d'investissement de 18 576 000 francs pour moderniser le système d'information financier de l'État. Il a lui aussi été adopté en premier débat. Ce type d'outil, invisible pour le public, sert à tenir les comptes de toute l'administration cantonale.",
+      "Ces votes sont des premiers débats : la procédure parlementaire se poursuit pour ces objets, et les pages officielles ne détaillent pas les débats eux-mêmes. Le Grand Conseil siégeait à Lausanne, de 9h30 à 12h et de 14h à 17h.",
+      "Ce même jour, les élus ont aussi vu déposer plusieurs textes : une motion du groupe PLR pour exonérer du droit de mutation l'achat d'une résidence principale, une motion sur la compensation des avantages liés à l'exploitation des gravières, ou encore un postulat sur le libre accès aux forêts et ses risques. Ils sont déposés, pas encore tranchés : les prochains débats diront ce qu'ils deviennent."
+    ],
+    "sources": [
+      {
+        "name": "État de Vaud – Grand Conseil, séance du 3 novembre 2026",
+        "url": "https://www.vd.ch/gc/seances-du-grand-conseil/detail-seance/seance-gc/1033714"
+      }
+    ],
+    "author": "Mauricio Montero",
+    "motif": "parliament"
+  },
+  {
     "slug": "vaud-impots-2027-acomptes-valeur-locative-33-pour-cent",
     "title": "Impôts 2027 : les acomptes grimpent de 1 %, la valeur locative passe à 33 %",
     "category": "Économie",
