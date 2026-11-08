@@ -1,5 +1,38 @@
 [
  {
+  "slug": "cyberattaque-gymnases-vaudois-adolescent-16-ans-38000-eleves",
+  "title": "Cyberattaque dans les gymnases vaudois : un jeune de 16 ans soupçonné, 38'000 élèves concernés",
+  "category": "Société",
+  "date": "2026-11-08",
+  "summary": "Les noms et adresses e-mail scolaires de 38'000 élèves et 3'500 enseignants ont été copiés. Un mineur a été interpellé, mais l'enquête ne fait que commencer.",
+  "body": [
+   "C'est l'une des plus grosses fuites de données de l'école vaudoise. Entre le vendredi 23 et le lundi 26 octobre 2026, une personne non autorisée est entrée dans la plateforme de support informatique des gymnases et des écoles professionnelles du canton. L'intrusion a été détectée le 26 octobre par la Direction générale de l'enseignement postobligatoire.",
+   "Selon l'État de Vaud, les noms, prénoms et adresses e-mail scolaires d'environ 38'000 élèves et 3'500 enseignants ont été copiés, ainsi que le contenu de demandes d'assistance adressées au service informatique. Cette plateforme sert à signaler les problèmes techniques.",
+   "Le 3 novembre, la Police cantonale a annoncé l'interpellation d'un jeune de 16 ans, arrêté le samedi 31 octobre. Il est soupçonné d'intrusion dans un système informatique et de soustraction de données. Il a été auditionné, son matériel informatique a été saisi, puis il a été libéré à l'issue de son audition.",
+   "Une plainte pénale a été déposée. Les spécialistes cyber de la police de sûreté enquêtent sous la conduite du Tribunal des mineurs. Ils doivent établir comment l'intrusion s'est déroulée et si des données ont été téléchargées ou transmises à des tiers. Le matériel saisi est en cours d'analyse. Le jeune bénéficie de la présomption d'innocence.",
+   "L'école obligatoire n'est pas touchée : ses élèves et son personnel utilisent un système informatique indépendant de celui du postobligatoire, précise le canton.",
+   "Le vrai risque, désormais, est le piratage par hameçonnage. Avec des noms et des adresses e-mail réels, des escrocs peuvent écrire en se faisant passer pour l'école ou pour le support informatique. Le canton a prévenu directement les élèves et le corps enseignant et rappelle les règles de base : se méfier des messages inhabituels ou pressants, et ne jamais donner son mot de passe par e-mail ou via un lien reçu dans un message."
+  ],
+  "sources": [
+   {
+    "name": "État de Vaud – Vol de données sur la plateforme de support informatique",
+    "url": "https://www.vd.ch/actualites/communiques-de-presse-de-letat-de-vaud/detail/communique/la-plateforme-de-support-informatique-des-gymnases-et-des-ecoles-professionnelles-du-canton-victime-dun-vol-de-donnees"
+   },
+   {
+    "name": "État de Vaud – Un mineur interpellé",
+    "url": "https://www.vd.ch/actualites/actualite/news/26762-intrusion-dans-la-plateforme-de-support-informatique-de-lenseignement-postobligatoire-un-mineur-interpelle"
+   },
+   {
+    "name": "La Télé – Un élève interpellé après la cyberattaque des gymnases",
+    "url": "https://latele.ch/articles/vaud-un-eleve-interpelle-dans-la-cyberattaque-sur-les-gymnases"
+   }
+  ],
+  "author": "Diego Carvalho",
+  "motif": "press",
+  "image": "cyberattaque-gymnases.jpg",
+  "image_credit": "Photo d'illustration"
+ },
+ {
   "slug": "montricher-voitures-visitees-nuit-3-4-novembre-habitants-alertent",
   "title": "Montricher : des voitures « visitées » dans la nuit, les habitants donnent l'alerte",
   "category": "Région",
