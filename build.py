@@ -8,7 +8,7 @@ from PIL import Image, ImageDraw, ImageFont
 SITE_NAME = "15 minutes"
 TAGLINE = "L'essentiel de l'actualité romande en 15 minutes"
 BASE_URL = "https://15minutes.ch"                            # ex: https://vaudquotidien.ch (sert aux balises Facebook)
-ADSENSE_CLIENT = ""                      # ex: ca-pub-1234567890123456 (après validation Google)
+ADSENSE_CLIENT = "ca-pub-6969360272814757"                      # ex: ca-pub-1234567890123456 (après validation Google)
 # Codes d'un autre réseau (ex. Adsterra) : coller le code HTML fourni dans l'emplacement voulu.
 # Ne pas mélanger avec AdSense sur la même page.
 def _sandbox(inner, w, h, minw=0, maxw=99999):
