@@ -239,6 +239,7 @@ def main():
     (OUT / "article").mkdir(parents=True); (OUT / "social").mkdir()
     if (ROOT / "photos").exists(): shutil.copytree(ROOT / "photos", OUT / "photos")
     (OUT / "CNAME").write_text("15minutes.ch\n")
+    (OUT / "google328dac0fa93f198c.html").write_text("google-site-verification: google328dac0fa93f198c.html")
     (OUT / "style.css").write_text(CSS, encoding="utf-8")
     (OUT / "logo.svg").write_text(logo_svg(256), encoding="utf-8")
     logo_png(OUT / "logo-profil.png")
