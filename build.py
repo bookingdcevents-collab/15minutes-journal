@@ -18,9 +18,9 @@ def _adsterra(key, w, h, minw=0, maxw=99999):
             "document.write('<scr'+'ipt src=\"https://bauval.org/22/%s\"></scr'+'ipt>');})();</script>") % (minw, maxw, key, h, w, key)
 
 AD_CUSTOM = {
-    "top": _adsterra("81f0f1093be39cfd364923e057257562", 728, 90, 768) + _adsterra("5083ba51c137481c711eaa6d0fabb937", 320, 50, 0, 767),  # 728x90 ordinateur/tablette, 320x50 mobile
-    "inline": _adsterra("f4bffaebe314ea08e3a2cdb7e970e9d6", 300, 250, 0),    # 300x250 partout
-    "side": _adsterra("ffe5be9075f8ba72055da2924ee871c4", 160, 600, 861),    # 160x600 colonne latérale (visible desktop)
+    "top": _adsterra("ad70c441f5e90255a8a63dfef45554bc", 728, 90, 768) + _adsterra("6030a2053a67c69f23be411862d595a0", 320, 50, 0, 767),  # 728x90 ordinateur/tablette, 320x50 mobile
+    "inline": _adsterra("a3e64e45b98fd4792cf1a0693e36525d", 300, 250, 0),    # 300x250 partout
+    "side": _adsterra("e0d68e3d2a6e086240916f91bf50df95", 160, 600, 861),    # 160x600 colonne latérale (visible desktop)
 }
 HEAD_SNIPPET = ""                        # code à placer dans <head>, si le réseau le demande
 SHOW_AD_PLACEHOLDERS = False   # True = affiche des cadres "Espace publicitaire" (maquette uniquement)
