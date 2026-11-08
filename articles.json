@@ -1,5 +1,33 @@
 [
  {
+  "slug": "montricher-voitures-visitees-nuit-3-4-novembre-habitants-alertent",
+  "title": "Montricher : des voitures « visitées » dans la nuit, les habitants donnent l'alerte",
+  "category": "Région",
+  "date": "2026-11-08",
+  "summary": "Dans la nuit du 3 au 4 novembre, plusieurs habitants disent avoir retrouvé leur voiture fouillée. Aucune confirmation de la police à ce stade.",
+  "body": [
+   "Le réveil a été désagréable pour plusieurs habitants de Montricher. Sur un groupe Facebook de la commune, les messages se sont enchaînés ces derniers jours : « nous nous sommes fait visiter la voiture cette nuit ». Un message d'alerte évoque des véhicules visités dans la nuit du 3 au 4 novembre et appelle à la vigilance. Il a été largement partagé.",
+   "Les témoignages se ressemblent. Une habitante dit avoir perdu une veste noire et des clés de voiture. Une autre raconte qu'on lui a pris sa petite monnaie et mis le désordre dans l'habitacle, sans rien casser. Plusieurs commentaires précisent que les vitres n'étaient pas brisées, ce qui laisse penser que certaines voitures n'étaient pas verrouillées. Un habitant reconnaît d'ailleurs « un oubli » de sa part.",
+   "Un témoignage va plus loin : sièges rabattus et forte odeur de cannabis dans la voiture. Selon une habitante de la région, des personnes auraient même passé un moment à l'intérieur. Un témoignage venu de L'Isle décrit des faits semblables, avec des sièges baissés, une odeur de joint et des traces de drogue dans l'habitacle. Ces récits n'ont pas été vérifiés.",
+   "À ce stade, nous n'avons trouvé aucune communication de la police sur ces faits, ni de bilan officiel du nombre de voitures touchées. Les messages ne permettent pas de dire combien de personnes ont réellement été visitées, ni si les mêmes auteurs sont en cause.",
+   "La Police cantonale vaudoise recommande de toujours verrouiller son véhicule, même devant chez soi, et de ne laisser aucun objet de valeur ni clé à l'intérieur. Toute personne lésée peut déposer plainte, et un comportement suspect se signale au 117. Cela compte aussi pour les cas déjà racontés sur Facebook : une plainte est la seule façon de les faire entrer dans les statistiques de la police.",
+   "Hasard du calendrier, la police vaudoise tiendra le samedi 14 novembre une action de sensibilisation contre les cambriolages dans plusieurs centres commerciaux du canton."
+  ],
+  "sources": [
+   {
+    "name": "Témoignages publiés dans un groupe Facebook de Montricher (non vérifiés)"
+   },
+   {
+    "name": "Police cantonale vaudoise – campagne « Cambriolage dans le viseur ? »",
+    "url": "https://www.vd.ch/actualites/actualite/news/26725-cambriolage-dans-le-viseur-quand-les-nuits-sallongent-redoublons-de-vigilance"
+   }
+  ],
+  "author": "Mauricio Montero",
+  "motif": "car",
+  "image": "vols-montricher.png",
+  "image_credit": "Illustration générée par IA (non contractuelle, ne montre pas les faits)"
+ },
+ {
   "slug": "horaire-cff-13-decembre-2026-paris-orbe-rer-vaud",
   "title": "Horaire CFF : le 13 décembre, Lausanne reprend la route de Paris et Orbe monte dans le RER",
   "category": "Mobilité",
