@@ -7,7 +7,7 @@ from PIL import Image, ImageDraw, ImageFont
 # ---------- RÉGLAGES ----------
 SITE_NAME = "15 minutes"
 TAGLINE = "L'essentiel de l'actualité romande en 15 minutes"
-BASE_URL = "https://bookingdcevents-collab.github.io/15minutes-journal"                            # ex: https://vaudquotidien.ch (sert aux balises Facebook)
+BASE_URL = "https://15minutes.ch"                            # ex: https://vaudquotidien.ch (sert aux balises Facebook)
 ADSENSE_CLIENT = ""                      # ex: ca-pub-1234567890123456 (après validation Google)
 # Codes d'un autre réseau (ex. Adsterra) : coller le code HTML fourni dans l'emplacement voulu.
 # Ne pas mélanger avec AdSense sur la même page.
@@ -222,6 +222,7 @@ def main():
     if OUT.exists(): shutil.rmtree(OUT)
     (OUT / "article").mkdir(parents=True); (OUT / "social").mkdir()
     if (ROOT / "photos").exists(): shutil.copytree(ROOT / "photos", OUT / "photos")
+    (OUT / "CNAME").write_text("15minutes.ch\n")
     (OUT / "style.css").write_text(CSS, encoding="utf-8")
     (OUT / "logo.svg").write_text(logo_svg(256), encoding="utf-8")
     logo_png(OUT / "logo-profil.png")
