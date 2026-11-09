@@ -41,7 +41,7 @@
         "url": "https://www.vd.ch/actualites/communiques-de-presse-de-letat-de-vaud/detail/communique/le-conseil-detat-sollicite-274-millions-pour-requalifier-le-contournement-sud-de-cheseaux-sur-lausanne"
       }
     ],
-    "author": "Diego Carvalho",
+    "author": "Jean-François Rossel",
     "motif": "car",
     "image": "cheseaux-trafic.jpg",
     "image_credit": "Photo : trafic à Cheseaux (plaques floutées)"
@@ -89,7 +89,7 @@
         "url": "https://www.lausanne.ch/apps/actualites/index.php?actu_id=90940"
       }
     ],
-    "author": "Diego Carvalho",
+    "author": "Jean-François Rossel",
     "motif": "village",
     "image": "tour-bel-air-lumieres.jpg",
     "image_credit": "Photo : projection lumineuse sur la tour Bel-Air, Lausanne"
@@ -134,7 +134,7 @@
         "url": "https://latele.ch/articles/jusqu-a-900-000-suisses-vont-changer-d-assureur-maladie-deloitte"
       }
     ],
-    "author": "Diego Carvalho",
+    "author": "Jean-François Rossel",
     "motif": "health",
     "image": "cancer-assureurs.jpg",
     "image_credit": "Illustration générée par IA"
@@ -191,7 +191,7 @@
         "url": "https://www.20min.ch/fr/story/football-nous-avons-perdu-1-1-magnin-entre-frustration-et-espoir-103663977"
       }
     ],
-    "author": "Diego Carvalho",
+    "author": "Jean-François Rossel",
     "motif": "crowd",
     "image": "ls-magnin.jpg",
     "image_credit": "Photo : Ludovic Magnin, entraîneur du Lausanne-Sport"
@@ -247,7 +247,7 @@
         "url": "https://www.lausanne.ch/apps/agir/seance/S_9780fddf646e428798b1d1e9b7629766.html"
       }
     ],
-    "author": "Diego Carvalho",
+    "author": "Jean-François Rossel",
     "motif": "parliament"
   },
   {
@@ -278,7 +278,7 @@
         "url": "https://latele.ch/articles/vaud-un-eleve-interpelle-dans-la-cyberattaque-sur-les-gymnases"
       }
     ],
-    "author": "Diego Carvalho",
+    "author": "Jean-François Rossel",
     "motif": "press",
     "image": "cyberattaque-gymnases.jpg",
     "image_credit": "Illustration générée par IA"
@@ -334,7 +334,7 @@
         "url": "https://www.vd.ch/mobilite/loffre-de-mobilite-a-votre-disposition/consultation-du-projet-dhoraire"
       }
     ],
-    "author": "Diego Carvalho",
+    "author": "Jean-François Rossel",
     "motif": "tram",
     "image": "horaire-cff.png",
     "image_credit": "Illustration générée par IA"
@@ -413,7 +413,7 @@
         "url": "https://www.vd.ch/actualites/decisions-du-conseil-detat/seance-du-conseil-detat/seance/1033004"
       }
     ],
-    "author": "Diego Carvalho",
+    "author": "Jean-François Rossel",
     "motif": "museum"
   },
   {
@@ -461,7 +461,7 @@
         "url": "https://www.vd.ch/actualites/communiques-de-presse-de-letat-de-vaud/detail/communique/votez-pour-la-sportive-le-sportif-et-lespoir-de-lannee-2"
       }
     ],
-    "author": "Diego Carvalho",
+    "author": "Jean-François Rossel",
     "motif": "crowd"
   },
   {
@@ -505,7 +505,7 @@
         "url": "https://www.vd.ch/actualites/communiques-de-presse-de-letat-de-vaud/detail/communique/le-conseil-detat-accorde-la-pleine-indexation-des-salaires-de-la-fonction-publique-en-2027"
       }
     ],
-    "author": "Diego Carvalho",
+    "author": "Jean-François Rossel",
     "motif": "chart"
   },
   {
@@ -591,7 +591,7 @@
         "url": "https://econostrum.info/suisse/pib-la-region-lemanique-zurich-berne/"
       }
     ],
-    "author": "Diego Carvalho",
+    "author": "Jean-François Rossel",
     "motif": "chart"
   },
   {
@@ -659,7 +659,7 @@
         "url": "https://www.vd.ch/etat-droit-finances/votations-et-elections/votation-federale-du-29-novembre-2026"
       }
     ],
-    "author": "Diego Carvalho",
+    "author": "Jean-François Rossel",
     "motif": "parliament"
   },
   {
@@ -705,7 +705,7 @@
       }
     ],
     "motif": "village",
-    "author": "Diego Carvalho"
+    "author": "Jean-François Rossel"
   },
   {
     "slug": "fonction-publique-vaudoise-manifestation-lausanne",
@@ -765,7 +765,7 @@
       }
     ],
     "motif": "tram",
-    "author": "Diego Carvalho",
+    "author": "Jean-François Rossel",
     "image": "tram-lausanne-renens.jpg",
     "image_credit": "Photo : rame du tramway des tl"
   },
@@ -808,7 +808,7 @@
       }
     ],
     "motif": "parliament",
-    "author": "Diego Carvalho",
+    "author": "Jean-François Rossel",
     "image": "grand-conseil.png",
     "image_credit": "Illustration générée par IA"
   },
@@ -854,7 +854,7 @@
       }
     ],
     "motif": "halloween",
-    "author": "Diego Carvalho"
+    "author": "Jean-François Rossel"
   },
   {
     "slug": "tamedia-debrayage-redactions",
@@ -902,7 +902,7 @@
       }
     ],
     "motif": "communes",
-    "author": "Diego Carvalho"
+    "author": "Jean-François Rossel"
   },
   {
     "slug": "week-end-musees-riviera-revue-vaudoise",
