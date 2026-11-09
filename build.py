@@ -217,8 +217,8 @@ body{background:#f3f4f7}
 .hd{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 1px 0 #e6e8ee,0 6px 20px -12px rgba(15,23,42,.25)}
 .top{background:none;border:0;padding:12px 20px;display:flex;align-items:center;gap:14px;max-width:1100px;margin:0 auto;flex-wrap:nowrap}
 .logo{font:800 26px/1 system-ui,-apple-system,'Segoe UI',sans-serif;letter-spacing:-.8px}.logo svg{width:34px;height:34px}
-.tag{font:500 13px system-ui,sans-serif;color:#8a90a0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-@media(max-width:760px){.tag{display:none}}
+.tag{font:500 13px system-ui,sans-serif;color:#8a90a0;white-space:nowrap}
+@media(max-width:760px){.logo{font-size:22px}.logo svg{width:28px;height:28px}.tag{font-size:11px;line-height:1.25;white-space:normal;max-width:130px}}
 .lens{margin-left:auto;width:42px;height:42px;border-radius:50%;background:#f0f1f5;border:0;cursor:pointer;color:#16181d;display:flex;align-items:center;justify-content:center;transition:background .15s,transform .15s;padding:0;flex:none}
 .lens:hover{background:#e4e6ee}.lens:active{transform:scale(.94)}
 .sf{display:block;max-height:0;overflow:hidden;opacity:0;padding:0 20px;transition:max-height .25s ease,opacity .2s ease,padding .25s ease;max-width:1100px;margin:0 auto}
