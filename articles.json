@@ -20,7 +20,9 @@
       }
     ],
     "author": "Mauricio Montero",
-    "motif": "tram"
+    "motif": "tram",
+    "image": "tunnel-morges-perroy.png",
+    "image_credit": "Photo : train CFF sortant d'un tunnel sur la Côte vaudoise"
   },
   {
     "slug": "cheseaux-contournement-sud-27-millions-18700-vehicules",
