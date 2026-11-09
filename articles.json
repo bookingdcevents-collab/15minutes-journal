@@ -542,31 +542,35 @@
  },
  {
   "slug": "tram-lausanne-renens-credit-supplementaire",
-  "title": "Tram Lausanne–Renens : la facture grimpe encore, 55,3 millions de plus",
+  "title": "Tramway Lausanne–Renens : la facture augmente encore, 55,3 millions de plus",
   "category": "Mobilité",
-  "date": "2026-11-05",
-  "summary": "Environ huit ans de retard, des rames qui roulent déjà sans passagers : le canton demande une rallonge au Grand Conseil.",
+  "date": "2026-11-09",
+  "summary": "Le Canton demande 55,3 millions supplémentaires pour les infrastructures et relève de 20 millions sa garantie. La demande doit encore passer devant le Grand Conseil.",
   "body": [
-   "Le Conseil d'État vaudois demande au Grand Conseil un financement complémentaire pour la première étape du tramway entre le Flon et la gare de Renens. Il propose un prêt additionnel de 55,3 millions de francs pour les infrastructures et un relèvement de 20 millions de la garantie cantonale accordée aux Transports publics lausannois (TL).",
-   "Selon la presse, les recours, les adaptations du projet et les retards de livraison ont repoussé l'ouvrage d'environ huit ans. Les rames circulent déjà sur le tracé sans passagers, dans le cadre de marches à blanc menées depuis début octobre.",
-   "Une mise en service lors du changement d'horaire de fin d'année est envisagée. La demande de crédit devra encore être examinée par le Grand Conseil."
+   "Le tram n'est pas encore en service, et la note grimpe déjà. Le Conseil d'État vaudois demande au Grand Conseil un financement complémentaire pour la première étape du tramway entre Lausanne-Flon et la gare de Renens, annoncé dans un communiqué du 5 novembre.",
+   "La demande comprend deux éléments : un prêt additionnel de 55,3 millions de francs pour les infrastructures, et un relèvement de 20 millions de la garantie cantonale accordée aux Transports publics de la région lausannoise (tl). Le prêt s'ajoute aux 286,8 millions de francs déjà accordés pour les infrastructures. Selon le canton, cette mesure doit couvrir les surcoûts enregistrés depuis 2016.",
+   "Pourquoi une telle rallonge ? Le Conseil d'État cite les adaptations liées aux oppositions et aux recours, le renchérissement observé depuis l'adoption du crédit initial, et des imprévus comme le retard de livraison des rames, causé par des inondations chez le fournisseur à Valence, en Espagne. Ces événements ont retardé les travaux d'environ huit ans et provoqué des dépenses supplémentaires.",
+   "Les paiements n'ont pas attendu. Pour ne pas freiner le chantier, le Conseil d'État et la Commission des finances du Grand Conseil avaient autorisé, au printemps 2024, l'engagement de dépenses supplémentaires dans l'attente d'un crédit additionnel. Il s'agit donc, en pratique, de régulariser une dépense déjà engagée.",
+   "À quelques semaines de la mise en service, la décision revient maintenant au Grand Conseil, qui devra examiner la demande. Le tramway est prévu pour la fin de l'année. Les rames circulent déjà sur le tracé sans passagers dans le cadre d'essais."
   ],
   "sources": [
    {
-    "name": "État de Vaud – Communiqués de presse",
-    "url": "https://www.vd.ch/actualites/communiques-de-presse-de-letat-de-vaud"
+    "name": "État de Vaud – Demande de crédit additionnel pour finaliser la première étape du tramway",
+    "url": "https://www.vd.ch/actualites/communiques-de-presse-de-letat-de-vaud/detail/communique/demande-de-credit-additionnel-pour-finaliser-la-premiere-etape-du-tramway-entre-lausanne-flon-et-la-gare-de-renens"
+   },
+   {
+    "name": "La Télé – Crédit additionnel pour le tramway Lausanne-Renens",
+    "url": "https://latele.ch/articles/un-credit-additionnel-pour-le-tram-lausanne-renens"
    },
    {
     "name": "LFM – Un crédit additionnel pour le tram Lausanne-Renens",
     "url": "https://www.lfm.ch/actualite/suisse/romandie/vaud/lausanne/un-credit-additionnel-pour-le-tram-lausanne-renens/"
-   },
-   {
-    "name": "24heures – L'essentiel de l'actualité du 5 novembre 2026",
-    "url": "https://www.24heures.ch/lessentiel-de-lactualite-du-jeudi-5-novembre-2026-220352982720"
    }
   ],
   "motif": "tram",
-  "author": "Diego Carvalho"
+  "author": "Diego Carvalho",
+  "image": "tram-lausanne-renens.jpg",
+  "image_credit": "Photo : rame du tramway des tl"
  },
  {
   "slug": "chomage-vaud-octobre-2026",
