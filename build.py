@@ -104,10 +104,26 @@ def draw_clock(d, cx, cy, r, ink, ring=None):
     c = r*0.1; d.ellipse([cx-c, cy-c, cx+c, cy+c], fill=ink)
 
 def header(rel):
+    nav = "".join(f'<a href="{rel}index.html?cat={esc(c)}" data-cat="{esc(c)}" style="--c:{col}">{esc(c)}</a>' for c, col in CATS.items())
     return (f'<header class="top"><a class="logo" href="{rel}index.html">{logo_svg(40)}<span>{esc(SITE_NAME)}</span></a>'
-            f'<span class="tag">{esc(TAGLINE)}</span></header>')
+            f'<span class="tag">{esc(TAGLINE)}</span>'
+            f'<button class="lens" type="button" aria-label="Rechercher" onclick="var f=document.getElementById(\'sf\');f.classList.toggle(\'open\');if(f.classList.contains(\'open\'))document.getElementById(\'q\').focus()">'
+            f'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg></button></header>'
+            f'<form id="sf" class="sf" action="{rel}index.html" method="get" role="search"><input id="q" name="q" type="search" placeholder="Rechercher un article…" autocomplete="off"></form>'
+            f'<nav class="cats"><a href="{rel}index.html" data-cat="">À la une</a>{nav}</nav>')
 
 CONSENT = """<div id="cb" style="display:none;position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#111;color:#fff;padding:14px 16px;font:14px/1.4 system-ui,sans-serif;box-shadow:0 -2px 12px rgba(0,0,0,.3)"><div style="max-width:900px;margin:auto;display:flex;gap:12px;flex-wrap:wrap;align-items:center"><span style="flex:1 1 300px">Nous utilisons des cookies publicitaires (réseau Adsterra) pour financer ce site gratuit. Vous pouvez les accepter ou les refuser. <a href="/15minutes-journal/confidentialite.html" style="color:#9cf">En savoir plus</a></span><button id="cr" style="padding:8px 16px;border:1px solid #fff;background:none;color:#fff;border-radius:6px;cursor:pointer">Refuser</button><button id="ca" style="padding:8px 16px;border:0;background:#fff;color:#111;border-radius:6px;cursor:pointer;font-weight:600">Accepter</button></div></div><script>function rc15(){try{localStorage.removeItem('c15')}catch(e){}location.reload();return false}(function(){var v=null;try{v=localStorage.getItem('c15')}catch(e){}if(v===null){var b=document.getElementById('cb');b.style.display='block';document.getElementById('ca').onclick=function(){try{localStorage.setItem('c15','1')}catch(e){}location.reload()};document.getElementById('cr').onclick=function(){try{localStorage.setItem('c15','0')}catch(e){}b.style.display='none'}}})();</script>"""
+
+INDEX_JS = '''<script>(function(){var p=new URLSearchParams(location.search),q=(p.get('q')||'').trim().toLowerCase(),c=p.get('cat')||'';
+var cs=document.querySelectorAll('.card'),n=0;
+function norm(x){return x.normalize('NFD').replace(/[\\u0300-\\u036f]/g,'')}
+var nq=norm(q).split(/\\s+/).filter(Boolean);
+cs.forEach(function(e){var ok=(!c||e.dataset.cat===c);if(ok&&nq.length){var t=norm(e.dataset.t);ok=nq.every(function(w){return t.indexOf(w)>-1})}e.style.display=ok?'':'none';if(ok)n++});
+document.querySelectorAll('.cats a').forEach(function(a){if((a.dataset.cat||'')===c)a.classList.add('on')});
+var qi=document.getElementById('q');if(q){qi.value=p.get('q');document.getElementById('sf').classList.add('open')}
+var m=document.getElementById('nores');if(m&&(q||c)&&n===0)m.style.display='block';
+var h=document.getElementById('hl');if(h&&(q||c))h.textContent=q?('Résultats pour « '+p.get('q')+' » ('+n+')'):c;
+})();</script>'''
 
 def footer(rel=""):
     return (f'<footer><p>© {esc(SITE_NAME)}. Contenus rédigés de façon originale à partir de sources citées.</p>'
@@ -194,6 +210,13 @@ main{max-width:1060px;margin:0 auto;padding:24px;display:grid;grid-template-colu
 .ad{background:repeating-linear-gradient(45deg,#f0eee8,#f0eee8 10px,#e9e6de 10px,#e9e6de 20px);border:1px dashed #b9b4a6;color:#8a8473;font:12px system-ui,sans-serif;display:flex;align-items:center;justify-content:center;margin:22px 0;text-transform:uppercase;letter-spacing:.1em}
 .ad-top{min-height:90px}.ad-inline{min-height:250px}.ad-side{min-height:600px}@media(max-width:860px){.ad-side{display:none}}@media(max-width:767px){.ad-top{min-height:50px}}
 aside .box{background:#fff;border:1px solid #e3e1da;border-radius:8px;padding:14px 16px;font:15px system-ui,sans-serif}
+.top{position:relative}.lens{margin-left:auto;background:none;border:0;cursor:pointer;color:#16181d;padding:6px;align-self:center}
+.sf{display:none;background:#fff;padding:0 24px 12px;border-bottom:1px solid #e3e1da}.sf.open{display:block}
+.sf input{width:100%;max-width:1012px;display:block;margin:0 auto;padding:11px 14px;font:16px system-ui,sans-serif;border:1px solid #c9c6bb;border-radius:8px}
+.cats{background:#fff;border-bottom:1px solid #e3e1da;padding:0 24px;display:flex;gap:8px;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch}
+.cats a{font:600 14px system-ui,sans-serif;text-decoration:none;color:#333;padding:12px 12px;border-bottom:3px solid transparent}
+.cats a:hover{color:var(--c,#16181d)}.cats a.on{border-bottom-color:var(--c,#16181d);color:var(--c,#16181d)}
+.nores{display:none;font:16px system-ui,sans-serif;color:#667;padding:20px 0}
 footer{text-align:center;font:13px system-ui,sans-serif;color:#667;padding:30px 20px}
 """
 
@@ -276,11 +299,11 @@ def main():
     cards = ""
     for a in arts:
         col = CATS.get(a["category"], "#334155")
-        cards += (f'<a class="card" href="article/{a["slug"]}.html"><img src="img/{a["slug"]}.jpg?v={a["_v"]}" alt="">'
+        cards += (f'<a class="card" data-cat="{esc(a["category"])}" data-t="{esc((a["title"]+" "+a["summary"]+" "+a["category"]).lower())}" href="article/{a["slug"]}.html"><img src="img/{a["slug"]}.jpg?v={a["_v"]}" alt="">'
                   f'<div><span class="cat" style="background:{col}">{esc(a["category"])}</span>'
                   f'<h2>{esc(a["title"])}</h2><p>{esc(a["summary"])}</p><span class="meta">Par {esc(a.get("author","La rédaction"))} · {fr_date(a["date"])}</span></div></a>')
     idx = (head(f"{SITE_NAME} – {TAGLINE}", TAGLINE, "", url="", ld={"@context": "https://schema.org", "@type": "NewsMediaOrganization", "name": SITE_NAME, "url": BASE_URL.rstrip("/") + "/", "logo": BASE_URL.rstrip("/") + "/logo-profil.png", "inLanguage": "fr-CH"}) + header("") +
-           f'<main><section>{ad("top")}{cards}</section><aside>{ad("side")}</aside></main>' + footer(""))
+           f'<main><section>{ad("top")}<h1 id="hl" style="font:700 20px system-ui,sans-serif;margin:0 0 14px"></h1><div id="nores" class="nores">Aucun article ne correspond. <a href="index.html">Voir les derniers articles</a></div>{cards}</section><aside>{ad("side")}</aside></main>' + INDEX_JS + footer(""))
     (OUT / "index.html").write_text(idx, encoding="utf-8")
     legal_pages(arts)
     seo_files(arts)
