@@ -42,7 +42,9 @@
       }
     ],
     "author": "Diego Carvalho",
-    "motif": "car"
+    "motif": "car",
+    "image": "cheseaux-trafic.jpg",
+    "image_credit": "Photo : trafic à Cheseaux (plaques floutées)"
   },
   {
     "slug": "centrale-sante-058-6-116-116-remplace-medecins-de-garde-vaud",
