@@ -1,5 +1,50 @@
 [
   {
+    "slug": "cancer-assureurs-refusent-traitements-vitaux-primes-maladie-2027-hausse",
+    "title": "Cancer : pour le même traitement vital, ta caisse peut dire oui… ou non. Et les primes, elles, montent encore",
+    "category": "Société",
+    "date": "2026-11-09",
+    "summary": "Une enquête de la RTS révèle de fortes différences entre assureurs pour rembourser des médicaments « off-label » contre le cancer. Une inégalité qui tombe en pleine hausse des primes 2027.",
+    "body": [
+      "Tu payes ta prime chaque mois. Mais si tu tombes gravement malade, ta caisse te remboursera-t-elle le traitement dont tu as besoin pour survivre ? Selon une enquête de l'émission « Mise au Point » de la RTS, relayée par 20 minutes, la réponse dépend beaucoup de l'assureur chez qui tu es.",
+      "Le point de départ : les médicaments dits « off-label ». Ce sont des traitements utilisés hors de leur indication officielle, parfois vitaux pour des patients atteints d'un cancer ou d'une maladie rare. Ils ne sont pas automatiquement remboursés par l'assurance de base : chaque demande est examinée au cas par cas. Selon la RTS, près de 80'000 demandes ont été déposées en 2025 pour accéder à des médicaments non pris en charge par l'assurance de base.",
+      "Et les caisses ne répondent pas toutes de la même manière. Dans une étude de l'Office fédéral de la santé publique (OFSP) datant de 2020, que la RTS a mis cinq ans à obtenir par voie juridique, les taux d'acceptation (période 2017-2019) allaient de 98 % pour la KPT à 96 % pour Assura et 94 % pour le Groupe Mutuel. Plus bas : Helsana 67 %, Atupri 53 % et Sanitas 45 %. La moyenne nationale : 76 %.",
+      "Les auteurs de l'étude avaient aussi envoyé à 16 grands assureurs le même dossier fictif. Résultat : trois ont accepté, quatre ont refusé, six ont proposé un essai thérapeutique et trois ont demandé des informations complémentaires. Un même cas, quatre réponses possibles.",
+      "L'enquête cite le cas d'un patient atteint d'un cancer agressif, à qui son assurance a refusé en 2023 un traitement innovant, son dernier espoir. Après un long bras de fer, il a obtenu le remboursement et son cancer est aujourd'hui en rémission. Selon l'enquête, d'autres patients n'ont pas eu cette issue et sont décédés sans avoir obtenu l'accord de leur assureur.",
+      "Du côté des assureurs, prio.swiss, leur organisation faîtière, émet de « sérieuses réserves » sur l'étude de l'OFSP : elle aurait été interprétée et appliquée différemment selon les caisses. Sanitas, la moins bien placée, affirme que les essais thérapeutiques ont été comptés comme des refus. En les excluant, son taux serait de 80 %.",
+      "Une réforme est entrée en vigueur en 2024 pour harmoniser les évaluations. A-t-elle changé la donne ? La RTS a interrogé le service d'oncologie du CHUV sur les cas traités entre 2020 et 2025 : les « bonnes » et les « mauvaises » caisses seraient restées les mêmes. Solange Peters, cheffe de l'oncologie au CHUV et présidente d'Oncosuisse, résume que les assurances ont « un droit de vie et de mort » sur les patients.",
+      "Cette polémique arrive au pire moment pour le porte-monnaie. Pour 2027, les primes d'assurance maladie augmentent en moyenne de 5,0 % en Suisse, à 412 francs par mois (ATS). Dans le canton de Vaud, la hausse moyenne est de 3,5 %, soit 15,20 francs de plus par mois, selon l'État de Vaud. Pour 2026, la prime moyenne suisse était de 393,30 francs.",
+      "Pour beaucoup de ménages, la facture pèse lourd. L'ATS rapportait avant l'annonce que de plus en plus de familles disent ne plus réussir à mettre de l'argent de côté face à la hausse des primes et à l'inflation. Le cabinet Deloitte estime que 600'000 à 900'000 personnes vont changer de caisse pour 2027.",
+      "La question que pose cette enquête est simple : si tout le monde paie de plus en plus cher une assurance de base obligatoire, est-il normal que l'accès à un traitement vital dépende de la caisse choisie ? Les assureurs, eux, contestent les chiffres de l'OFSP. Le débat est lancé.",
+      "À noter : l'illustration de cet article est générée par IA et ne représente aucune situation réelle."
+    ],
+    "sources": [
+      {
+        "name": "20 minutes – Cancer : des assureurs refusent des traitements parfois vitaux (enquête de la RTS, « Mise au Point »)"
+      },
+      {
+        "name": "État de Vaud – Les primes d'assurance maladie vont augmenter de 3.5 % en moyenne en 2027",
+        "url": "https://www.vd.ch/actualites/communiques-de-presse-de-letat-de-vaud/detail/communique/les-primes-dassurance-maladie-vont-augmenter-de-35-en-moyenne-en-2027"
+      },
+      {
+        "name": "La Télé (ATS) – Primes maladie 2027 : hausse moyenne de 5 % en Suisse",
+        "url": "https://latele.ch/articles/nouvelle-envolee-des-primes-maladie-en-2027"
+      },
+      {
+        "name": "allnews.ch (AWP/ATS) – Tension avant l'annonce des primes d'assurance maladie pour 2027",
+        "url": "https://allnews.ch/node/159762"
+      },
+      {
+        "name": "La Télé – Jusqu'à 900 000 Suisses vont changer d'assurance maladie (Deloitte)",
+        "url": "https://latele.ch/articles/jusqu-a-900-000-suisses-vont-changer-d-assureur-maladie-deloitte"
+      }
+    ],
+    "author": "Diego Carvalho",
+    "motif": "health",
+    "image": "cancer-assureurs.jpg",
+    "image_credit": "Illustration générée par IA"
+  },
+  {
     "slug": "policier-vaudois-whatsapp-automobiliste-acquitte-abus-autorite-est-vaudois",
     "title": "Un policier fouille les dossiers pour joindre une automobiliste, puis lui écrit sur WhatsApp : acquitté",
     "category": "Société",
