@@ -11,20 +11,31 @@ BASE_URL = "https://15minutes.ch"                            # ex: https://vaudq
 ADSENSE_CLIENT = "ca-pub-6969360272814757"                      # ex: ca-pub-1234567890123456 (après validation Google)
 # Codes d'un autre réseau (ex. Adsterra) : coller le code HTML fourni dans l'emplacement voulu.
 # Ne pas mélanger avec AdSense sur la même page.
+def _sandbox(inner, w, h, minw=0, maxw=99999):
+    # Isole la pub dans un cadre : elle ne peut pas rediriger la page entière (pas de allow-top-navigation).
+    import json as _j
+    doc = _j.dumps('<!doctype html><body style="margin:0">' + inner).replace("</", "<\\/")
+    return ("<script>(function(){var x=window.innerWidth;if(x<%d||x>%d)return;"
+            "var f=document.createElement('iframe');"
+            "f.setAttribute('sandbox','allow-scripts allow-popups allow-popups-to-escape-sandbox allow-same-origin');"
+            "f.setAttribute('scrolling','no');f.setAttribute('title','Publicité');f.width=%d;f.height=%d;"
+            "f.style.cssText='border:0;display:block;margin:0 auto;max-width:100%%';"
+            "f.srcdoc=%s;var s=document.currentScript;s.parentNode.insertBefore(f,s);})();</script>") % (minw, maxw, w, h, doc)
+
 def _adsterra(key, w, h, minw=0, maxw=99999):
-    # Charge la pub uniquement si l'écran est assez large (évite de charger une pub cachée)
-    return ("<script>(function(){if(window.innerWidth<%d||window.innerWidth>%d)return;"
-            "window.atOptions={'key':'%s','format':'iframe','height':%d,'width':%d,'params':{}};"
-            "document.write('<scr'+'ipt src=\"https://bauval.org/22/%s\"></scr'+'ipt>');})();</script>") % (minw, maxw, key, h, w, key)
+    inner = ("<script>atOptions={'key':'%s','format':'iframe','height':%d,'width':%d,'params':{}};</script>"
+             "<script src=\"https://bauval.org/22/%s\"></script>") % (key, h, w, key)
+    return _sandbox(inner, w, h, minw, maxw)
 
 AD_CUSTOM = {
     "top": _adsterra("ad70c441f5e90255a8a63dfef45554bc", 728, 90, 768) + _adsterra("6030a2053a67c69f23be411862d595a0", 320, 50, 0, 767),  # 728x90 ordinateur/tablette, 320x50 mobile
     "inline": _adsterra("a3e64e45b98fd4792cf1a0693e36525d", 300, 250, 0),    # 300x250 partout
     "side": _adsterra("e0d68e3d2a6e086240916f91bf50df95", 160, 600, 861),    # 160x600 colonne latérale (visible desktop)
 }
+_NATIVE_INNER = ('<script async="async" data-cfasync="false" src="https://bauval.org/21/44bc81f191dcd8fbf2267d2a001ad71f"></script>'
+                 '<div id="container-44bc81f191dcd8fbf2267d2a001ad71f"></div>')
 NATIVE = ('<div class="ad-native" style="margin:24px 0"><div style="font:600 11px system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#64748b;margin-bottom:6px">Contenus sponsorisés</div>'
-          '<script async="async" data-cfasync="false" src="https://bauval.org/21/44bc81f191dcd8fbf2267d2a001ad71f"></script>'
-          '<div id="container-44bc81f191dcd8fbf2267d2a001ad71f"></div></div>')
+          + _sandbox(_NATIVE_INNER, 700, 360) + '</div>')
 HEAD_SNIPPET = ""                        # code à placer dans <head>, si le réseau le demande
 SHOW_AD_PLACEHOLDERS = False   # True = affiche des cadres "Espace publicitaire" (maquette uniquement)
 EDITEUR = {"nom": "À compléter (nom / raison sociale)", "adresse": "À compléter", "email": "contact@exemple.ch"}
