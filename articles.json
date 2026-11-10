@@ -33,7 +33,9 @@
       }
     ],
     "author": "Jean-François Rossel",
-    "motif": "press"
+    "motif": "press",
+    "image": "cryotherapie-cabine.png",
+    "image_credit": "Illustration générée par IA"
   },
   {
     "slug": "eca-vaud-12-9-millions-logiciel-jamais-mis-en-service-litige-justice",
@@ -69,7 +71,9 @@
       }
     ],
     "author": "Mauricio Montero",
-    "motif": "chart"
+    "motif": "chart",
+    "image": "eca-batiment.jpg",
+    "image_credit": "Photo : DR / ECA Vaud"
   },
   {
     "slug": "vaud-inventaire-103-geotopes-sites-geologiques-consultation",
