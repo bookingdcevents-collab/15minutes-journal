@@ -80,7 +80,7 @@ def head(title, desc, rel, og_img=None, url=None, ld=None, art=None):
     return (f'<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8">'
             f'<meta name="viewport" content="width=device-width,initial-scale=1">'
             f'{HEAD_SNIPPET}<title>{esc(title)}</title><meta name="description" content="{esc(desc)}"><meta name="robots" content="index,follow,max-image-preview:large">{canon}{og}{ldj}'
-            f'<link rel="icon" type="image/svg+xml" href="{rel}logo.svg"><link rel="stylesheet" href="{rel}style.css">{adsense}{GOAT}</head><body>')
+            f'<link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png"><link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png"><link rel="icon" type="image/svg+xml" href="/logo.svg"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="stylesheet" href="{rel}style.css">{adsense}{GOAT}</head><body>')
 
 RED = "#d7261e"
 def logo_svg(size=44, ink="#16181d"):
@@ -293,6 +293,12 @@ def main():
     (OUT / "style.css").write_text(CSS, encoding="utf-8")
     (OUT / "logo.svg").write_text(logo_svg(256), encoding="utf-8")
     logo_png(OUT / "logo-profil.png")
+    # favicons (horloge seule, fond blanc) : ico + PNG 48/192 + apple-touch
+    from PIL import Image as _I
+    _base = _I.open(OUT / "logo-profil.png").convert("RGB").crop((184, 82, 840, 738))
+    for _n, _sz in (("favicon-48.png", 48), ("favicon-192.png", 192), ("apple-touch-icon.png", 180)):
+        _base.resize((_sz, _sz), _I.LANCZOS).save(OUT / _n)
+    _base.resize((256, 256), _I.LANCZOS).save(OUT / "favicon.ico", sizes=[(16, 16), (32, 32), (48, 48)])
 
     for a in arts:
         social_image(a, OUT / "social" / f"{a['slug']}.png")
