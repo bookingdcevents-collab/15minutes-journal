@@ -71,7 +71,9 @@
       }
     ],
     "author": "Mauricio Montero",
-    "motif": "parliament"
+    "motif": "parliament",
+    "image": "grand-conseil-hemicycle.png",
+    "image_credit": "Illustration générée par IA"
   },
   {
     "slug": "lausanne-cryotherapie-8-instituts-controles-3-ventilation-adaptee-risque-asphyxie",
