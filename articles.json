@@ -1,5 +1,31 @@
 [
   {
+    "slug": "vaud-inventaire-103-geotopes-sites-geologiques-consultation",
+    "title": "103 trésors de pierre, de glace et d'eau : Vaud dresse la carte de ses sites géologiques",
+    "category": "Société",
+    "date": "2026-11-10",
+    "summary": "Le canton met en consultation, jusqu'au 10 décembre, un inventaire de 103 sites géologiques remarquables répartis dans 124 communes, surtout dans le Jura et les Préalpes.",
+    "body": [
+      "Cascades, grottes, vallées sculptées par les glaciers : le sol vaudois cache un patrimoine que presque personne ne regarde de près. Le canton veut maintenant le recenser noir sur blanc. Selon un communiqué publié ce mardi 10 novembre, l'État de Vaud met en consultation un inventaire de 103 sites géologiques remarquables, les « géotopes ».",
+      "Ces objets racontent l'histoire de la Terre et l'évolution du paysage : formations rocheuses, reliefs, grottes, sites liés à l'eau. La plupart se situent dans le Jura et dans les Préalpes. Au total, 124 des 300 communes vaudoises sont concernées, selon l'État de Vaud, qui indique que quelque 500 000 habitants y vivent.",
+      "L'inventaire a été élaboré avec des experts de l'Université de Lausanne, du Natureum, le musée cantonal des sciences naturelles, et de l'Institut suisse de spéléologie et de karstologie. Pour chaque site, des cartes et des fiches illustrées décrivent ses particularités, sa vulnérabilité et les mesures de protection prévues.",
+      "Pourquoi maintenant ? La loi sur la protection du patrimoine naturel et paysager, en vigueur depuis le 1er janvier 2023, oblige la Direction générale de l'environnement à établir cet inventaire. Les objectifs affichés : mieux connaître la géodiversité, c'est-à-dire la nature non vivante comme les roches, les sols, les minéraux ou les fossiles ; protéger les sites contre les menaces ; les garder disponibles pour l'enseignement et la recherche ; et valoriser le territoire, notamment par le géotourisme.",
+      "Concrètement, rien ne se joue sans vous : la consultation publique court du 10 novembre au 10 décembre 2026. Communes, associations et habitants peuvent donc se pencher sur la liste des sites, et vérifier si le rocher, la grotte ou la cascade de leur région y figure."
+    ],
+    "sources": [
+      {
+        "name": "État de Vaud – Géotopes (DGE)",
+        "url": "https://www.vd.ch/environnement/geologie/geotopes"
+      },
+      {
+        "name": "LFM / Keystone-ATS",
+        "url": "https://www.lfm.ch/actualite/suisse/romandie/vaud/lausanne/vaud-veut-faire-linventaire-de-ses-sites-naturels-geologiques/"
+      }
+    ],
+    "author": "Mauricio Montero",
+    "motif": "village"
+  },
+  {
     "slug": "routes-vaudoises-31-millions-entretien-revetements-2026-2027",
     "title": "Routes vaudoises : 31 millions pour effacer les nids-de-poule et sécuriser les pistes cyclables",
     "category": "Mobilité",
