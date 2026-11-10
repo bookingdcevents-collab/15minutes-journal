@@ -1,5 +1,50 @@
 [
   {
+    "slug": "lausanne-sleep-in-malley-ferme-rats-punaises-de-lit-hiver-abri-pci",
+    "title": "Lausanne : rats et punaises de lit forcent la fermeture du Sleep-In, à l'approche de l'hiver",
+    "category": "Société",
+    "date": "2026-11-10",
+    "summary": "L'hébergement d'urgence Sleep-In de Malley est fermé depuis la mi-octobre à cause d'une invasion de rats et de punaises de lit. Les hommes sont relogés dans un abri de protection civile.",
+    "body": [
+      "Barricadé derrière des grilles métalliques, avec un avis collé dessus : le Sleep-In de Malley, à Lausanne, ne reçoit plus personne. Selon des informations de 24 heures, l'hébergement d'urgence est fermé depuis la mi-octobre, en raison d'une invasion de rats et de punaises de lit.",
+      "La fermeture est qualifiée de temporaire, pour des raisons d'insalubrité. En attendant, les hommes qui fréquentaient le lieu sont accueillis à l'abri de protection civile de la Vallée de la Jeunesse. Les femmes et les enfants sont répartis dans les quatre autres structures d'hébergement d'urgence de la Ville.",
+      "Le moment est sensible : l'hiver arrive. La Ville maintient 246 places d'urgence pour la saison froide et peut en ouvrir 60 de plus en cas de grand froid, rapporte 24 heures. L'immeuble de Tivoli 12, un autre hébergement, pourra rester ouvert jusqu'à fin septembre prochain, le propriétaire ayant accepté de prolonger. La Municipalité veut stabiliser le nombre de places, mais peine à trouver des bâtiments pour loger 50 à 60 personnes, selon Watson.",
+      "Les punaises de lit ne sont pas une nouveauté dans les hébergements d'urgence lausannois. La Municipalité reconnaît leur présence depuis 2020 dans le dispositif, et le Sleep-In avait déjà été fermé six semaines en hiver, fin 2021, pour un traitement des locaux, d'après une interpellation déposée au Conseil communal en 2022.",
+      "La pression sur le dispositif est forte depuis des mois. Il y a quelques mois, la RTS décrivait l'accueil de nuit de Malley comme débordé, avec une centaine de personnes sans abri rassemblées chaque soir devant le Sleep-In et quarante à cinquante refusées.",
+      "Les sources consultées ne précisent pas la date de réouverture du Sleep-In ni la durée des travaux de traitement."
+    ],
+    "sources": [
+      {
+        "name": "24 heures – Sleep-in : l'hébergement d'urgence lausannois fermé pour rats et punaises",
+        "url": "https://www.24heures.ch/sleep-in-lhebergement-durgence-lausannois-ferme-pour-rats-et-punaises-252237566257"
+      },
+      {
+        "name": "24 heures – L'essentiel du jour, lundi 9 novembre 2026",
+        "url": "https://www.24heures.ch/lessentiel-du-jour-lundi-9-novembre-2026-881177634645"
+      },
+      {
+        "name": "RTS – Lausanne : le sleep-in de Malley fermé pour rats et punaises",
+        "url": "https://www.rts.ch/info/regions/vaud/2026/article/lausanne-le-sleep-in-de-malley-ferme-pour-rats-et-punaises-29410937.html"
+      },
+      {
+        "name": "Watson – Attaque de rats et punaises de lit au Sleep-in de Malley",
+        "url": "https://www.watson.ch/fr/suisse/animaux/965351519-attaque-de-rats-et-punaises-de-lit-au-sleep-in-de-malley"
+      },
+      {
+        "name": "RTS – L'hébergement d'urgence de Malley surchargé",
+        "url": "https://www.rts.ch/info/regions/vaud/2026/article/lausanne-l-accueil-de-nuit-de-malley-deborde-apres-la-fermeture-de-squats-29280595.html"
+      },
+      {
+        "name": "Ville de Lausanne – Interpellation urgente sur les punaises de lit (Conseil communal)",
+        "url": "https://www.lausanne.ch/apps/agir/affaire/doc/18/18fe42002b2d42aea5f43f65f16ce536.pdf"
+      }
+    ],
+    "author": "Jean-François Rossel",
+    "motif": "press",
+    "image": "sleep-in-malley.jpg",
+    "image_credit": "Photo : DR"
+  },
+  {
     "slug": "rc1-prangins-gland-26-3-millions-pistes-cyclables-grand-conseil",
     "title": "RC 1 entre Prangins et Gland : 26,3 millions pour dompter 3,4 km de route peu aimable avec les vélos",
     "category": "Mobilité",
