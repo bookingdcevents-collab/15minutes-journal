@@ -17,9 +17,10 @@ def _adsterra(key, w, h, minw=0, maxw=99999):
             "window.atOptions={'key':'%s','format':'iframe','height':%d,'width':%d,'params':{}};"
             "document.write('<scr'+'ipt src=\"https://bauval.org/22/%s\"></scr'+'ipt>');})();</script>") % (minw, maxw, key, h, w, key)
 
+GOAT = '<script data-goatcounter="https://15minutes.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>'
 AD_CUSTOM = {
     "top": _adsterra("ad70c441f5e90255a8a63dfef45554bc", 728, 90, 768) + _adsterra("6030a2053a67c69f23be411862d595a0", 320, 50, 0, 767),  # 728x90 ordinateur/tablette, 320x50 mobile
-    "inline": '<a href="https://restaurantlaforet.ch/?utm_source=15minutes&utm_medium=banniere&utm_campaign=pub-article" target="_blank" rel="noopener sponsored" style="display:block;width:300px;max-width:100%;margin:0 auto"><img src="/photos/pub-laforet.jpg" width="300" height="250" alt="Restaurant La Forêt, pizzas au feu de bois, tous les mardis soir pizzas à CHF 13.90" style="display:block;width:100%;height:auto;border-radius:6px" loading="lazy"></a>',    # pub maison La Forêt 300x250
+    "inline": '<a href="https://restaurantlaforet.ch/?utm_source=15minutes&utm_medium=banniere&utm_campaign=pub-article" target="_blank" rel="noopener sponsored" onclick="try{goatcounter.count({path:&quot;clic-pub-laforet&quot;,title:&quot;Clic pub La Forêt&quot;,event:true})}catch(e){}" style="display:block;width:300px;max-width:100%;margin:0 auto"><img src="/photos/pub-laforet.jpg" width="300" height="250" alt="Restaurant La Forêt, pizzas au feu de bois, tous les mardis soir pizzas à CHF 13.90" style="display:block;width:100%;height:auto;border-radius:6px" loading="lazy"></a>',    # pub maison La Forêt 300x250
     "inline2": _adsterra("a3e64e45b98fd4792cf1a0693e36525d", 300, 250, 0),    # 300x250 Adsterra en fin d'article
     "side": _adsterra("e0d68e3d2a6e086240916f91bf50df95", 160, 600, 861),    # 160x600 colonne latérale (visible desktop)
 }
@@ -79,7 +80,7 @@ def head(title, desc, rel, og_img=None, url=None, ld=None, art=None):
     return (f'<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8">'
             f'<meta name="viewport" content="width=device-width,initial-scale=1">'
             f'{HEAD_SNIPPET}<title>{esc(title)}</title><meta name="description" content="{esc(desc)}"><meta name="robots" content="index,follow,max-image-preview:large">{canon}{og}{ldj}'
-            f'<link rel="icon" type="image/svg+xml" href="{rel}logo.svg"><link rel="stylesheet" href="{rel}style.css">{adsense}</head><body>')
+            f'<link rel="icon" type="image/svg+xml" href="{rel}logo.svg"><link rel="stylesheet" href="{rel}style.css">{adsense}{GOAT}</head><body>')
 
 RED = "#d7261e"
 def logo_svg(size=44, ink="#16181d"):
