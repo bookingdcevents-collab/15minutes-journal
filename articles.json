@@ -19,7 +19,9 @@
       }
     ],
     "author": "Jean-François Rossel",
-    "motif": "car"
+    "motif": "car",
+    "image": "revetements-routes.png",
+    "image_credit": "Photo d'illustration : chantier de réfection de chaussée"
   },
   {
     "slug": "vaud-30-millions-routes-cantonales-communes-trottoirs-pistes-cyclables",
