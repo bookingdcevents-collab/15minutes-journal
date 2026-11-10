@@ -49,7 +49,9 @@
       }
     ],
     "author": "Jean-François Rossel",
-    "motif": "parliament"
+    "motif": "parliament",
+    "image": "viaduc-broye.png",
+    "image_credit": "Illustration générée par IA"
   },
   {
     "slug": "grand-conseil-10-novembre-heure-des-questions-loyers-navettes-autonomes-data-center",
