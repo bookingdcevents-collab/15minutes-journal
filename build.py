@@ -65,7 +65,7 @@ def head(title, desc, rel, og_img=None, url=None, ld=None, art=None):
     if og_img:
         full = f"{BASE_URL}/{og_img}" if BASE_URL else og_img
         og = (f'<meta property="og:type" content="article"><meta property="og:title" content="{esc(title)}">'
-              f'<meta property="og:description" content="{esc(desc)}"><meta property="og:image" content="{esc(full)}">'
+              f'<meta property="og:description" content="{esc(desc)}"><meta property="og:image" content="{esc(full)}"><meta property="og:image:secure_url" content="{esc(full)}"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="675">'
               f'<meta property="og:site_name" content="{esc(SITE_NAME)}"><meta name="twitter:card" content="summary_large_image">')
     base = BASE_URL.rstrip("/")
     canon = f'<link rel="canonical" href="{base}/{url or ""}"><meta property="og:url" content="{base}/{url or ""}"><meta property="og:locale" content="fr_CH">'
