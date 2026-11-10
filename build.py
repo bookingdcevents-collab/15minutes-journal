@@ -20,6 +20,7 @@ def _adsterra(key, w, h, minw=0, maxw=99999):
 AD_CUSTOM = {
     "top": _adsterra("ad70c441f5e90255a8a63dfef45554bc", 728, 90, 768) + _adsterra("6030a2053a67c69f23be411862d595a0", 320, 50, 0, 767),  # 728x90 ordinateur/tablette, 320x50 mobile
     "inline": '<a href="https://restaurantlaforet.ch" target="_blank" rel="noopener sponsored" style="display:block;width:300px;max-width:100%;margin:0 auto"><img src="/photos/pub-laforet.jpg" width="300" height="250" alt="Restaurant La Forêt, pizzas au feu de bois, tous les mardis soir pizzas à CHF 13.90" style="display:block;width:100%;height:auto;border-radius:6px" loading="lazy"></a>',    # pub maison La Forêt 300x250
+    "inline2": _adsterra("a3e64e45b98fd4792cf1a0693e36525d", 300, 250, 0),    # 300x250 Adsterra en fin d'article
     "side": _adsterra("e0d68e3d2a6e086240916f91bf50df95", 160, 600, 861),    # 160x600 colonne latérale (visible desktop)
 }
 NATIVE = ('<div class="ad-native" style="margin:24px 0"><div style="font:600 11px system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#64748b;margin-bottom:6px">Contenus sponsorisés</div>'
@@ -209,7 +210,7 @@ main{max-width:1060px;margin:0 auto;padding:24px;display:grid;grid-template-colu
 .sources{border-top:1px solid #ddd;margin-top:28px;padding-top:12px;font:14px system-ui,sans-serif}
 .demo{background:#fff3cd;border:1px solid #e6cf7a;padding:8px 12px;border-radius:6px;font:14px system-ui,sans-serif;margin-bottom:12px}
 .ad{background:repeating-linear-gradient(45deg,#f0eee8,#f0eee8 10px,#e9e6de 10px,#e9e6de 20px);border:1px dashed #b9b4a6;color:#8a8473;font:12px system-ui,sans-serif;display:flex;align-items:center;justify-content:center;margin:22px 0;text-transform:uppercase;letter-spacing:.1em}
-.ad-top{min-height:90px}.ad-inline{min-height:250px}.ad-side{min-height:600px}@media(max-width:860px){.ad-side{display:none}}@media(max-width:767px){.ad-top{min-height:50px}}
+.ad-top{min-height:90px}.ad-inline,.ad-inline2{min-height:250px}.ad-side{min-height:600px}@media(max-width:860px){.ad-side{display:none}}@media(max-width:767px){.ad-top{min-height:50px}}
 aside .box{background:#fff;border:1px solid #e3e1da;border-radius:8px;padding:14px 16px;font:15px system-ui,sans-serif}
 .nores{display:none;font:16px system-ui,sans-serif;color:#667;padding:20px 0}
 /* ---- Design moderne ---- */
@@ -314,7 +315,7 @@ def main():
                 f'<main><article>{demo}{ad("top")}<span class="cat" style="background:{col}">{esc(a["category"])}</span>'
                 f'<h1>{esc(a["title"])}</h1><div class="meta">Par <strong>{esc(a.get("author","La rédaction"))}</strong> · {fr_date(a["date"])}</div>'
                 f'<img class="hero" src="../img/{a["slug"]}.jpg?v={a["_v"]}" alt="{esc(a["title"])}">{credit}'
-                f'<p class="lead">{esc(a["summary"])}</p>{body}{ad("inline")}'
+                f'<p class="lead">{esc(a["summary"])}</p>{body}{ad("inline2")}'
                 f'<div class="sources"><strong>Sources :</strong><ul>{srcs}</ul></div>{NATIVE}</article>'
                 f'<aside>{ad("side")}<div class="box"><strong>À lire aussi</strong><br>' +
                 "".join(f'<p><a href="{o["slug"]}.html">{esc(o["title"])}</a></p>' for o in arts if o is not a) +
