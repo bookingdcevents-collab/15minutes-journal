@@ -45,7 +45,9 @@
       }
     ],
     "author": "Mauricio Montero",
-    "motif": "communes"
+    "motif": "communes",
+    "image": "piste-cyclable-village.png",
+    "image_credit": "Photo d'illustration : piste cyclable en traversée de village"
   },
   {
     "slug": "vaud-parkings-commerciaux-ombrieres-photovoltaiques-2000-m2",
