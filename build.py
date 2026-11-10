@@ -29,7 +29,7 @@ NATIVE = ('<div class="ad-native" style="margin:24px 0"><div style="font:600 11p
           '<div id="container-44bc81f191dcd8fbf2267d2a001ad71f"></div></div>')
 HEAD_SNIPPET = ""                        # code à placer dans <head>, si le réseau le demande
 SHOW_AD_PLACEHOLDERS = False   # True = affiche des cadres "Espace publicitaire" (maquette uniquement)
-EDITEUR = {"nom": "À compléter (nom / raison sociale)", "adresse": "À compléter", "email": "contact@exemple.ch"}
+EDITEUR = {"nom": "GG Distribution Alimentaire Ltd", "adresse": "71-75 Shelton Street, Covent Garden, London, United Kingdom, WC2H 9JQ", "email": "bookingdcevents@gmail.com"}
 AD_SLOTS = {"top": "", "inline": "", "side": ""}   # identifiants de blocs AdSense
 CATS = {"Mobilité": "#1f6feb", "Région": "#c2410c", "Sport": "#15803d",
         "Économie": "#7c3aed", "Société": "#be123c", "Culture": "#0e7490"}
