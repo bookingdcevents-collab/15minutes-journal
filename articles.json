@@ -1,5 +1,37 @@
 [
   {
+    "slug": "taxe-auto-vaud-2027-qui-paie-plus-qui-paie-moins-rabais-majoration",
+    "title": "Taxe auto vaudoise dès 2027 : moins de malus pour les plus polluantes, moins de rabais pour les voitures peu émettrices",
+    "category": "Mobilité",
+    "date": "2026-11-11",
+    "summary": "Dès le 1er janvier 2027, la majoration maximale passe de 50 % à 40 % et les rabais sont réduits. Les recettes devraient rester stables : certains automobilistes paieront moins, d'autres davantage.",
+    "body": [
+      "Qui va payer plus, qui va payer moins ? Le Conseil d'État vaudois a dévoilé le 5 novembre les nouveaux taux de la taxe automobile, qui s'appliqueront dès le 1er janvier 2027. Le principe : le malus recule pour les voitures les plus polluantes, mais les rabais accordés aux voitures peu émettrices sont réduits.",
+      "Concrètement, la majoration maximale passe de 50 % à 40 % pour les voitures légères les plus émettrices de CO₂, soit, selon La Télé, celles qui dépassent 248 g/km. Elle concerne environ 42'700 véhicules, d'après le communiqué du gouvernement. Les majorations de 15 % et 25 % ne changent pas.",
+      "Côté rabais, les voitures électriques gardent leur rabais maximal de 90 %. En revanche, pour les voitures à très faibles émissions, il passe de 90 % à 75 %, et pour le palier suivant de 75 % à 60 %. Le gouvernement explique que ce nouveau calcul tient compte des hybrides, qui peuvent émettre nettement plus lorsque leur moteur thermique tourne. Pour leurs propriétaires, la facture pourrait donc augmenter.",
+      "L'État affirme que la baisse de la majoration sera compensée par la réduction des rabais. Les recettes de la taxe sur les voitures légères, estimées à environ 215 millions de francs, devraient ainsi rester à peu près stables.",
+      "Comment en est-on arrivé là ? Pour 2026, le Conseil d'État voulait d'abord relever la majoration maximale de 25 % à 40 %. Le Grand Conseil a ensuite adopté un amendement écologiste visant 10 millions de francs de recettes supplémentaires, ce qui a porté le taux à 50 %. Selon La Télé, environ 186'600 voitures légères, sur un parc d'environ 480'000, sont aujourd'hui soumises à une majoration.",
+      "Le Grand Conseil avait ensuite adopté de justesse, par 72 voix contre 70, la motion de l'UDC Yann Glayre, qui demande de plafonner la majoration à 25 % dans la loi. Le Conseil d'État propose de la rejeter : un plafond aussi bas ne serait, selon lui, pas compatible avec les objectifs de réduction des émissions. Il présente sa démarche comme « une réponse pragmatique aux préoccupations exprimées ».",
+      "Le gouvernement chiffre à environ 13,3 millions de francs la perte de recettes si la motion était appliquée telle quelle. C'est maintenant au Grand Conseil de trancher sur la modification de loi proposée. Les nouveaux taux du règlement, eux, entrent en vigueur le 1er janvier 2027."
+    ],
+    "sources": [
+      {
+        "name": "Communiqué du Conseil d'État vaudois, 5 novembre 2026",
+        "url": "https://www.vd.ch/actualites/communiques-de-presse-de-letat-de-vaud/detail/communique/le-conseil-detat-repond-a-la-motion-glayre-et-propose-dadapter-le-dispositif-des-2027"
+      },
+      {
+        "name": "La Télé – Taxe vaudoise des véhicules polluants : le Conseil d'État recule légèrement",
+        "url": "https://latele.ch/articles/hausse-de-la-taxe-des-vehicules-polluants-legere-marche-arriere"
+      },
+      {
+        "name": "État de Vaud – Taxe sur les véhicules (tableau comparatif)",
+        "url": "https://www.vd.ch/actualites/actualite/news/26770-taxe-sur-les-vehicules"
+      }
+    ],
+    "author": "Mauricio Montero",
+    "motif": "car"
+  },
+  {
     "slug": "morges-amende-sens-interdit-envoyee-au-mauvais-conducteur-temoignage",
     "title": "Morges : une amende pour « interdiction de circuler dans les deux sens » envoyée à un automobiliste… qui n'était même pas en Suisse",
     "category": "Société",
