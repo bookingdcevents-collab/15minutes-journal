@@ -1477,5 +1477,30 @@
     ],
     "motif": "museum",
     "author": "Mauricio Montero"
+  },
+  {
+    "slug": "viaduc-broye-lucens-curtilles-credit-accepte-grand-conseil",
+    "title": "Viaduc de la Broye : feu vert des députés, les travaux démarreront au printemps 2027",
+    "category": "Région",
+    "date": "2026-11-12",
+    "summary": "Le Grand Conseil a accepté le crédit pour rénover le viaduc de Lucens–Curtilles, à l'unanimité moins quatre abstentions. Un crédit d'étude de 1,4 million pour le pont du Larrevoin, à Aigle, a aussi été débloqué.",
+    "body": [
+      "C'est un ouvrage que près de 11 000 véhicules franchissent chaque jour, et il vient d'obtenir son ticket pour une cure de jouvence. Mardi 10 novembre, le Grand Conseil vaudois a accepté le crédit d'ouvrage de 10,775 millions de francs destiné à rénover le viaduc de la route cantonale 601 entre Lucens et Curtilles. Au vote final, le oui a été unanime, à quatre abstentions près.",
+      "Construit en 1963, le viaduc mesure environ 300 mètres et enjambe la Broye ainsi que les voies CFF. Les travaux doivent le rendre résistant aux séismes et capable de supporter des charges allant jusqu'à 90 tonnes. Le chantier principal est prévu dès le printemps 2027 et doit s'achever à la fin de l'été 2028, selon l'ATS. La conseillère d'État Nuria Gorrite a plaidé pour le crédit devant le Parlement.",
+      "Le même jour, les députés ont aussi débloqué 1,4 million de francs pour l'étude de la réhabilitation et du renforcement du pont du Larrevoin, à Aigle, sur la RC 705, l'axe qui mène aux Mosses, aux Diablerets et à Leysin. Cet ouvrage de 1965, long d'environ 300 mètres, voit passer quelque 7 300 véhicules par jour. L'étude et l'appel d'offres sont prévus l'an prochain, le crédit pour les travaux est attendu fin 2028, et le chantier est annoncé pour 2029-2030.",
+      "Les résultats des votes sur le crédit de 39,6 millions pour la RC 705 B-P à la Frasse (Ormont-Dessous) et sur celui de 26,3 millions pour la RC 1 entre Dully, Gland et Prangins n'étaient pas encore publiés au moment de la rédaction. Nous y reviendrons dès qu'ils seront confirmés."
+    ],
+    "sources": [
+      {
+        "name": "ATS via La Télé – Les députés vaudois débloquent des crédits pour deux ponts (10.11.2026)",
+        "url": "https://latele.ch/index.php/articles/les-deputes-vaudois-debloquent-des-credits-pour-deux-ponts"
+      },
+      {
+        "name": "Grand Conseil vaudois – Séance du 10 novembre 2026",
+        "url": "https://www.vd.ch/gc/seances-du-grand-conseil/detail-seance/seance-gc/1033715"
+      }
+    ],
+    "author": "Jean-François Rossel",
+    "motif": "car"
   }
 ]
