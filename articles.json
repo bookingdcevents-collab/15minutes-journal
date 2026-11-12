@@ -21,7 +21,12 @@
     "author": "Mauricio Montero",
     "motif": "press",
     "image": "ecublens-incendie-hangar.jpg",
-    "image_credit": "Photo : rédaction 15 minutes"
+    "image_credit": "Photo : rédaction 15 minutes",
+    "extra_image": {
+      "file": "ecublens-immeuble.jpg",
+      "alt": "L'immeuble touché par l'incendie à Ecublens, avec des pompiers sur place",
+      "credit": "L'immeuble concerné, avec les véhicules des pompiers en arrière-plan. Photo : rédaction 15 minutes"
+    }
   },
   {
     "slug": "vaud-violences-domestiques-commission-unanime-trois-entretiens-socio-educatifs-auteurs",
