@@ -26,7 +26,16 @@
       "file": "ecublens-immeuble.jpg",
       "alt": "L'immeuble touché par l'incendie à Ecublens, avec des pompiers sur place",
       "credit": "L'immeuble concerné, avec les véhicules des pompiers en arrière-plan. Photo : rédaction 15 minutes"
-    }
+    },
+    "extra_images": [
+      {
+        "file": "ecublens-fumee-habitant.jpg",
+        "alt": "Épaisse fumée noire au-dessus des immeubles à Ecublens",
+        "credit": "Fumée visible depuis un immeuble voisin. Photo : un habitant, publiée sur Facebook",
+        "after": 2,
+        "maxw": 60
+      }
+    ]
   },
   {
     "slug": "vaud-violences-domestiques-commission-unanime-trois-entretiens-socio-educatifs-auteurs",

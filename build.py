@@ -336,10 +336,10 @@ def main():
         for i, p in enumerate(a["body"]):
             body += f"<p>{esc(p)}</p>"
             if i == 0: body += ad("inline")
-            if i == 1 and a.get("extra_image"):
-                _e = a["extra_image"]
-                body += (f'<figure style="margin:18px 0"><img src="../photos/{_e["file"]}" alt="{esc(_e.get("alt",""))}" style="width:100%;height:auto;border-radius:6px" loading="lazy">'
-                         f'<figcaption class="meta" style="margin-top:6px">{esc(_e.get("credit",""))}</figcaption></figure>')
+            for _e in ([a["extra_image"]] if a.get("extra_image") else []) + a.get("extra_images", []):
+                if _e.get("after", 1) == i:
+                    body += (f'<figure style="margin:18px auto;max-width:{_e.get("maxw", 100)}%"><img src="../photos/{_e["file"]}" alt="{esc(_e.get("alt",""))}" style="width:100%;height:auto;border-radius:6px" loading="lazy">'
+                             f'<figcaption class="meta" style="margin-top:6px">{esc(_e.get("credit",""))}</figcaption></figure>')
         srcs = "".join((f'<li><a href="{esc(s["url"])}" rel="noopener nofollow" target="_blank">{esc(s["name"])}</a></li>' if s.get("url") else f'<li>{esc(s["name"])}</li>') for s in a["sources"])
         credit = f'<div class="meta" style="margin:-8px 0 14px">{esc(a["image_credit"])}</div>' if a.get("image") and a.get("image_credit") else ""
         demo = '<div class="demo">Article d\'exemple — à remplacer par un contenu réel.</div>' if a.get("demo") else ""
