@@ -11,11 +11,29 @@ BASE_URL = "https://15minutes.ch"                            # ex: https://vaudq
 ADSENSE_CLIENT = "ca-pub-6969360272814757"                      # ex: ca-pub-1234567890123456 (après validation Google)
 # Codes d'un autre réseau (ex. Adsterra) : coller le code HTML fourni dans l'emplacement voulu.
 # Ne pas mélanger avec AdSense sur la même page.
+ADPAGES = {}   # pages d'isolation des pubs (écrites dans docs/ads/ par main())
+def _sandbox(inner, w, h, minw=0, maxw=99999, auto=False):
+    # Isole la pub dans un cadre sandbox chargé depuis /ads/ (même domaine : Adsterra voit bien 15minutes.ch).
+    # Pas de allow-top-navigation : la pub ne peut jamais rediriger la page entière, ses clics s'ouvrent dans un nouvel onglet.
+    import hashlib
+    name = hashlib.md5(inner.encode()).hexdigest()[:10]
+    ADPAGES[name] = ('<!doctype html><html><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow">'
+                     '<base target="_blank"><meta name="viewport" content="width=device-width,initial-scale=1"></head>'
+                     '<body style="margin:0;background:transparent">' + inner + '</body></html>')
+    grow = ("var r=function(){try{var d=f.contentDocument;var h=Math.max(d.body.scrollHeight,d.documentElement.scrollHeight);if(h>20)f.height=h}catch(e){}};"
+            "f.onload=function(){r();setTimeout(r,1500);setTimeout(r,4000)};") if auto else ""
+    return ("<script>(function(){var x=window.innerWidth;if(x<%d||x>%d)return;"
+            "var f=document.createElement('iframe');"
+            "f.setAttribute('sandbox','allow-scripts allow-popups allow-popups-to-escape-sandbox allow-same-origin');"
+            "f.setAttribute('scrolling','no');f.setAttribute('title','Publicité');f.setAttribute('loading','lazy');f.width=%d;f.height=%d;"
+            "f.style.cssText='border:0;display:block;margin:0 auto;max-width:100%%;width:'+(%s?'100%%':'%dpx');"
+            "%sf.src='/ads/%s.html';var s=document.currentScript;s.parentNode.insertBefore(f,s);})();</script>") % (
+            minw, maxw, w, h, 'true' if auto else 'false', w, grow, name)
+
 def _adsterra(key, w, h, minw=0, maxw=99999):
-    # Charge la pub uniquement si l'écran est assez large (évite de charger une pub cachée)
-    return ("<script>(function(){if(window.innerWidth<%d||window.innerWidth>%d)return;"
-            "window.atOptions={'key':'%s','format':'iframe','height':%d,'width':%d,'params':{}};"
-            "document.write('<scr'+'ipt src=\"https://bauval.org/22/%s\"></scr'+'ipt>');})();</script>") % (minw, maxw, key, h, w, key)
+    inner = ("<script>atOptions={'key':'%s','format':'iframe','height':%d,'width':%d,'params':{}};</script>"
+             "<script src=\"https://bauval.org/22/%s\"></script>") % (key, h, w, key)
+    return _sandbox(inner, w, h, minw, maxw)
 
 GOAT = '<script data-goatcounter="https://15minutes.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>'
 AD_CUSTOM = {
@@ -24,9 +42,10 @@ AD_CUSTOM = {
     "inline2": _adsterra("a3e64e45b98fd4792cf1a0693e36525d", 300, 250, 0),    # 300x250 Adsterra en fin d'article
     "side": _adsterra("e0d68e3d2a6e086240916f91bf50df95", 160, 600, 861),    # 160x600 colonne latérale (visible desktop)
 }
+_NATIVE_INNER = ('<script async="async" data-cfasync="false" src="https://bauval.org/21/44bc81f191dcd8fbf2267d2a001ad71f"></script>'
+                 '<div id="container-44bc81f191dcd8fbf2267d2a001ad71f"></div>')
 NATIVE = ('<div class="ad-native" style="margin:24px 0"><div style="font:600 11px system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#64748b;margin-bottom:6px">Contenus sponsorisés</div>'
-          '<script async="async" data-cfasync="false" src="https://bauval.org/21/44bc81f191dcd8fbf2267d2a001ad71f"></script>'
-          '<div id="container-44bc81f191dcd8fbf2267d2a001ad71f"></div></div>')
+          + _sandbox(_NATIVE_INNER, 700, 360, auto=True) + '</div>')
 HEAD_SNIPPET = ""                        # code à placer dans <head>, si le réseau le demande
 SHOW_AD_PLACEHOLDERS = False   # True = affiche des cadres "Espace publicitaire" (maquette uniquement)
 EDITEUR = {"nom": "GG Distribution Alimentaire Ltd", "adresse": "71-75 Shelton Street, Covent Garden, London, United Kingdom, WC2H 9JQ", "email": "bookingdcevents@gmail.com"}
@@ -294,6 +313,8 @@ def main():
     if OUT.exists(): shutil.rmtree(OUT)
     (OUT / "article").mkdir(parents=True); (OUT / "social").mkdir()
     if (ROOT / "photos").exists(): shutil.copytree(ROOT / "photos", OUT / "photos")
+    (OUT / "ads").mkdir()
+    for _n, _h in ADPAGES.items(): (OUT / "ads" / f"{_n}.html").write_text(_h, encoding="utf-8")
     (OUT / "CNAME").write_text("15minutes.ch\n")
     (OUT / "google328dac0fa93f198c.html").write_text("google-site-verification: google328dac0fa93f198c.html")
     (OUT / "style.css").write_text(CSS, encoding="utf-8")
