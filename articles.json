@@ -1,5 +1,79 @@
 [
  {
+  "slug": "vaud-budget-2027-greve-illicite-conseil-d-etat-syndicats-fsf-ssp-sud",
+  "title": "Budget 2027 : le Conseil d'État juge la grève illicite, les syndicats de la fonction publique sous pression",
+  "category": "Société",
+  "date": "2026-11-13",
+  "summary": "Après l'échec de la conciliation, le gouvernement vaudois estime que la grève envisagée par FSF, SSP et SUD ne remplit pas les conditions légales. Il dit ne pas prévoir de sanction « en l'état ».",
+  "body": [
+   "Le bras de fer budgétaire vaudois vient de changer de tempo. Jeudi 12 novembre, l'Organe de conciliation et d'arbitrage a constaté l'échec de la conciliation entre l'État et les syndicats FSF, SSP et SUD. Dans la foulée, le Conseil d'État a pris position : une grève lancée sur cette base serait, à ses yeux, illicite.",
+   "Les syndicats exigent le retrait de tous les amendements budgétaires présentés après l'acceptation de l'initiative dite des 12 %. Ils veulent que les conséquences financières soient compensées par des revenus extraordinaires ou par un prélèvement sur les réserves du Canton.",
+   "Le gouvernement oppose trois arguments. D'abord, la loi sur le personnel de l'État pose des conditions cumulatives pour qu'une grève soit licite : lien avec les relations de travail, conflit collectif, acte de non-conciliation, proportionnalité, dernier recours. Ensuite, réclamer le retrait global de propositions budgétaires relève, selon lui, d'une contestation de la politique budgétaire, pas de conditions de travail. Enfin, le budget est désormais entre les mains du Grand Conseil, qui doit trancher sur les amendements : un arrêt de travail ne serait donc pas un moyen proportionné.",
+   "Le Conseil d'État invite le personnel à ne pas suivre un tel mouvement, tout en précisant qu'il ne prévoit pas de sanction en l'état. Il rappelle aussi que, selon la loi, les collaborateurs qui s'abstiennent de travailler dans le respect des règles ne sont en principe pas rétribués, et qu'un service minimum est assuré là où un arrêt mettrait en péril des prestations indispensables.",
+   "Sur le fond financier, le communiqué avance que plus de 60 % des 272 millions de francs à compenser seront couverts par des revenus extraordinaires. Il remet aussi sur la table la pleine indexation des salaires au 1er janvier 2027 et le maintien des annuités, déjà annoncés. Reste à voir si les syndicats maintiendront leur appel : pour les habitants, l'enjeu se jouera dans les prochaines semaines, au Grand Conseil."
+  ],
+  "sources": [
+   {
+    "name": "État de Vaud – Budget 2027 : le Conseil d'État précise sa position sur la licéité de la grève (12.11.2026)",
+    "url": "https://www.vd.ch/actualites/communiques-de-presse-de-letat-de-vaud/detail/communique/budget-2027-le-conseil-detat-precise-sa-position-sur-la-liceite-de-la-greve"
+   },
+   {
+    "name": "État de Vaud – Pleine indexation des salaires de la fonction publique en 2027",
+    "url": "https://www.vd.ch/actualites/communiques-de-presse-de-letat-de-vaud/detail/communique/le-conseil-detat-accorde-la-pleine-indexation-des-salaires-de-la-fonction-publique-en-2027"
+   }
+  ],
+  "author": "Mauricio Montero",
+  "motif": "crowd"
+ },
+ {
+  "slug": "cyber26-vaud-170-entites-580-personnes-cyberattaque-fictive-exercice-crise",
+  "title": "CYBER26 : 580 Vaudois plongés pendant quatre heures dans une cyberattaque… fictive",
+  "category": "Région",
+  "date": "2026-11-13",
+  "summary": "Près de 170 entités vaudoises, communes comprises, ont affronté jeudi matin une cybercrise simulée. Objectif : tester la coordination avant qu'une vraie attaque ne frappe.",
+  "body": [
+   "Services clés bloqués, cellules de crise en ébullition, décisions à prendre dans l'urgence : jeudi 12 novembre au matin, une partie de l'administration vaudoise a vécu une cyberattaque. Heureusement, elle était fictive.",
+   "Il s'agissait de la deuxième édition de CYBER26, un exercice mené sous forme de jeu sérieux en ligne et piloté par le CSIRT, la force cantonale d'intervention en cybersécurité. Selon l'État de Vaud, près de 170 entités y ont pris part, soit environ 580 personnes réparties dans 168 cellules de crise, pendant quatre heures.",
+   "Le scénario a été conçu par le CSIRT et l'équipe sécurité de la Direction générale du numérique et des systèmes d'information. Le but : éprouver la coordination et la communication entre communes, Canton et partenaires quand un incident majeur survient. L'exercice sert aussi à former les nouvelles municipales et nouveaux municipaux entrés en fonction cet été. Le Canton souligne par ailleurs que les attaques s'accélèrent, notamment avec l'intelligence artificielle.",
+   "Le CSIRT réunit des experts de la DGNSI, rejoints au besoin par des spécialistes de la cybercriminalité de la Police cantonale et de la gestion de crise de l'État-major cantonal de conduite. Il peut intervenir pour une commune, une entité étatique ou paraétatique, voire une organisation privée dont l'atteinte pourrait toucher l'État ou la population.",
+   "Et si cela vous arrive pour de bon ? Le communiqué est clair : il faut appeler le 117. La Police cantonale met alors en contact la force cantonale de la DGNSI, qui coordonne la suite."
+  ],
+  "sources": [
+   {
+    "name": "État de Vaud – Renforcer la résilience des administrations du canton face aux cybermenaces (12.11.2026)",
+    "url": "https://www.vd.ch/actualites/communiques-de-presse-de-letat-de-vaud/detail/communique/renforcer-la-resilience-des-administrations-du-canton-face-aux-cybermenaces"
+   }
+  ],
+  "author": "Jean-François Rossel",
+  "motif": "chart"
+ },
+ {
+  "slug": "oser-tous-les-metiers-2026-vaud-23000-eleves-lausanne-401-enfants",
+  "title": "Ingénieure ou infirmier ? 23 000 élèves vaudois ont testé, jeudi, les métiers « du sexe opposé »",
+  "category": "Société",
+  "date": "2026-11-13",
+  "summary": "Pour la Journée Oser tous les métiers, plus de 23 000 élèves de 7e à 9e année ont découvert des professions hors des clichés de genre. À Lausanne, 401 enfants ont visité l'administration.",
+  "body": [
+   "Une fille en atelier de chauffage, un garçon en pharmacie : jeudi 12 novembre, la Journée Oser tous les métiers a bousculé les habitudes dans tout le canton. Selon l'État de Vaud, plus de 23 000 élèves de la 7e à la 9e année y ont participé, soit 89 % des jeunes concernés.",
+   "Au programme : immersions en entreprise et ateliers, de la chirurgie à l'agriculture, en passant par l'informatique, les ressources humaines et la politique. Les ateliers affichaient complet, avec plus de 1600 places proposées. Parmi les exemples cités, ingénieure, informaticienne ou chauffagiste pour les filles ; infirmier, éducateur de l'enfance ou assistant en pharmacie pour les garçons.",
+   "Côté politique, 120 participantes ont siégé au Parlement des filles, sous la conduite du président du Grand Conseil, Patrick Simonin. Elles y ont débattu de sujets de leur choix, dont l'interdiction des réseaux sociaux aux moins de 16 ans.",
+   "Le contraste avec la réalité est frappant. D'après les statistiques publiées en septembre par le Bureau de l'égalité et Statistique Vaud, deux seulement des dix apprentissages les plus choisis s'approchent de la parité. En 2025, les femmes représentent 10 % des apprentis en informatique, et les hommes 10 % des apprentis assistants en pharmacie.",
+   "À Lausanne, la Ville a ouvert ses coulisses à 401 enfants, accompagnés d'un parent ou d'un proche, à travers 27 ateliers sur mesure. Première cette année : un atelier réunissant enfants et adultes pour questionner ensemble les clichés de genre."
+  ],
+  "sources": [
+   {
+    "name": "État de Vaud – Plus de 23'000 élèves découvrent des métiers sans préjugés (12.11.2026)",
+    "url": "https://www.vd.ch/actualites/communiques-de-presse-de-letat-de-vaud/detail/communique/plus-de-23000-eleves-decouvrent-des-metiers-sans-prejuges"
+   },
+   {
+    "name": "Ville de Lausanne – Journée Oser tous les métiers 2026 (12.11.2026)",
+    "url": "https://www.lausanne.ch/apps/actualites/index.php?actu_id=91000"
+   }
+  ],
+  "author": "Mauricio Montero",
+  "motif": "communes"
+ },
+ {
   "slug": "cremo-restructuration-mont-sur-lausanne-site-a-vendre-650-emplois-2030",
   "title": "Cremo met le Mont-sur-Lausanne en vente : 650 emplois dans la balance d'ici 2030",
   "category": "Économie",
