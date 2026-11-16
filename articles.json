@@ -1,5 +1,75 @@
 [
   {
+    "slug": "m1-ecublens-voiture-sur-les-rails-renens-epfl-bus-de-remplacement-16-novembre",
+    "title": "Une voiture sur les rails, et le M1 s'arrête net entre Renens et l'EPFL",
+    "category": "Mobilité",
+    "date": "2026-11-16",
+    "summary": "Lundi matin, une rame du M1 a heurté un véhicule engagé sur la voie à Ecublens. Le trafic a été coupé entre Renens-Gare et l'EPFL, des bus ont pris le relais.",
+    "body": [
+      "Lundi, le réveil a été brutal pour les pendulaires de l'Ouest lausannois. Vers 7 h, une rame du métro M1 a percuté une voiture présente sur les rails, à Ecublens.",
+      "L'accrochage s'est produit au passage à niveau situé entre le chemin du Champ-Fleury et l'avenue du Tir-Fédéral. Le métro circulait de l'arrêt Cerisaie en direction de Renens-Gare. D'après les informations publiées par l'agence Keystone-ATS, il n'y a que des dégâts matériels : aucun blessé n'est mentionné.",
+      "Conséquence immédiate : le M1 a été interrompu entre Renens-Gare et l'EPFL. Un service de bus de remplacement a été mis en place sur ce tronçon, et la perturbation a duré jusqu'à la fin de la matinée. Aucune heure précise de reprise normale du trafic n'a été communiquée.",
+      "Reste la question que tout le monde se pose : comment le véhicule s'est-il retrouvé sur la voie ? Pour l'heure, on l'ignore. La police de l'Ouest lausannois a indiqué qu'une enquête était en cours pour établir les circonstances de l'accident.",
+      "Pour les milliers d'étudiants, de salariés et d'habitants qui empruntent chaque jour cette ligne, l'épisode rappelle à quel point le M1 est devenu l'épine dorsale de la mobilité de la région : quand il s'arrête, c'est tout l'Ouest lausannois qui ralentit. Les voyageurs sont invités à consulter les informations des transports publics avant de partir."
+    ],
+    "sources": [
+      {
+        "name": "La Télé / Keystone-ATS",
+        "url": "https://latele.ch/articles/une-voiture-sur-les-rails-du-metro-m1-dans-l-ouest-lausannois"
+      }
+    ],
+    "author": "Mauricio Montero",
+    "motif": "tram"
+  },
+  {
+    "slug": "chuv-antibioresistance-anne-levy-ofsp-soins-intensifs-depistage-60000-infections",
+    "title": "Bactéries multirésistantes : le CHUV ouvre les portes de ses soins intensifs à la patronne de l'OFSP",
+    "category": "Société",
+    "date": "2026-11-16",
+    "summary": "La directrice de l'Office fédéral de la santé publique a visité lundi le CHUV, à Lausanne, où les soins intensifs ont présenté leurs mesures contre les germes résistants aux antibiotiques.",
+    "body": [
+      "Les microbes qui résistent aux antibiotiques ne sont plus une menace lointaine. Lundi, au CHUV, la directrice de l'Office fédéral de la santé publique (OFSP), Anne Lévy, est venue le constater sur le terrain, dans le cadre de la semaine mondiale de sensibilisation à la résistance aux antimicrobiens.",
+      "Sa visite l'a menée dans le service des soins intensifs de l'hôpital lausannois, qui a détaillé son dispositif. Au programme : une approche multidisciplinaire qui associe prévention des infections et bon usage des antibiotiques. Le service procède à un dépistage systématique des patients et applique des mesures de nettoyage particulières.",
+      "Devant les médias réunis à Lausanne, Anne Lévy a rappelé l'enjeu en une phrase : l'antibiorésistance est « un problème de santé publique majeur ». Les germes multirésistants, a-t-elle souligné, sont de plus en plus fréquents. Elle a aussi insisté sur le rôle moteur des hôpitaux universitaires dans le développement, l'évaluation et la diffusion des bonnes pratiques.",
+      "Les chiffres donnent la mesure du problème : en Suisse, environ 60 000 personnes contractent chaque année une infection durant un séjour à l'hôpital, parfois à cause de germes particulièrement difficiles à traiter.",
+      "Pour les patients vaudois, le message est double. D'un côté, l'un des principaux hôpitaux du pays affiche ses méthodes de lutte. De l'autre, l'OFSP rappelle que le combat se joue aussi en amont, dans l'usage raisonné des antibiotiques."
+    ],
+    "sources": [
+      {
+        "name": "La Télé / Keystone-ATS",
+        "url": "https://latele.ch/articles/le-chuv-presente-ses-mesures-contre-les-bacteries-multiresistantes"
+      },
+      {
+        "name": "blue News / Keystone-ATS : L'actu du lundi 16 novembre 2026",
+        "url": "https://www.bluewin.ch/fr/infos/suisse/keystone-ats-l-actualit-du-lundi-16-novembre-2026-li.3674893"
+      }
+    ],
+    "author": "Jean-François Rossel",
+    "motif": "chart"
+  },
+  {
+    "slug": "voiture-electrique-economie-1500-francs-par-an-analyse-ofen-tcs-presse-alemanique",
+    "title": "Électrique contre thermique : jusqu'à 1780 francs d'économies par an, selon une analyse de la presse alémanique",
+    "category": "Économie",
+    "date": "2026-11-16",
+    "summary": "Rouler à l'électrique peut faire économiser plus de 1500 francs par an par rapport à une voiture à essence, selon des calculs fondés sur des données de l'OFEN et du TCS.",
+    "body": [
+      "Le plein ou la prise ? Une analyse publiée lundi par plusieurs quotidiens alémaniques (Tages-Anzeiger, Basler Zeitung, Berner Zeitung et Der Bund) relance le débat sur le coût réel de la voiture électrique.",
+      "Selon ces journaux, qui se sont appuyés sur des données de l'Office fédéral de l'énergie (OFEN) et du Touring Club Suisse (TCS), les conducteurs de véhicules électriques peuvent économiser plus de 1500 francs par an par rapport à ceux d'une voiture thermique.",
+      "La fourchette est large. Pour les petites voitures, l'économie annoncée est d'environ 500 francs par an. Elle grimpe jusqu'à 1780 francs pour les segments des compactes, des moyennes et des SUV.",
+      "Ces chiffres reposent sur des hypothèses précises : 15 000 kilomètres parcourus par année et un prix médian de l'électricité de 28 centimes le kilowattheure. Autrement dit, le résultat peut changer selon que l'on roule plus ou moins, ou que l'on recharge à domicile ou en route.",
+      "Pour les automobilistes de la région lausannoise, de Morges ou de Cossonay, la question n'a rien de théorique : entre trajets pendulaires et prix des carburants, chaque centime compte. Ce calcul ne dit toutefois rien du prix d'achat, qui n'entre pas dans cette comparaison telle que rapportée. À chacun de refaire le compte avec son propre kilométrage."
+    ],
+    "sources": [
+      {
+        "name": "blue News / Keystone-ATS : L'actu du lundi 16 novembre 2026 (« Vu dans la presse »)",
+        "url": "https://www.bluewin.ch/fr/infos/suisse/keystone-ats-l-actualit-du-lundi-16-novembre-2026-li.3674893"
+      }
+    ],
+    "author": "Mauricio Montero",
+    "motif": "car"
+  },
+  {
     "slug": "lhc-ambri-piotta-4-0-gottardo-arena-zsc-lions-jeudi-19-novembre",
     "title": "Muets à Ambri : le LHC s'incline 4-0 dans la Léventine et reçoit les ZSC Lions jeudi",
     "category": "Sport",
