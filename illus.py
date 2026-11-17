@@ -159,6 +159,16 @@ def scene(motif, color):
         p.rect(540, g-215, 680, g-190, p.light)
         p.rect(150, g-8, 850, g, p.light)
         for x in (180, 260, 740, 820): person(p, x, g+30, 110, p.light)
+    elif motif == "boat":
+        p.rect(0, g-70, W, g, p.mid)
+        for i in range(8): p.line([(40+i*125, g-40), (80+i*125, g-52), (120+i*125, g-40)], p.light, 4)
+        p.poly([(230, g-150), (770, g-150), (700, g-70), (300, g-70)], p.white)
+        p.rect(330, g-230, 640, g-150, p.white, r=6)
+        for i in range(5): p.rect(350+i*55, g-215, 390+i*55, g-175, p.dark, r=4)
+        p.rect(560, g-310, 600, g-230, p.light); p.rect(555, g-330, 605, g-305, p.dark)
+        p.poly([(130, g-120), (130, g-60), (200, g-60)], p.white); p.line([(130, g-330), (130, g-60)], p.white, 5)
+        p.poly([(135, g-320), (135, g-120), (210, g-120)], p.light)
+        p.ell(800, 70, 900, 170, p.white)
     elif motif == "museum":
         p.rect(130, g-30, 870, g, p.mid)
         p.rect(160, g-290, 840, g-30, p.white)
