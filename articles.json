@@ -1,5 +1,31 @@
 [
   {
+    "slug": "initiative-feux-artifice-votation-29-novembre-2026-petards-bruyants-interdiction-conseil-federal-non",
+    "title": "Feux d'artifice : le 29 novembre, la Suisse décide si le bruit a droit de cité",
+    "category": "Société",
+    "date": "2026-11-19",
+    "summary": "Dix jours avant le scrutin, l'initiative « Pour une limitation des feux d'artifice » divise : interdire les pièces bruyantes aux particuliers, ou laisser cantons et communes gérer ?",
+    "body": [
+      "Un 1er août sans pétards, un Nouvel An sans détonations dans le quartier : c'est ce que dessine l'initiative « Pour une limitation des feux d'artifice », soumise au peuple et aux cantons le 29 novembre. Dans le canton de Vaud comme ailleurs, chacun aura son mot à dire.",
+      "Le texte veut interdire la vente et l'utilisation des pièces d'artifice qui font du bruit. Selon ses auteurs, les articles discrets, comme les feux de Bengale ou les volcans, resteraient permis. Les cantons pourraient accorder des dérogations pour des événements d'importance suprarégionale, comme le 1er août, mais les particuliers n'auraient pas le droit d'utiliser de pièces bruyantes.",
+      "Les partisans, parmi lesquels des organisations de protection animale, mettent en avant la peur et la panique que les détonations provoquent chez les animaux, ainsi que la pollution de l'air. D'après l'Euronews, citant l'Office fédéral de l'environnement, les feux d'artifice génèrent entre 200 et 400 tonnes de particules fines par an, soit 2 à 3 % des émissions annuelles.",
+      "Le Conseil fédéral et le Parlement recommandent de voter non. À leurs yeux, l'initiative va trop loin : les nuisances ne durent que quelques jours par an, l'usage est déjà très encadré et les cantons comme les communes peuvent déjà restreindre la vente et l'utilisation. Les opposants, dont l'UDC et l'Union suisse des arts et métiers, évoquent aussi les commerçants et la tradition.",
+      "Un sondage SSR publié le 23 octobre, rapporté par Euronews, donnait 69 % d'avis favorables. Un chiffre à prendre avec prudence : l'initiative doit réunir la majorité du peuple et celle des cantons. Réponse dans les urnes dans dix jours."
+    ],
+    "sources": [
+      {
+        "name": "Confédération (admin.ch) – Initiative sur les feux d'artifice",
+        "url": "https://www.admin.ch/fr/initiative-feux-artifice"
+      },
+      {
+        "name": "Euronews – Chiens terrorisés par les feux d'artifice : la Suisse vote sur une interdiction nationale",
+        "url": "https://fr.euronews.com/2026/10/27/animaux-en-detresse-et-pollution-de-lair-la-suisse-vote-linterdiction-des-feux-dartifice"
+      }
+    ],
+    "author": "Mauricio Montero",
+    "motif": "crowd"
+  },
+  {
     "slug": "eoljorat-sud-tribunal-federal-effet-suspensif-huit-eoliennes-jorat-froideville-lausanne",
     "title": "Éoliennes du Jorat : le Tribunal fédéral met le chantier en pause",
     "category": "Région",
