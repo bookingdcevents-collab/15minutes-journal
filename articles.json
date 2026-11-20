@@ -1,5 +1,65 @@
 [
   {
+    "slug": "lausanne-manifestation-20-novembre-montbenon-18h-services-publics-cortege-perturbations-centre-ville",
+    "title": "Ce soir, Lausanne descend dans la rue : rendez-vous à Montbenon, centre-ville perturbé jusqu'à 21 h",
+    "category": "Société",
+    "date": "2026-11-20",
+    "summary": "Les syndicats de la fonction publique manifestent ce vendredi soir à Lausanne. Rassemblement à 18 h à Montbenon, départ à 18 h 30, perturbations annoncées au centre-ville de 18 h à 21 h.",
+    "body": [
+      "Si vous comptiez traverser le centre de Lausanne ce vendredi en fin de journée, prévoyez une marge. Une grande manifestation « contre les attaques visant les services publics » s'y déroule ce soir, et la Ville annonce des perturbations au centre-ville de 18 h à 21 h.",
+      "Le rendez-vous est fixé à 18 h sur l'esplanade de Montbenon, avec un départ à 18 h 30, selon la Fédération syndicale SUD. Le parcours publié par la Ville passe notamment par la place Saint-François, la rue de la Paix, le pont Bessières et l'avenue de l'Université, avant d'aboutir place du Château.",
+      "Ce cortège est le point d'orgue d'une journée de grèves et d'actions sur les lieux de travail et de formation. Les syndicats y défendent les services publics et les libertés syndicales, dans le bras de fer qui les oppose au Conseil d'État autour du budget 2027. Ils disent vouloir aussi converger avec les revendications des étudiants et des gymnasiens, mobilisés le même jour dans une « grève de la jeunesse » contre l'austérité et la militarisation, coordonnée au niveau national par la Jeunesse socialiste.",
+      "La Ville, dont la page d'information a été mise à jour hier, ne détaille ni fermetures de rues ni déviations de transports publics et renvoie aux communiqués de la Police de Lausanne.",
+      "Ce n'est pas la fin du mouvement : les syndicats annoncent une nouvelle journée de grèves et d'actions mardi 24 novembre, avec une manifestation « en fin de journée » dont le lieu et l'heure restent à préciser. Leur prochaine assemblée générale est prévue jeudi 26 novembre à 18 h 30, à la Maison du peuple de Lausanne."
+    ],
+    "sources": [
+      {
+        "name": "Ville de Lausanne – Avis de perturbations (cortèges et manifestations)",
+        "url": "https://www.lausanne.ch/vie-pratique/economie-et-commerces/manifestations/avis-de-perturbations.html"
+      },
+      {
+        "name": "Fédération syndicale SUD – Mobilisation les 20 et 24 novembre 2026",
+        "url": "https://sud-vd.ch/mobilisation-le-20-et-24-novembre-2026/"
+      },
+      {
+        "name": "État d'urgence – Grève de la jeunesse, 20 novembre 2026",
+        "url": "https://etatdurgence.ch/evenements/greve-de-la-jeunesse-20-novembre-2026/"
+      }
+    ],
+    "author": "Jean-François Rossel",
+    "motif": "crowd"
+  },
+  {
+    "slug": "lhc-zsc-lions-2-5-vaudoise-arena-19-novembre-2026-menait-2-0-onzieme-place-geneve-dimanche",
+    "title": "Le LHC menait 2-0, il finit par s'écrouler : les ZSC Lions renversent la Vaudoise Arena",
+    "category": "Sport",
+    "date": "2026-11-20",
+    "summary": "Jeudi soir, Lausanne a dominé le premier tiers avant de perdre 2-5 contre le leader zurichois. Le LHC reste onzième avant le derby de dimanche à Genève.",
+    "body": [
+      "Deux buts d'avance, 9 771 spectateurs debout, et puis plus rien. Jeudi soir à la Vaudoise Arena, le Lausanne HC a vu la victoire lui échapper : battu 2-5 par les ZSC Lions (2-0, 0-2, 0-3), il a laissé le leader du championnat retourner complètement la rencontre.",
+      "Tout avait bien commencé. Suomela ouvre le score à la 7e minute, puis Zehnder double la mise en supériorité numérique juste avant la sirène, à la 20e. Lausanne mène 2-0 et le public y croit.",
+      "Le deuxième tiers fait basculer la soirée. Dès la 24e minute, en moins de trente secondes, Balcers puis Riedi égalisent pour Zurich. Le troisième tiers est celui du naufrage : Lehtonen donne l'avantage aux visiteurs à 5 contre 3 (48e), Knak enfonce le clou en supériorité numérique une minute plus tard, et Balcers scelle le score à la 57e. Côté lausannois, Czarnik a écopé d'une pénalité de match, et la presse relève aussi l'expulsion d'Andrighetto à la 12e minute, jugée sévère par le compte rendu de blue News.",
+      "Au classement, la tendance est préoccupante : selon les données publiées après la rencontre, Lausanne occupe la 11e place avec 26 points en 22 matches, alors que les ZSC Lions comptent 52 points en 21 matches. Le LHC aborde en outre cette période sans plusieurs joueurs blessés, dont Baragano, Brännström, Lazar et Miller.",
+      "Pas le temps de ruminer : les Vaudois se rendent dimanche à Genève pour le derby lémanique face à Genève-Servette. Une occasion de relever la tête, et de rassurer des supporters qui avaient cru, un tiers durant, à une belle soirée."
+    ],
+    "sources": [
+      {
+        "name": "blue News – Lausanne perd encore",
+        "url": "https://www.bluewin.ch/fr/sport/hockey-sur-glace/lausanne-perd-encore-li.3680079"
+      },
+      {
+        "name": "blue News – The Lions turn the game around against Lausanne",
+        "url": "https://www.bluewin.ch/en/sport/the-lions-turn-the-game-around-against-lausanne-li.3680096"
+      },
+      {
+        "name": "Blick – National League : Lausanne HC – ZSC Lions (19.11.2026)",
+        "url": "https://www.blick.ch/fr/sport/hockey/national-league/national-league-lausanne-hc-zsc-lions-19112026/s5zhkwh"
+      }
+    ],
+    "author": "Mauricio Montero",
+    "motif": "crowd"
+  },
+  {
     "slug": "initiative-feux-artifice-votation-29-novembre-2026-petards-bruyants-interdiction-conseil-federal-non",
     "title": "Feux d'artifice : le 29 novembre, la Suisse décide si le bruit a droit de cité",
     "category": "Société",
