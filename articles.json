@@ -1,5 +1,85 @@
 [
   {
+    "slug": "vaud-semaine-citoyennete-9000-eleves-vote-a-blanc-460-classes-23-27-novembre-2026",
+    "title": "9000 élèves vaudois glissent un bulletin dans l'urne, pour de faux, avant les grands",
+    "category": "Société",
+    "date": "2026-11-23",
+    "summary": "Du 23 au 27 novembre, près de 9000 élèves de 460 classes votent à blanc sur les objets fédéraux du 29 novembre. Une semaine pour apprendre la démocratie en la pratiquant.",
+    "body": [
+      "Une urne dans le couloir, du matériel de vote dans le cartable : cette semaine, des milliers de jeunes Vaudois jouent les électeurs. Pour de faux, mais avec le plus grand sérieux.",
+      "Selon l'État de Vaud, la 3e Semaine de la citoyenneté se déroule du 23 au 27 novembre 2026. Elle touche près de 9000 élèves, de l'école obligatoire au postobligatoire : écoles ordinaires, pédagogie spécialisée, gymnases et écoles professionnelles.",
+      "Le moment fort tient en deux mots : vote à blanc. Les élèves de 460 classes reçoivent leur matériel de vote, puis glissent leur bulletin dans une urne installée dans leur établissement. L'exercice est calqué sur la votation fédérale du 29 novembre, celle que les adultes trancheront pour de bon dans cinq jours.",
+      "L'idée n'est pas neuve : la manifestation a déjà eu lieu en 2022 et en 2024. Cette troisième édition suit le même fil, puisque l'opération se cale sur le calendrier des scrutins. Pour le canton, il s'agit de familiariser les jeunes avec les droits civiques avant qu'ils n'aient eux-mêmes le droit de voter.",
+      "Le message adressé aux familles est simple : si votre enfant rentre ce soir avec un avis sur les objets du 29 novembre, ce n'est peut-être pas l'effet d'un débat de cuisine, mais d'un cours de classe. Les enseignants disposent de ressources en ligne sur le site semaine-citoyennete-vaud.ch.",
+      "Le dossier est piloté par le Département de la formation, de la jeunesse et de la culture, dirigé par le conseiller d'État Frédéric Borloz. Le canton ne publie, à ce stade, aucun résultat : ce vote à blanc vise l'apprentissage, pas le pronostic."
+    ],
+    "sources": [
+      {
+        "name": "État de Vaud – Des milliers d'élèves apprennent à voter (23 novembre 2026)",
+        "url": "https://www.vd.ch/actualites/communiques-de-presse-de-letat-de-vaud/detail/communique/des-milliers-deleves-apprennent-a-voter"
+      }
+    ],
+    "author": "Mauricio Montero",
+    "motif": "parliament"
+  },
+  {
+    "slug": "grand-conseil-vaud-24-novembre-2026-dissolution-fractions-le-sechey-la-coudre-vallee-de-joux-l-isle",
+    "title": "Le Séchey et La Coudre, deux « mini-communes » d'un autre âge, rayées de la carte vaudoise",
+    "category": "Région",
+    "date": "2026-11-23",
+    "summary": "Mardi, le Grand Conseil doit entériner la dissolution de deux fractions de commune, Le Séchey et La Coudre. Il n'en restera que sept dans le canton.",
+    "body": [
+      "Elles existaient avant le canton de Vaud lui-même. Mardi 24 novembre, deux d'entre elles pourraient disparaître d'un trait de plume : le Grand Conseil examine les dissolutions de la fraction du Séchey et du hameau de La Coudre.",
+      "Une fraction de commune est un reliquat historique : une communauté qui garde ses biens et son conseil général au sein d'une commune plus grande. Celles-ci ne datent pas d'un décret, mais d'avant la création du canton. Pour les dissoudre, la loi sur les communes exige un décret du Grand Conseil.",
+      "Selon les rapports de commission, la procédure suit toujours le même chemin : la fraction demande sa dissolution, la commune en prend acte, puis le parlement tranche. Dans les deux cas, la commission s'est prononcée à l'unanimité en faveur du texte, après sa séance du 26 octobre.",
+      "Au Séchey, rattaché à La Vallée de Joux (qui naîtra de la fusion de L'Abbaye, du Chenit et du Lieu au 1er janvier 2027), une indemnité de 29'000 francs, prélevée sur le fonds cantonal des fusions, doit être versée à la commune. L'impôt de fraction a été supprimé dès le 1er janvier 2027, mais pourrait être réinstauré.",
+      "À La Coudre, rattachée à L'Isle, l'indemnité s'élève à 38'900 francs. Le rapport décrit un hameau doté d'un collège, d'une fontaine et de son couvert, d'une forêt, d'un refuge et de terres agricoles, sur environ une centaine d'hectares. L'Isle compte entre 1100 et 1120 habitants, dont environ un dixième vit à La Coudre. Le village gérait son eau, jusqu'à ce que la mise aux normes de ses sources devienne financièrement impossible : il est désormais raccordé au réseau intercommunal.",
+      "Si le parlement suit, il ne restera plus que sept fractions dans le canton : six à La Vallée de Joux et une aux Hameaux de Payerne, dont la dissolution est attendue en 2027, selon le rapport."
+    ],
+    "sources": [
+      {
+        "name": "Grand Conseil vaudois – Séance du 24 novembre 2026 (ordre du jour)",
+        "url": "https://www.vd.ch/gc/seances-du-grand-conseil/detail-seance/seance-gc/1033717"
+      },
+      {
+        "name": "Grand Conseil – Rapport de commission 26_LEG_127 (Le Séchey)",
+        "url": "https://www.vd.ch/fileadmin/user_upload/organisation/gc/fichiers_pdf/2022-2027/26_LEG_127_RC.pdf"
+      },
+      {
+        "name": "Grand Conseil – Rapport de commission 26_LEG_128 (La Coudre)",
+        "url": "https://www.vd.ch/fileadmin/user_upload/organisation/gc/fichiers_pdf/2022-2027/26_LEG_128_RC.pdf"
+      }
+    ],
+    "author": "Jean-François Rossel",
+    "motif": "village"
+  },
+  {
+    "slug": "grand-conseil-vaud-24-novembre-2026-initiative-conge-parental-suspension-geneve-loi-apg",
+    "title": "Congé parental vaudois : le Grand Conseil appuie sur « pause », Berne et Genève dictent le tempo",
+    "category": "Société",
+    "date": "2026-11-23",
+    "summary": "Mardi, les députés vaudois doivent se prononcer sur la suspension de l'initiative « Pour un congé parental vaudois ». La commission y est favorable à l'unanimité.",
+    "body": [
+      "Le congé parental vaudois attendra. Mardi 24 novembre, le Grand Conseil traite en premier débat la suspension du traitement de l'initiative « Pour un congé parental vaudois », et la commission chargée du dossier propose de dire oui.",
+      "Pourquoi freiner ? Selon le rapport de commission, deux horloges tournent ailleurs. À Genève, une initiative similaire est en cours de traitement. Et à Berne, une modification de la loi fédérale sur les allocations pour perte de gain, soit l'article 16mbis, devrait être examinée à la session d'hiver des Chambres fédérales. Elle viserait une allocation plus élevée ou plus longue pour l'autre parent, financée par des cotisations particulières.",
+      "Le Conseil d'État, qui avait déjà présenté un contre-projet, s'engage à en déposer un nouveau, conforme au futur cadre fédéral, dans les douze mois suivant la ratification.",
+      "La commission a examiné le texte le 21 novembre 2025 et son rapport est daté du 5 mai 2026. Elle recommande l'entrée en matière et l'adoption des articles 1 à 3 ainsi que du vote final, à l'unanimité des quinze commissaires présents.",
+      "Pour les familles vaudoises, l'enjeu est concret : le calendrier de l'éventuelle extension du congé parental dépendra de ce que décideront d'abord les Chambres fédérales. Le rapport ne détaille pas le contenu de l'initiative, et le vote du plénum n'est pas connu à ce jour."
+    ],
+    "sources": [
+      {
+        "name": "Grand Conseil vaudois – Séance du 24 novembre 2026 (ordre du jour)",
+        "url": "https://www.vd.ch/gc/seances-du-grand-conseil/detail-seance/seance-gc/1033717"
+      },
+      {
+        "name": "Grand Conseil – Rapport de commission 25_LEG_66",
+        "url": "https://www.vd.ch/fileadmin/user_upload/organisation/gc/fichiers_pdf/2022-2027/25_LEG_66_RC.pdf"
+      }
+    ],
+    "author": "Mauricio Montero",
+    "motif": "parliament"
+  },
+  {
     "slug": "lausanne-fraisage-ornieres-nuit-23-27-novembre-2026-beaulieu-bel-air-saint-francois",
     "title": "Lausanne : la chaussée passe à la fraiseuse, de nuit, dès lundi",
     "category": "Mobilité",
