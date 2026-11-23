@@ -12,3 +12,11 @@
 - Articles percutants, vivants, qui donnent envie de lire : titres forts, accroche dès la première phrase, rythme, verbes d'action.
 - Les faits restent exacts : jamais de chiffre, citation, événement ou détail inventé ou exagéré. Le style peut être dramatique, pas les faits.
 - Si Diego colle un dossier de presse, s'en servir comme matière première (ne pas exiger un format particulier).
+
+## Qualité (plan AdSense, 23 nov. 2026)
+- Google a refusé le site pour « contenu à faible valeur informative » : qualité avant quantité.
+- 1 article par passage (2 maximum si vraiment importants), **500 à 800 mots**, au moins **3 sources** dont une primaire.
+- Structure : faits essentiels, contexte/historique, chiffres expliqués, « ce que ça change » pour les habitants, prochaines étapes, positions des acteurs.
+- **Signatures : toujours alterner « Jean-François Rossel » et « Mauricio Montero »** (décision de Diego). Jamais « Diego Carvalho », pas de « La rédaction ».
+- Champ `hidden: true` : article masqué (noindex, hors accueil/sitemap/« À lire aussi », sans pub). Appliqué aux anciens articles de moins de 250 mots (sauf reportages originaux). Ne pas toucher.
+- Pubs : Adsterra retiré ; seule la pub maison La Forêt reste (AD_CUSTOM["inline"]). Pages ajoutées : charte éditoriale, à-propos réécrit.

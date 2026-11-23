@@ -99,7 +99,8 @@
       }
     ],
     "author": "Mauricio Montero",
-    "motif": "parliament"
+    "motif": "parliament",
+    "hidden": true
   },
   {
     "slug": "lausanne-fraisage-ornieres-nuit-23-27-novembre-2026-beaulieu-bel-air-saint-francois",
@@ -125,7 +126,8 @@
       }
     ],
     "author": "Jean-François Rossel",
-    "motif": "car"
+    "motif": "car",
+    "hidden": true
   },
   {
     "slug": "sainte-croix-mumaps-exposition-richard-authier-designer-paillard-bolex-jusqu-au-21-mars-2027",
@@ -155,7 +157,8 @@
       }
     ],
     "author": "Mauricio Montero",
-    "motif": "museum"
+    "motif": "museum",
+    "hidden": true
   },
   {
     "slug": "lhc-erik-brannstrom-prolonge-jusqu-en-2031-defenseur-suedois-blesse-retour-proche",
@@ -181,7 +184,8 @@
       }
     ],
     "author": "Jean-François Rossel",
-    "motif": "crowd"
+    "motif": "crowd",
+    "hidden": true
   },
   {
     "slug": "archives-cantonales-vaudoises-credit-etude-400000-francs-extension-renovation-saturation",
@@ -203,7 +207,8 @@
       }
     ],
     "author": "Mauricio Montero",
-    "motif": "museum"
+    "motif": "museum",
+    "hidden": true
   },
   {
     "slug": "vaud-aide-sociale-limites-de-fortune-csias-1er-janvier-2027-conseil-d-etat",
@@ -225,7 +230,8 @@
       }
     ],
     "author": "Jean-François Rossel",
-    "motif": "communes"
+    "motif": "communes",
+    "hidden": true
   },
   {
     "slug": "mercosur-vaud-conseil-d-etat-prefavorise-pas-referendum-cantonal-viande-vin-aele",
@@ -247,7 +253,8 @@
       }
     ],
     "author": "Mauricio Montero",
-    "motif": "chart"
+    "motif": "chart",
+    "hidden": true
   },
   {
     "slug": "vaud-infirmiere-cantonale-sandra-gaillard-desmedt-mars-2027-investpro-penurie-soins",
@@ -291,7 +298,8 @@
       }
     ],
     "author": "Mauricio Montero",
-    "motif": "museum"
+    "motif": "museum",
+    "hidden": true
   },
   {
     "slug": "vaud-apprentissage-20000-jeunes-14000-gymnasiens-contrats-en-ligne-fonds-formation-professionnelle",
@@ -312,7 +320,8 @@
       }
     ],
     "author": "Jean-François Rossel",
-    "motif": "chart"
+    "motif": "chart",
+    "hidden": true
   },
   {
     "slug": "septembre-musical-montreux-vevey-80-ans-convention-2026-2029-389654-francs",
@@ -334,7 +343,8 @@
       }
     ],
     "author": "Mauricio Montero",
-    "motif": "museum"
+    "motif": "museum",
+    "hidden": true
   },
   {
     "slug": "vaud-logements-etudiants-apprentis-gymnasiens-reglement-18-novembre-2026",
@@ -356,7 +366,8 @@
       }
     ],
     "author": "Jean-François Rossel",
-    "motif": "communes"
+    "motif": "communes",
+    "hidden": true
   },
   {
     "slug": "lausanne-conseil-communal-24-novembre-2026-velos-electriques-nuisances-sonores-pontaise",
@@ -378,7 +389,8 @@
       }
     ],
     "author": "Mauricio Montero",
-    "motif": "parliament"
+    "motif": "parliament",
+    "hidden": true
   },
   {
     "slug": "lausanne-manifestation-20-novembre-montbenon-18h-services-publics-cortege-perturbations-centre-ville",
@@ -490,7 +502,8 @@
       }
     ],
     "author": "Mauricio Montero",
-    "motif": "village"
+    "motif": "village",
+    "hidden": true
   },
   {
     "slug": "tour-de-romandie-2027-80e-edition-yverdon-jura-27-avril-2-mai-boucles",
@@ -520,7 +533,8 @@
       }
     ],
     "author": "Jean-François Rossel",
-    "motif": "crowd"
+    "motif": "crowd",
+    "hidden": true
   },
   {
     "slug": "vaud-ls-lhc-campagne-violence-domestique-ensemble-faisons-equipe-ecrans-geants",
@@ -546,7 +560,8 @@
       }
     ],
     "author": "Mauricio Montero",
-    "motif": "crowd"
+    "motif": "crowd",
+    "hidden": true
   },
   {
     "slug": "faireswiss-lait-equitable-menace-cremo-mont-sur-lausanne-production-briques",
@@ -572,7 +587,8 @@
       }
     ],
     "author": "Jean-François Rossel",
-    "motif": "village"
+    "motif": "village",
+    "hidden": true
   },
   {
     "slug": "13e-rente-avs-tva-votation-29-novembre-8-5-pour-cent-premier-versement-decembre-2026",
@@ -744,7 +760,8 @@
       }
     ],
     "author": "Mauricio Montero",
-    "motif": "village"
+    "motif": "village",
+    "hidden": true
   },
   {
     "slug": "vaudbilingue-association-schwiizerdutsch-kit-de-survie-echange-boucheries-vaud-berne",
@@ -766,7 +783,8 @@
       }
     ],
     "author": "Jean-François Rossel",
-    "motif": "communes"
+    "motif": "communes",
+    "hidden": true
   },
   {
     "slug": "vaud-administration-numerique-credit-16-4-millions-grand-conseil-premier-debat-130000-demarches-par-mois",
@@ -845,7 +863,8 @@
       }
     ],
     "author": "Mauricio Montero",
-    "motif": "press"
+    "motif": "press",
+    "hidden": true
   },
   {
     "slug": "grand-conseil-vaud-lunettes-connectees-motion-raedler-95-voix-regles-claires",
@@ -871,7 +890,8 @@
       }
     ],
     "author": "Jean-François Rossel",
-    "motif": "parliament"
+    "motif": "parliament",
+    "hidden": true
   },
   {
     "slug": "vaud-cadastre-geodonnees-credit-52-8-millions-grand-conseil-2026-2031",
@@ -897,7 +917,8 @@
       }
     ],
     "author": "Mauricio Montero",
-    "motif": "communes"
+    "motif": "communes",
+    "hidden": true
   },
   {
     "slug": "vaud-loyers-13-pour-cent-dix-ans-salaires-9-pour-cent-statistique-vaud-numerus",
@@ -919,7 +940,8 @@
       }
     ],
     "author": "Jean-François Rossel",
-    "motif": "chart"
+    "motif": "chart",
+    "hidden": true
   },
   {
     "slug": "lacs-neuchatel-morat-lnm-nouveau-modele-quatre-bateaux-20-millions-saison-2027-assuree",
@@ -992,7 +1014,8 @@
     ],
     "author": "Mauricio Montero",
     "motif": "chart",
-    "date": "2026-11-17"
+    "date": "2026-11-17",
+    "hidden": true
   },
   {
     "slug": "parc-eolien-sur-grati-vaulion-premier-six-eoliennes-production-debut-2028",
@@ -1038,7 +1061,8 @@
     ],
     "author": "Mauricio Montero",
     "motif": "parliament",
-    "date": "2026-11-17"
+    "date": "2026-11-17",
+    "hidden": true
   },
   {
     "slug": "roman-mityukov-record-suisse-200-m-dos-championnats-petit-bassin-lausanne",
@@ -1061,7 +1085,8 @@
     ],
     "author": "Jean-François Rossel",
     "motif": "crowd",
-    "date": "2026-11-17"
+    "date": "2026-11-17",
+    "hidden": true
   },
   {
     "slug": "m1-ecublens-voiture-sur-les-rails-renens-epfl-bus-de-remplacement-16-novembre",
@@ -1109,7 +1134,8 @@
       }
     ],
     "author": "Jean-François Rossel",
-    "motif": "chart"
+    "motif": "chart",
+    "hidden": true
   },
   {
     "slug": "voiture-electrique-economie-1500-francs-par-an-analyse-ofen-tcs-presse-alemanique",
@@ -1131,7 +1157,8 @@
       }
     ],
     "author": "Mauricio Montero",
-    "motif": "car"
+    "motif": "car",
+    "hidden": true
   },
   {
     "slug": "lhc-ambri-piotta-4-0-gottardo-arena-zsc-lions-jeudi-19-novembre",
@@ -1208,7 +1235,8 @@
       }
     ],
     "author": "Mauricio Montero",
-    "motif": "crowd"
+    "motif": "crowd",
+    "hidden": true
   },
   {
     "slug": "lausanne-marche-aux-jouets-28-novembre-montbenon-inscriptions-stands",
@@ -1230,7 +1258,8 @@
       }
     ],
     "author": "Jean-François Rossel",
-    "motif": "village"
+    "motif": "village",
+    "hidden": true
   },
   {
     "slug": "lausanne-prix-entreprises-formatrices-2026-six-laureats-apprentissage",
@@ -1252,7 +1281,8 @@
       }
     ],
     "author": "Mauricio Montero",
-    "motif": "chart"
+    "motif": "chart",
+    "hidden": true
   },
   {
     "slug": "lausanne-employes-ville-habitent-lausanne-36-6-pour-cent-6388-municipalite-reponse",
@@ -1274,7 +1304,8 @@
       }
     ],
     "author": "Jean-François Rossel",
-    "motif": "communes"
+    "motif": "communes",
+    "hidden": true
   },
   {
     "slug": "lausanne-fondation-innovation-technologique-fit-50000-francs-par-an-2027-2031-startups",
@@ -1296,7 +1327,8 @@
       }
     ],
     "author": "Mauricio Montero",
-    "motif": "chart"
+    "motif": "chart",
+    "hidden": true
   },
   {
     "slug": "lausanne-nuit-du-court-20-novembre-pathe-les-galeries-70-films-19h-4h",
@@ -1352,7 +1384,8 @@
       }
     ],
     "author": "Mauricio Montero",
-    "motif": "crowd"
+    "motif": "crowd",
+    "hidden": true
   },
   {
     "slug": "lausanne-dimanche-15-novembre-festival-bach-opera-tour-d-ecrou-terranova",
@@ -1378,7 +1411,8 @@
       }
     ],
     "author": "Jean-François Rossel",
-    "motif": "museum"
+    "motif": "museum",
+    "hidden": true
   },
   {
     "slug": "week-end-14-15-novembre-gin-fest-montbenon-montreux-art-gallery-salon-cotes-de-l-orbe-daillens",
@@ -1400,7 +1434,8 @@
       }
     ],
     "author": "Mauricio Montero",
-    "motif": "village"
+    "motif": "village",
+    "hidden": true
   },
   {
     "slug": "tram-lausanne-renens-mise-en-service-13-decembre-oft-fete-5-decembre",
@@ -1448,7 +1483,8 @@
       }
     ],
     "author": "Mauricio Montero",
-    "motif": "car"
+    "motif": "car",
+    "hidden": true
   },
   {
     "slug": "vaud-budget-2027-greve-illicite-conseil-d-etat-syndicats-fsf-ssp-sud",
@@ -1496,7 +1532,8 @@
       }
     ],
     "author": "Jean-François Rossel",
-    "motif": "chart"
+    "motif": "chart",
+    "hidden": true
   },
   {
     "slug": "oser-tous-les-metiers-2026-vaud-23000-eleves-lausanne-401-enfants",
@@ -1522,7 +1559,8 @@
       }
     ],
     "author": "Mauricio Montero",
-    "motif": "communes"
+    "motif": "communes",
+    "hidden": true
   },
   {
     "slug": "cremo-restructuration-mont-sur-lausanne-site-a-vendre-650-emplois-2030",
@@ -1602,7 +1640,8 @@
       }
     ],
     "author": "Jean-François Rossel",
-    "motif": "parliament"
+    "motif": "parliament",
+    "hidden": true
   },
   {
     "slug": "ecublens-important-dispositif-de-secours-incendie-immeuble-centre-commercial-croset",
@@ -1662,7 +1701,8 @@
       }
     ],
     "author": "Jean-François Rossel",
-    "motif": "parliament"
+    "motif": "parliament",
+    "hidden": true
   },
   {
     "slug": "vaud-loi-sur-les-communes-consultation-contrastee-taux-activite-associations-rccom-2027",
@@ -1757,7 +1797,8 @@
     "author": "Mauricio Montero",
     "motif": "crowd",
     "image": "montreux-comedy-visuel.jpg",
-    "image_credit": "Visuel : Montreux Comedy"
+    "image_credit": "Visuel : Montreux Comedy",
+    "hidden": true
   },
   {
     "slug": "lausanne-conseil-communal-indemnites-seance-120-francs-hausse-50-pour-cent",
@@ -1789,7 +1830,8 @@
     "author": "Jean-François Rossel",
     "motif": "chart",
     "image": "conseil-communal-120-francs.jpg",
-    "image_credit": "Illustration générée par IA"
+    "image_credit": "Illustration générée par IA",
+    "hidden": true
   },
   {
     "slug": "vaud-motion-plr-droit-de-mutation-premier-million-residence-principale",
@@ -1817,7 +1859,8 @@
     "author": "Mauricio Montero",
     "motif": "communes",
     "image": "premier-million-cles.jpg",
-    "image_credit": "Illustration générée par IA"
+    "image_credit": "Illustration générée par IA",
+    "hidden": true
   },
   {
     "slug": "taxe-auto-vaud-2027-qui-paie-plus-qui-paie-moins-rabais-majoration",
@@ -1904,7 +1947,8 @@
     "author": "Mauricio Montero",
     "motif": "village",
     "image": "montreux-grands-pres.jpg",
-    "image_credit": "Photo : DR"
+    "image_credit": "Photo : DR",
+    "hidden": true
   },
   {
     "slug": "morges-voie-verte-14-millions-beausobre-huit-classes-mobilier-preavis",
@@ -1935,7 +1979,8 @@
     "author": "Jean-François Rossel",
     "motif": "communes",
     "image": "morges-voie-verte.jpg",
-    "image_credit": "Visualisation : Paysagestion"
+    "image_credit": "Visualisation : Paysagestion",
+    "hidden": true
   },
   {
     "slug": "lausanne-sleep-in-malley-ferme-rats-punaises-de-lit-hiver-abri-pci",
@@ -2036,7 +2081,8 @@
     "author": "Jean-François Rossel",
     "motif": "parliament",
     "image": "viaduc-broye.png",
-    "image_credit": "Illustration générée par IA"
+    "image_credit": "Illustration générée par IA",
+    "hidden": true
   },
   {
     "slug": "grand-conseil-10-novembre-heure-des-questions-loyers-navettes-autonomes-data-center",
@@ -2060,7 +2106,8 @@
     "author": "Mauricio Montero",
     "motif": "parliament",
     "image": "grand-conseil-hemicycle.png",
-    "image_credit": "Illustration générée par IA"
+    "image_credit": "Illustration générée par IA",
+    "hidden": true
   },
   {
     "slug": "lausanne-cryotherapie-8-instituts-controles-3-ventilation-adaptee-risque-asphyxie",
@@ -2188,7 +2235,8 @@
     "author": "Jean-François Rossel",
     "motif": "car",
     "image": "revetements-routes.png",
-    "image_credit": "Photo d'illustration : chantier de réfection de chaussée"
+    "image_credit": "Photo d'illustration : chantier de réfection de chaussée",
+    "hidden": true
   },
   {
     "slug": "vaud-30-millions-routes-cantonales-communes-trottoirs-pistes-cyclables",
@@ -2216,7 +2264,8 @@
     "author": "Mauricio Montero",
     "motif": "communes",
     "image": "piste-cyclable-village.png",
-    "image_credit": "Photo d'illustration : piste cyclable en traversée de village"
+    "image_credit": "Photo d'illustration : piste cyclable en traversée de village",
+    "hidden": true
   },
   {
     "slug": "vaud-parkings-commerciaux-ombrieres-photovoltaiques-2000-m2",
@@ -2240,7 +2289,8 @@
     "author": "Jean-François Rossel",
     "motif": "chart",
     "image": "ombrieres-parking.png",
-    "image_credit": "Photo d'illustration : ombrières photovoltaïques sur un parking"
+    "image_credit": "Photo d'illustration : ombrières photovoltaïques sur un parking",
+    "hidden": true
   },
   {
     "slug": "transports-45-vaud-tunnel-morges-perroy-conseil-d-etat-reclame",
@@ -2289,7 +2339,8 @@
     "author": "Jean-François Rossel",
     "motif": "car",
     "image": "cheseaux-trafic.jpg",
-    "image_credit": "Photo : trafic à Cheseaux (plaques floutées)"
+    "image_credit": "Photo : trafic à Cheseaux (plaques floutées)",
+    "hidden": true
   },
   {
     "slug": "centrale-sante-058-6-116-116-remplace-medecins-de-garde-vaud",
@@ -2337,7 +2388,8 @@
     "author": "Jean-François Rossel",
     "motif": "village",
     "image": "tour-bel-air-lumieres.jpg",
-    "image_credit": "Photo : projection lumineuse sur la tour Bel-Air, Lausanne"
+    "image_credit": "Photo : projection lumineuse sur la tour Bel-Air, Lausanne",
+    "hidden": true
   },
   {
     "slug": "cancer-assureurs-refusent-traitements-vitaux-primes-maladie-2027-hausse",
@@ -2407,7 +2459,8 @@
     "author": "Mauricio Montero",
     "motif": "justice",
     "image": "policier-whatsapp.png",
-    "image_credit": "Illustration générée par IA, fictive : ne représente pas l'agent concerné"
+    "image_credit": "Illustration générée par IA, fictive : ne représente pas l'agent concerné",
+    "hidden": true
   },
   {
     "slug": "ls-grasshopper-1-1-magnin-premier-point-vaduz-22-novembre",
@@ -2439,7 +2492,8 @@
     "author": "Jean-François Rossel",
     "motif": "crowd",
     "image": "ls-magnin.jpg",
-    "image_credit": "Photo : Ludovic Magnin, entraîneur du Lausanne-Sport"
+    "image_credit": "Photo : Ludovic Magnin, entraîneur du Lausanne-Sport",
+    "hidden": true
   },
   {
     "slug": "auberge-sauvabelin-985000-francs-supplementaires-conseil-communal",
@@ -2467,7 +2521,8 @@
     "author": "Mauricio Montero",
     "motif": "village",
     "image": "auberge-sauvabelin.jpg",
-    "image_credit": "Photo : Auberge de Sauvabelin, Lausanne"
+    "image_credit": "Photo : Auberge de Sauvabelin, Lausanne",
+    "hidden": true
   },
   {
     "slug": "conseil-communal-lausanne-10-novembre-halle-riponne-indexation-manifestations",
@@ -2493,7 +2548,8 @@
       }
     ],
     "author": "Jean-François Rossel",
-    "motif": "parliament"
+    "motif": "parliament",
+    "hidden": true
   },
   {
     "slug": "cyberattaque-gymnases-vaudois-adolescent-16-ans-38000-eleves",
@@ -2582,7 +2638,8 @@
     "author": "Jean-François Rossel",
     "motif": "tram",
     "image": "horaire-cff.png",
-    "image_credit": "Illustration générée par IA"
+    "image_credit": "Illustration générée par IA",
+    "hidden": true
   },
   {
     "slug": "grand-conseil-vaudois-3-novembre-hopital-payerne-garantie-finances",
@@ -2606,7 +2663,8 @@
     "author": "Mauricio Montero",
     "motif": "parliament",
     "image": "hopital-payerne.jpg",
-    "image_credit": "Photo : Hôpital intercantonal de la Broye (HIB)"
+    "image_credit": "Photo : Hôpital intercantonal de la Broye (HIB)",
+    "hidden": true
   },
   {
     "slug": "vaud-impots-2027-acomptes-valeur-locative-33-pour-cent",
@@ -2633,7 +2691,8 @@
       }
     ],
     "author": "Mauricio Montero",
-    "motif": "chart"
+    "motif": "chart",
+    "hidden": true
   },
   {
     "slug": "vaud-archeologie-preventive-nouveau-bareme-proprietaires",
@@ -2659,7 +2718,8 @@
       }
     ],
     "author": "Jean-François Rossel",
-    "motif": "museum"
+    "motif": "museum",
+    "hidden": true
   },
   {
     "slug": "chateau-d-oex-ballons-2027-drones-interdits-perimetre",
@@ -2684,7 +2744,8 @@
       }
     ],
     "author": "Mauricio Montero",
-    "motif": "village"
+    "motif": "village",
+    "hidden": true
   },
   {
     "slug": "merites-sportifs-vaudois-2026-votez-27-novembre",
@@ -2707,7 +2768,8 @@
       }
     ],
     "author": "Jean-François Rossel",
-    "motif": "crowd"
+    "motif": "crowd",
+    "hidden": true
   },
   {
     "slug": "lausanne-200-bornes-electriques-publiques-2031",
@@ -2729,7 +2791,8 @@
       }
     ],
     "author": "Mauricio Montero",
-    "motif": "car"
+    "motif": "car",
+    "hidden": true
   },
   {
     "slug": "vaud-indexation-salaires-fonction-publique-2027",
@@ -2751,7 +2814,8 @@
       }
     ],
     "author": "Jean-François Rossel",
-    "motif": "chart"
+    "motif": "chart",
+    "hidden": true
   },
   {
     "slug": "vaud-zurich-echanges-linguistiques-accord-renouvele",
@@ -2774,7 +2838,8 @@
       }
     ],
     "author": "Mauricio Montero",
-    "motif": "communes"
+    "motif": "communes",
+    "hidden": true
   },
   {
     "slug": "grasshopper-lausanne-sport-match-de-la-peur-letzigrund",
@@ -2811,7 +2876,8 @@
     "author": "Mauricio Montero",
     "motif": "press",
     "image": "gc-lausanne-sport.jpg",
-    "image_credit": "Illustration : visuel du match (non contractuel)"
+    "image_credit": "Illustration : visuel du match (non contractuel)",
+    "hidden": true
   },
   {
     "slug": "arc-lemanique-pib-depasse-zurich-190-milliards",
@@ -2860,7 +2926,8 @@
     "author": "Mauricio Montero",
     "motif": "museum",
     "image": "choc-des-nations.jpg",
-    "image_credit": "Visuel : Le Choc des Nations (organisateurs)"
+    "image_credit": "Visuel : Le Choc des Nations (organisateurs)",
+    "hidden": true
   },
   {
     "slug": "gare-de-morges-commerces-ferment-chantier-sablon-gare",
@@ -2884,7 +2951,8 @@
     "author": "Mauricio Montero",
     "motif": "tram",
     "image": "gare-de-morges.jpg",
-    "image_credit": "Photo : la gare de Morges (fournie par la rédaction)"
+    "image_credit": "Photo : la gare de Morges (fournie par la rédaction)",
+    "hidden": true
   },
   {
     "slug": "votation-federale-29-novembre-2026-vaud-mode-demploi",
@@ -2905,7 +2973,8 @@
       }
     ],
     "author": "Jean-François Rossel",
-    "motif": "parliament"
+    "motif": "parliament",
+    "hidden": true
   },
   {
     "slug": "bo-noel-lausanne-2026-derniere-edition",
@@ -2931,7 +3000,8 @@
       }
     ],
     "author": "Mauricio Montero",
-    "motif": "village"
+    "motif": "village",
+    "hidden": true
   },
   {
     "slug": "yens-ancien-college-nouveau-centre-de-vie",
@@ -2950,7 +3020,8 @@
       }
     ],
     "motif": "village",
-    "author": "Jean-François Rossel"
+    "author": "Jean-François Rossel",
+    "hidden": true
   },
   {
     "slug": "fonction-publique-vaudoise-manifestation-lausanne",
@@ -2980,7 +3051,8 @@
       }
     ],
     "motif": "crowd",
-    "author": "Mauricio Montero"
+    "author": "Mauricio Montero",
+    "hidden": true
   },
   {
     "slug": "tram-lausanne-renens-credit-supplementaire",
@@ -3032,7 +3104,8 @@
       }
     ],
     "motif": "chart",
-    "author": "Mauricio Montero"
+    "author": "Mauricio Montero",
+    "hidden": true
   },
   {
     "slug": "grand-conseil-vaudois-10-novembre-transports",
@@ -3055,7 +3128,8 @@
     "motif": "parliament",
     "author": "Jean-François Rossel",
     "image": "grand-conseil.png",
-    "image_credit": "Illustration générée par IA"
+    "image_credit": "Illustration générée par IA",
+    "hidden": true
   },
   {
     "slug": "taxe-automobile-vaud-motion-glayre",
@@ -3075,7 +3149,8 @@
       }
     ],
     "motif": "car",
-    "author": "Mauricio Montero"
+    "author": "Mauricio Montero",
+    "hidden": true
   },
   {
     "slug": "halloween-violences-suisse-mimetisme",
@@ -3099,7 +3174,8 @@
       }
     ],
     "motif": "halloween",
-    "author": "Jean-François Rossel"
+    "author": "Jean-François Rossel",
+    "hidden": true
   },
   {
     "slug": "tamedia-debrayage-redactions",
@@ -3123,7 +3199,8 @@
       }
     ],
     "motif": "press",
-    "author": "Mauricio Montero"
+    "author": "Mauricio Montero",
+    "hidden": true
   },
   {
     "slug": "communes-vaudoises-investissements-2025",
@@ -3147,7 +3224,8 @@
       }
     ],
     "motif": "communes",
-    "author": "Jean-François Rossel"
+    "author": "Jean-François Rossel",
+    "hidden": true
   },
   {
     "slug": "week-end-musees-riviera-revue-vaudoise",
@@ -3175,7 +3253,8 @@
       }
     ],
     "motif": "museum",
-    "author": "Mauricio Montero"
+    "author": "Mauricio Montero",
+    "hidden": true
   },
   {
     "slug": "viaduc-broye-lucens-curtilles-credit-accepte-grand-conseil",

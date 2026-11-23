@@ -37,15 +37,11 @@ def _adsterra(key, w, h, minw=0, maxw=99999):
 
 GOAT = '<script data-goatcounter="https://15minutes.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>'
 AD_CUSTOM = {
-    "top": _adsterra("ad70c441f5e90255a8a63dfef45554bc", 728, 90, 768) + _adsterra("6030a2053a67c69f23be411862d595a0", 320, 50, 0, 767),  # 728x90 ordinateur/tablette, 320x50 mobile
     "inline": '<a href="https://restaurantlaforet.ch/?utm_source=15minutes&utm_medium=banniere&utm_campaign=pub-article" target="_blank" rel="noopener sponsored" onclick="try{goatcounter.count({path:&quot;clic-pub-laforet&quot;,title:&quot;Clic pub La Forêt&quot;,event:true})}catch(e){}" style="display:block;width:300px;max-width:100%;margin:0 auto"><img src="/photos/pub-laforet.jpg" width="300" height="250" alt="Restaurant La Forêt, pizzas au feu de bois, tous les mardis soir pizzas à CHF 13.90" style="display:block;width:100%;height:auto;border-radius:6px" loading="lazy"></a>',    # pub maison La Forêt 300x250
-    "inline2": _adsterra("a3e64e45b98fd4792cf1a0693e36525d", 300, 250, 0),    # 300x250 Adsterra en fin d'article
-    "side": _adsterra("e0d68e3d2a6e086240916f91bf50df95", 160, 600, 861),    # 160x600 colonne latérale (visible desktop)
 }
 _NATIVE_INNER = ('<script async="async" data-cfasync="false" src="https://bauval.org/21/44bc81f191dcd8fbf2267d2a001ad71f"></script>'
                  '<div id="container-44bc81f191dcd8fbf2267d2a001ad71f"></div>')
-NATIVE = ('<div class="ad-native" style="margin:24px 0"><div style="font:600 11px system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#64748b;margin-bottom:6px">Contenus sponsorisés</div>'
-          + _sandbox(_NATIVE_INNER, 700, 360, auto=True) + '</div>')
+NATIVE = ""
 HEAD_SNIPPET = ""                        # code à placer dans <head>, si le réseau le demande
 SHOW_AD_PLACEHOLDERS = False   # True = affiche des cadres "Espace publicitaire" (maquette uniquement)
 EDITEUR = {"nom": "GG Distribution Alimentaire Ltd", "adresse": "71-75 Shelton Street, Covent Garden, London, United Kingdom, WC2H 9JQ", "email": "bookingdcevents@gmail.com"}
@@ -98,7 +94,7 @@ def head(title, desc, rel, og_img=None, url=None, ld=None, art=None):
     ldj = f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>' if ld else ""
     return (f'<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8">'
             f'<meta name="viewport" content="width=device-width,initial-scale=1">'
-            f'{HEAD_SNIPPET}<title>{esc(title)}</title><meta name="description" content="{esc(desc)}"><meta name="robots" content="index,follow,max-image-preview:large">{canon}{og}{ldj}'
+            f'{HEAD_SNIPPET}<title>{esc(title)}</title><meta name="description" content="{esc(desc)}"><meta name="robots" content="{"noindex,follow" if (art and art.get("hidden")) else "index,follow,max-image-preview:large"}">{canon}{og}{ldj}'
             f'<link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png"><link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png"><link rel="icon" type="image/svg+xml" href="/logo.svg"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="stylesheet" href="{rel}style.css">{adsense}{GOAT}</head><body>')
 
 RED = "#d7261e"
@@ -133,7 +129,7 @@ def header(rel):
             f'<form id="sf" class="sf" action="{rel}index.html" method="get" role="search"><input id="q" name="q" type="search" placeholder="Rechercher un article…" autocomplete="off"></form>'
             f'<nav class="cats"><a href="{rel}index.html" data-cat="">À la une</a>{nav}</nav></div>')
 
-CONSENT = """<div id="cb" style="display:none;position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#111;color:#fff;padding:14px 16px;font:14px/1.4 system-ui,sans-serif;box-shadow:0 -2px 12px rgba(0,0,0,.3)"><div style="max-width:900px;margin:auto;display:flex;gap:12px;flex-wrap:wrap;align-items:center"><span style="flex:1 1 300px">Nous utilisons des cookies publicitaires (réseau Adsterra) pour financer ce site gratuit. Vous pouvez les accepter ou les refuser. <a href="/confidentialite.html" style="color:#9cf">En savoir plus</a></span><button id="cr" style="padding:8px 16px;border:1px solid #fff;background:none;color:#fff;border-radius:6px;cursor:pointer">Refuser</button><button id="ca" style="padding:8px 16px;border:0;background:#fff;color:#111;border-radius:6px;cursor:pointer;font-weight:600">Accepter</button></div></div><script>function rc15(){try{localStorage.removeItem('c15')}catch(e){}location.reload();return false}(function(){var v=null;try{v=localStorage.getItem('c15')}catch(e){}if(v===null){var b=document.getElementById('cb');b.style.display='block';document.getElementById('ca').onclick=function(){try{localStorage.setItem('c15','1')}catch(e){}location.reload()};document.getElementById('cr').onclick=function(){try{localStorage.setItem('c15','0')}catch(e){}b.style.display='none'}}})();</script>"""
+CONSENT = """<div id="cb" style="display:none;position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#111;color:#fff;padding:14px 16px;font:14px/1.4 system-ui,sans-serif;box-shadow:0 -2px 12px rgba(0,0,0,.3)"><div style="max-width:900px;margin:auto;display:flex;gap:12px;flex-wrap:wrap;align-items:center"><span style="flex:1 1 300px">Nous utilisons des cookies publicitaires pour financer ce site gratuit. Vous pouvez les accepter ou les refuser. <a href="/confidentialite.html" style="color:#9cf">En savoir plus</a></span><button id="cr" style="padding:8px 16px;border:1px solid #fff;background:none;color:#fff;border-radius:6px;cursor:pointer">Refuser</button><button id="ca" style="padding:8px 16px;border:0;background:#fff;color:#111;border-radius:6px;cursor:pointer;font-weight:600">Accepter</button></div></div><script>function rc15(){try{localStorage.removeItem('c15')}catch(e){}location.reload();return false}(function(){var v=null;try{v=localStorage.getItem('c15')}catch(e){}if(v===null){var b=document.getElementById('cb');b.style.display='block';document.getElementById('ca').onclick=function(){try{localStorage.setItem('c15','1')}catch(e){}location.reload()};document.getElementById('cr').onclick=function(){try{localStorage.setItem('c15','0')}catch(e){}b.style.display='none'}}})();</script>"""
 
 INDEX_JS = '''<script>(function(){var p=new URLSearchParams(location.search),q=(p.get('q')||'').trim().toLowerCase(),c=p.get('cat')||'';
 var cs=document.querySelectorAll('.card'),n=0;
@@ -149,7 +145,7 @@ var h=document.getElementById('hl');if(h&&(q||c))h.textContent=q?('Résultats po
 
 def footer(rel=""):
     return (f'<footer><p>© {esc(SITE_NAME)}. Contenus rédigés de façon originale à partir de sources citées.</p>'
-            f'<p><a href="{rel}a-propos.html">À propos</a> · <a href="{rel}contact.html">Contact</a> · <a href="{rel}mentions-legales.html">Mentions légales</a> · <a href="{rel}confidentialite.html">Confidentialité et cookies</a></p></footer></body></html>')
+            f'<p><a href="{rel}a-propos.html">À propos</a> · <a href="{rel}charte-editoriale.html">Charte éditoriale</a> · <a href="{rel}contact.html">Contact</a> · <a href="{rel}mentions-legales.html">Mentions légales</a> · <a href="{rel}confidentialite.html">Confidentialité et cookies</a></p></footer></body></html>')
 
 def wrap(text, font, width, draw):
     words, lines, cur = text.split(), [], ""
@@ -269,12 +265,20 @@ footer{text-align:center;font:13px system-ui,sans-serif;color:#667;padding:30px 
 def legal_pages(arts):
     e = EDITEUR
     pages = {
-     "a-propos": ("À propos", f"<p><strong>{esc(SITE_NAME)}</strong> propose chaque jour l'essentiel de l'actualité romande, présenté en lecture courte.</p>"
-        "<p>Nos articles sont rédigés de façon originale. Lorsque nous nous appuyons sur d'autres médias ou sur des communiqués officiels, nous citons toujours nos sources en bas de page.</p>"
-        "<p><strong>Notre démarche.</strong> Nous nous en tenons aux faits vérifiables, nous attribuons à leur source les informations non confirmées et nous respectons la présomption d'innocence. Nous ne publions pas le nom des personnes privées ni des mineurs.</p>"
-        "<p><strong>Illustrations.</strong> Les images générées par intelligence artificielle sont signalées par la mention « Illustration générée par IA ». Les autres images sont créditées lorsque leur origine est connue.</p>"
-        "<p><strong>Corrections.</strong> Une erreur ? Écrivez-nous : nous corrigeons rapidement et nous signalons la correction dans l'article.</p>"
-        f"<p>Contact : {esc(e['email'])}</p>"),
+     "a-propos": ("À propos", f"<p><strong>{esc(SITE_NAME)}</strong> est un journal en ligne consacré à l'actualité de la région lausannoise, de La Côte et du canton de Vaud : décisions politiques locales, mobilité, économie, sport, culture et vie de la région.</p>"
+        "<p>Notre but : expliquer ce qui se passe près de chez vous, avec le contexte, les chiffres et les prochaines étapes, plutôt que de simplement répéter une dépêche.</p>"
+        "<p><strong>Notre rédaction.</strong> Les articles sont signés par Jean-François Rossel et Mauricio Montero. Le journal est édité par "
+        f"{esc(e['nom'])} (voir les mentions légales).</p>"
+        "<p><strong>Notre démarche.</strong> Chaque article est rédigé de façon originale, cite ses sources et s'en tient aux faits vérifiables. Lisez notre <a href=\"charte-editoriale.html\">charte éditoriale</a> pour le détail de nos règles : vérification, sources, corrections, illustrations, publicité.</p>"
+        f"<p>Une information à nous transmettre, une erreur à signaler ? Écrivez-nous : {esc(e['email'])}</p>"),
+     "charte-editoriale": ("Charte éditoriale", "<p>Voici les règles que nous nous imposons pour chaque article publié sur 15 minutes.</p>"
+        "<p><strong>1. Des faits, avec leurs sources.</strong> Nous nous appuyons sur des sources primaires (communiqués des autorités, séances des parlements, décisions de justice, entreprises concernées) et sur la presse, que nous citons en bas de chaque article. Une information non confirmée est attribuée à sa source et présentée comme telle.</p>"
+        "<p><strong>2. Des textes originaux.</strong> Nous reformulons entièrement ; nous ne copions pas d'autres médias. Nous cherchons à apporter du contexte, des chiffres expliqués et les conséquences concrètes pour les habitants.</p>"
+        "<p><strong>3. Respect des personnes.</strong> Nous respectons la présomption d'innocence, nous ne publions pas l'identité de personnes privées ni de mineurs, et nous évitons les détails qui pourraient permettre d'identifier des victimes.</p>"
+        "<p><strong>4. Corrections.</strong> Quand une erreur est signalée ou découverte, nous la corrigeons rapidement et l'indiquons dans l'article. Écrivez-nous à "
+        f"{esc(e['email'])}.</p>"
+        "<p><strong>5. Illustrations.</strong> Les images générées par intelligence artificielle portent la mention « Illustration générée par IA ». Les photographies sont créditées lorsque leur auteur est connu.</p>"
+        "<p><strong>6. Indépendance et publicité.</strong> Le journal est financé par la publicité, qui est clairement séparée du contenu éditorial. Les annonceurs n'ont aucune influence sur nos articles.</p>"),
      "contact": ("Contact", f"<p>Pour toute question, correction ou information à nous transmettre :</p><p><strong>{esc(e['email'])}</strong></p>"
         f"<p>Éditeur : {esc(e['nom'])}, {esc(e['adresse'])}</p>"
         "<p>Nous corrigeons toute erreur signalée dans les meilleurs délais.</p>"),
@@ -282,11 +286,11 @@ def legal_pages(arts):
         "<p><strong>Hébergement :</strong> GitHub Pages (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis).</p>"
         "<p><strong>Propriété intellectuelle :</strong> les textes et visuels de ce site sont protégés. Toute reproduction sans autorisation est interdite.</p>"
         "<p><strong>Responsabilité :</strong> nous veillons à l'exactitude des informations publiées et corrigeons toute erreur signalée.</p>"),
-     "confidentialite": ("Confidentialité et cookies", "<p>Ce site est financé par la publicité. Des réseaux publicitaires tiers, dont Adsterra et Google (AdSense), peuvent déposer ou lire des cookies et collecter des données techniques (adresse IP, appareil, pages consultées) afin d'afficher et de mesurer des annonces, y compris personnalisées.</p>"
+     "confidentialite": ("Confidentialité et cookies", "<p>Ce site est financé par la publicité. Des réseaux publicitaires tiers, dont Google (AdSense), peuvent déposer ou lire des cookies et collecter des données techniques (adresse IP, appareil, pages consultées) afin d'afficher et de mesurer des annonces, y compris personnalisées.</p>"
         "<p>Les annonces Google utilisent des cookies, notamment pour afficher des annonces en fonction de vos visites sur ce site et sur d'autres sites. Vous pouvez gérer la personnalisation des annonces Google sur adssettings.google.com et consulter les règles de Google sur policies.google.com/technologies/ads.</p>"
         "<p><strong>Mesure d'audience.</strong> Nous utilisons GoatCounter, un outil de statistiques qui ne dépose pas de cookie et ne collecte pas de données permettant de vous identifier. Il compte les pages vues, le navigateur, le pays et les clics sur certaines annonces.</p>"
         "<p><strong>Votre choix.</strong> Vous pouvez refuser ou supprimer les cookies à tout moment dans les paramètres de votre navigateur.</p>"
-        "<p>Vous pouvez refuser ou supprimer ces cookies dans les paramètres de votre navigateur. Pour plus d'informations, consultez la politique de confidentialité d'Adsterra sur adsterra.com.</p>"
+        ""
         f"<p>Responsable du traitement : {esc(e['nom'])} — {esc(e['email'])}.</p>"
         "<p>Vous disposez d'un droit d'accès, de rectification et de suppression de vos données (LPD suisse, RGPD pour les visiteurs de l'UE).</p>"),
     }
@@ -302,7 +306,7 @@ def seo_files(arts):
     today = datetime.date.today().isoformat()
     ents = [f"<url><loc>{base}/</loc><lastmod>{arts[0]['date']}</lastmod><changefreq>hourly</changefreq><priority>1.0</priority></url>"]
     ents += [f"<url><loc>{base}/article/{a['slug']}.html</loc><lastmod>{a['date']}</lastmod><priority>0.8</priority></url>" for a in arts]
-    ents += [f"<url><loc>{base}/{x}.html</loc><priority>0.3</priority></url>" for x in ("a-propos", "contact", "mentions-legales", "confidentialite")]
+    ents += [f"<url><loc>{base}/{x}.html</loc><priority>0.3</priority></url>" for x in ("a-propos", "charte-editoriale", "contact", "mentions-legales", "confidentialite")]
     sm = '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "".join(ents) + "</urlset>"
     (OUT / "sitemap.xml").write_text(sm, encoding="utf-8")
     (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {base}/sitemap.xml\n", encoding="utf-8")
@@ -310,6 +314,8 @@ def seo_files(arts):
 def main():
     arts = json.loads((ROOT / "articles.json").read_text(encoding="utf-8"))
     arts.sort(key=lambda a: a["date"], reverse=True)
+    allarts = arts
+    arts = [a for a in arts if not a.get("hidden")]   # visibles : accueil, « À lire aussi », sitemap
     if OUT.exists(): shutil.rmtree(OUT)
     (OUT / "article").mkdir(parents=True); (OUT / "social").mkdir()
     if (ROOT / "photos").exists(): shutil.copytree(ROOT / "photos", OUT / "photos")
@@ -327,7 +333,7 @@ def main():
         _base.resize((_sz, _sz), _I.LANCZOS).save(OUT / _n)
     _base.resize((256, 256), _I.LANCZOS).save(OUT / "favicon.ico", sizes=[(16, 16), (32, 32), (48, 48)])
 
-    for a in arts:
+    for a in allarts:
         social_image(a, OUT / "social" / f"{a['slug']}.png")
         (OUT / "img").mkdir(exist_ok=True); hero_image(a, OUT / "img" / f"{a['slug']}.jpg")
         import hashlib; a["_v"] = hashlib.md5((OUT / "img" / f"{a['slug']}.jpg").read_bytes()).hexdigest()[:8]
@@ -335,7 +341,7 @@ def main():
         body = ""
         for i, p in enumerate(a["body"]):
             body += f"<p>{esc(p)}</p>"
-            if i == 0: body += ad("inline")
+            if i == 0 and not a.get("hidden"): body += ad("inline")
             for _e in ([a["extra_image"]] if a.get("extra_image") else []) + a.get("extra_images", []):
                 if _e.get("after", 1) == i:
                     body += (f'<figure style="margin:18px auto;max-width:{_e.get("maxw", 100)}%"><img src="../photos/{_e["file"]}" alt="{esc(_e.get("alt",""))}" style="width:100%;height:auto;border-radius:6px" loading="lazy">'
@@ -350,13 +356,13 @@ def main():
               "inLanguage": "fr-CH", "author": {"@type": "Person", "name": a.get("author", "La rédaction")},
               "publisher": {"@type": "Organization", "name": SITE_NAME, "logo": {"@type": "ImageObject", "url": f"{base_}/logo-profil.png"}}}
         page = (head(f'{a["title"]} – {SITE_NAME}', a["summary"], "../", f'img/{a["slug"]}.jpg?v={a["_v"]}', url=f"article/{a['slug']}.html", ld=ld, art=a) + header("../") +
-                f'<main><article>{demo}{ad("top")}<span class="cat" style="background:{col}">{esc(a["category"])}</span>'
+                f'<main><article>{demo}{ad("top") if not a.get("hidden") else ""}<span class="cat" style="background:{col}">{esc(a["category"])}</span>'
                 f'<h1>{esc(a["title"])}</h1><div class="meta">Par <strong>{esc(a.get("author","La rédaction"))}</strong> · {fr_date(a["date"])}</div>'
                 f'<img class="hero" src="../img/{a["slug"]}.jpg?v={a["_v"]}" alt="{esc(a["title"])}">{credit}'
-                f'<p class="lead">{esc(a["summary"])}</p>{body}{ad("inline2")}'
+                f'<p class="lead">{esc(a["summary"])}</p>{body}{ad("inline2") if not a.get('hidden') else ''}'
                 f'<div class="sources"><strong>Sources :</strong><ul>{srcs}</ul></div>{NATIVE}</article>'
-                f'<aside>{ad("side")}<div class="box"><strong>À lire aussi</strong><br>' +
-                "".join(f'<p><a href="{o["slug"]}.html">{esc(o["title"])}</a></p>' for o in arts if o is not a) +
+                f'<aside>{ad("side") if not a.get("hidden") else ""}<div class="box"><strong>À lire aussi</strong><br>' +
+                "".join(f'<p><a href="{o["slug"]}.html">{esc(o["title"])}</a></p>' for o in arts[:8] if o is not a) +
                 f'</div></aside></main>' + footer("../"))
         (OUT / "article" / f"{a['slug']}.html").write_text(page, encoding="utf-8")
 
