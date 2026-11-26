@@ -177,4 +177,18 @@ def scene(motif, color):
         for i in range(7): p.rect(200+i*90, g-270, 240+i*90, g-50, p.light)
         p.rect(100, 60, 220, 180, p.white); p.rect(112, 72, 208, 168, p.mid)
         p.ell(740, 60, 900, 160, p.white); p.ell(780, 85, 800, 105, p.dark); p.ell(820, 75, 840, 95, p.dark); p.ell(850, 100, 870, 120, p.dark)
+    elif motif == "lights":
+        p.rect(0, g-40, W, g, p.mid)
+        p.ell(780, 50, 880, 150, p.white)
+        for x, hh in ((90, 220), (910, 260)):
+            p.rect(x-12, g-hh, x+12, g, p.mid); p.poly([(x-70, g-hh+40), (x, g-hh-120), (x+70, g-hh+40)], p.light)
+        p.rect(300, g-300, 700, g, p.light)
+        p.poly([(270, g-300), (500, g-400), (730, g-300)], p.white)
+        for i in range(4): p.rect(335+i*90, g-250, 385+i*90, g-150, p.dark, r=4)
+        p.rect(460, g-120, 540, g, p.dark)
+        for i in range(21):
+            x = 40 + i*46; y = 120 + 28*math.sin(i*.6)
+            p.ell(x-8, y-8, x+8, y+8, p.white)
+        p.line([(40 + i*46, 120 + 28*math.sin(i*.6)) for i in range(21)], p.soft, 3)
+        for x in (200, 760): person(p, x, g+30, 110, p.light)
     return p.out()
